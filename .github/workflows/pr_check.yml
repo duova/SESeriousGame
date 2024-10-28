@@ -14,7 +14,8 @@ jobs:
         UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
         UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
       with:
-        projectPath: /
+        unityVersion: 6000.0.23f1
+        projectPath: Library
         githubToken: ${{ secrets.GITHUB_TOKEN }}
     - uses: actions/upload-artifact@v4
       if: always()
