@@ -6,6 +6,10 @@ jobs:
   build:
     name: Build project
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+      repository-projects: write
     steps:
       # Checkout (without LFS)
       - name: Checkout repository
