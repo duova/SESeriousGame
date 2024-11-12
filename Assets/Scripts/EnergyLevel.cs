@@ -14,35 +14,30 @@ public class EnergyLevel : MonoBehaviour
 {
 
     public Image energyBar;
-
     public float Energy = 100f;
+    
     public bool inLevel = false;
     public float maxEnergy = 100f;
-    private float cost = 10f;
+    public float cost = 10f;
 
-    public void levelUpdate(bool isInLevel){
+    public void LevelUpdate(bool isInLevel){
         inLevel = isInLevel;
     }
 
-    public void eat(float eatenValue){
+    public void Eat(float eatenValue){
 
-        if(Energy <= (maxEnergy - eatenValue)){
-            Energy += eatenValue;
-        } 
+        if(Energy < (maxEnergy - eatenValue)){Energy += eatenValue;} 
         else{Energy = maxEnergy;}
 
-        energyBar.fillAmount = Energy/maxEnergy;
-        
+        energyBar.fillAmount = Energy / maxEnergy;
     }
 
-    void Update(){
-        Debug.Log("AA");
-
-        if(Input.GetKeyDown("a")){
+    private void Update(){
+        if(Input.GetKey(KeyCode.LeftArrow)){
             Energy -= cost;
         }
 
-        if(Input.GetKeyDown("d")){
+        if(Input.GetKey(KeyCode.RightArrow)){
             Energy -= cost;
         }
 
@@ -55,6 +50,5 @@ public class EnergyLevel : MonoBehaviour
     }
 
     public EnergyLevel(){
-        Debug.Log("AA");
     }
 }
