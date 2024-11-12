@@ -3,6 +3,7 @@ using System.Collections.Generic;
 
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 /*
 
 - Go Down over time, when level start.
@@ -18,7 +19,7 @@ public class EnergyLevel : MonoBehaviour
     
     public bool inLevel = false;
     public float maxEnergy = 100f;
-    public float cost = 10f;
+    public float cost = 0.05f;
 
     public void LevelUpdate(bool isInLevel){
         inLevel = isInLevel;
@@ -33,22 +34,26 @@ public class EnergyLevel : MonoBehaviour
     }
 
     private void Update(){
-        if(Input.GetKey(KeyCode.LeftArrow)){
-            Energy -= cost;
-        }
-
-        if(Input.GetKey(KeyCode.RightArrow)){
-            Energy -= cost;
-        }
 
         if(inLevel){
             Energy -= Time.deltaTime;
-            /*Do something when 0*/
+            if(Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.RightArrow)){
+                Energy -= cost;
+            }
+
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                Eat(10f);
+            }
+
+            if (Energy <= 0) {
+                SceneManager.LoadScene("ClickingSample");
+                inLevel = false;
+            }
+            energyBar.fillAmount = Energy/maxEnergy;
         }
-
-        energyBar.fillAmount = Energy/maxEnergy;
+        
     }
-
     public EnergyLevel(){
     }
 }
