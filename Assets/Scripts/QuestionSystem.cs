@@ -181,7 +181,7 @@ public class QuestionSystem
         //Throw errors if the question cannot be found.
 
         InstancedQuestion retVal = default;
-        QuestionEntry selectQuestion = default;
+        QuestionEntry selectQuestion = new QuestionEntry();
 
         if (specificQuestion)
         {
@@ -220,6 +220,7 @@ public class QuestionSystem
         {
             if (answer.isFeature)
             {
+                Debug.Log(answer.typeIndex);
                 if (answer.featureIndex < levelData.Levels[answer.typeIndex])
                 {
                     retVal.PossiblePlantFeatureAnswers

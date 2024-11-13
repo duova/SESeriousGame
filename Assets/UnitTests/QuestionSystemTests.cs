@@ -41,7 +41,7 @@ public class QuestionSystemTests
         //Create a simple mock question library.
         QuestionLibraryScriptableObject mockQuestionLib = ScriptableObject.CreateInstance<QuestionLibraryScriptableObject>();
 
-        QuestionEntry question = default;
+        QuestionEntry question = new QuestionEntry();
         question.questionType = QuestionType.Foraging;
         //Test accept all edible as well.
         question.acceptAllEdible = true;
