@@ -260,7 +260,12 @@ public class QuestionSystem
 
     private int GetIndexOfPlantType(string uniqueName)
     {
-        return _plantEntries.FindIndex(plant => plant.uniqueName == uniqueName);
+        var index = _plantEntries.FindIndex(plant => plant.uniqueName == uniqueName);
+        if (index < 0)
+        {
+            throw new Exception("Plant type can't be found.");
+        }
+        return index;
     }
 
     private int GetIndexOfPlantFeature(string uniqueName)
@@ -276,6 +281,6 @@ public class QuestionSystem
             }
         }
 
-        throw new ApplicationException("uniqueName of plant feature does not exist.");
+        throw new Exception("UniqueName of plant feature does not exist.");
     }
 }
