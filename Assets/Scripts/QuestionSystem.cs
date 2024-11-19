@@ -4,7 +4,7 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.Serialization;
 using Random = UnityEngine.Random;
-
+/*
 public enum QuestionType
 {
     Foraging,
@@ -284,3 +284,4 @@ public class QuestionSystem
         throw new Exception("UniqueName of plant feature does not exist.");
     }
 }
+*/

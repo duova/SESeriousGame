@@ -6,6 +6,7 @@ using UnityEngine.TestTools;
 
 public class QuestionSystemTests
 {
+    /*
     [Test]
     public void QuestionSystemTestsSimplePasses()
     {
@@ -92,4 +93,5 @@ public class QuestionSystemTests
         
         Assert.True(!questionSystem.AttemptQuestion("OakSeed"), "Check that wrong answers return false and higher level answers exist after using a higher level.");
     }
+    */
 }

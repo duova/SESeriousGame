@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
 //Stuff like oak leaf, oak seed, oak twig.
 [Serializable]
 public struct PlantFeature
@@ -44,3 +45,4 @@ public class PlantLibraryScriptableObject : ScriptableObject
 {
     public List<PlantTypeEntry> plantEntries;
 }
+*/
