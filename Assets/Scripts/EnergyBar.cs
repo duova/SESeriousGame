@@ -18,7 +18,6 @@ public class EnergyBar : MonoBehaviour
 
     private void Update()
     {
-     
         if (energyLevel.inLevel)
         {
             energyLevel.energy -= Time.deltaTime;
