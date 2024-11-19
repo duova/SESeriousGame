@@ -3,20 +3,16 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "EnergyLevel", menuName ="ScriptableObjects/EnergyLevel",  order = 0)]
 public class EnergyLevel : ScriptableObject
 {
-    public float cost = 0.08f;
-    public float Energy= 100f;
-    public float MaxEnergy = 100f;
-
+    [SerializeField]
+    private float cost = 0.08f;
+    
+    public float energy= 100f;
+    public float maxEnergy = 100f;
     public bool inLevel = false;  
-
-    public void SceneSwap()
-    {
-        inLevel = !inLevel;
-    }
 
     public void Eat(float nutritionalValue)
     {
-        if(Energy < (MaxEnergy - nutritionalValue)) { Energy += nutritionalValue; }
-        else { Energy = MaxEnergy; }
+        if(energy < (maxEnergy - nutritionalValue)) { energy += nutritionalValue; }
+        else { energy = maxEnergy; }
     }
 }
