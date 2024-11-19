@@ -3,9 +3,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "EnergyLevel", menuName ="ScriptableObjects/EnergyLevel",  order = 0)]
 public class EnergyLevel : ScriptableObject
 {
-    [SerializeField]
-    private float cost = 0.08f;
-    
+    public float cost = 0.08f;
     public float energy= 100f;
     public float maxEnergy = 100f;
     public bool inLevel = false;  
