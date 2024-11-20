@@ -10,7 +10,7 @@ public class EnergyBar : MonoBehaviour
     private void Start()
     {
         var scene = SceneManager.GetActiveScene();
-        energyBar.fillAmount = energyLevel.energy / energyLevel.maxEnergy;
+        energyBar.fillAmount = energyLevel.Energy / energyLevel.MaxEnergy;
 
         if (scene.name == "SampleScene")
         { energyLevel.inLevel = true; }
@@ -20,21 +20,20 @@ public class EnergyBar : MonoBehaviour
     {
         if (energyLevel.inLevel)
         {
-            energyLevel.energy -= Time.deltaTime;
+            energyLevel.Energy -= Time.deltaTime;
             if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.RightArrow))
-            { energyLevel.energy -= energyLevel.cost; }
+            { energyLevel.Energy -= energyLevel.cost; }
 
             if (Input.GetKeyDown(KeyCode.E))
             { energyLevel.Eat(10f); }
 
-            energyBar.fillAmount = energyLevel.energy / energyLevel.maxEnergy;
-
-            if (energyLevel.energy <= 0)
+            if (energyLevel.Energy <= 0)
             {
-                energyLevel.energy = 0;
+                energyLevel.Energy = 0;
                 energyLevel.inLevel = false;
                 SceneManager.LoadScene("ClickingSample");
             }
         }
+        energyBar.fillAmount = energyLevel.Energy / energyLevel.MaxEnergy;
     }
 }
