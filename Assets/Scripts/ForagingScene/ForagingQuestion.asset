@@ -9,10 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59ed1b986f5c9504cb681baef0ae5c1e, type: 3}
-  m_Name: EnergyLevel
+  m_Script: {fileID: 11500000, guid: db1d343a823574849b6514b4eefab401, type: 3}
+  m_Name: ForagingQuestion
   m_EditorClassIdentifier: 
-  cost: 0.08
-  energy: 44.13243
-  maxEnergy: 100
-  inLevel: 0
+  Question: {fileID: 0}

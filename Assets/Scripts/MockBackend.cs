@@ -29,7 +29,7 @@ public class QuestionEntry
     public QuestionHandle Handle;
 }
 
-[CreateAssetMenu(fileName = "Data", menuName = "ScriptableObjects/QuestionLibrary")]
+[CreateAssetMenu(fileName = "ForagingScene/QuestionLibraryScriptableObject", menuName = "ScriptableObjects/QuestionLibrary")]
 public class QuestionLibraryScriptableObject : ScriptableObject
 {
     public List<QuestionEntry> questionEntries;
