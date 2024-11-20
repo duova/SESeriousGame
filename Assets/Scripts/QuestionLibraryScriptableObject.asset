@@ -23,3 +23,13 @@ MonoBehaviour:
       sprite: {fileID: 6784075811087607387, guid: 9da743a66a367dd4e8bd8e55d656a644, type: 3}
       answerDisplayType: 0
       isCorrect: 0
+  - displayQuestion: Testing Q 2
+    answerEntries:
+    - displayText: Tick
+      sprite: {fileID: -1310959143692092007, guid: f2dc63a7a4c017948a63b13b60878acc, type: 3}
+      answerDisplayType: 0
+      isCorrect: 1
+    - displayText: Cross
+      sprite: {fileID: 4170208755089667720, guid: e4a31d4167670cd4ea0c5e7cdb927772, type: 3}
+      answerDisplayType: 0
+      isCorrect: 0
