@@ -199,7 +199,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      beech_catkin_0: -5703574053539511624
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

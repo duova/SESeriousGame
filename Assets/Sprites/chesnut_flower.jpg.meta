@@ -199,7 +199,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      chesnut_flower_0: -5371304916203724606
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

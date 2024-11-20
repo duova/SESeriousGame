@@ -18,7 +18,7 @@ public class ForagingController : MonoBehaviour
     private QuestionLibraryScriptableObject questionLibrary;
 
     private SpriteRenderer sprite1Renderer;
-    public BoxCollider2D _sprite1BoxCollider2D;
+    private BoxCollider2D _sprite1BoxCollider2D;
 
     private void GenerateSprites(List<Answer> possibleAnswers)
     {
@@ -32,11 +32,10 @@ public class ForagingController : MonoBehaviour
         sprite1Renderer.transform.localScale = new Vector3(0.05f, 0.05f,0);
         sprite1Renderer.sortingOrder = 10;
         sprite1Renderer.sortingLayerName = "Default";
-
-
-
+        
         _sprite1BoxCollider2D = sprite1.GetComponent<BoxCollider2D>();
         _sprite1BoxCollider2D.size = sprite1Renderer.sprite.bounds.size;
+        Debug.Log(sprite1Renderer.sprite.bounds.size);
     }
 
     private void LoadQuestion(string retrievedQuestion)
@@ -56,6 +55,7 @@ public class ForagingController : MonoBehaviour
     private void OnMouseUpAsButton()
     {
         //If Click on sprite, create answer handle.
+        Debug.Log("Hit");
         if (backend.AttemptQuestion(_currentQuestion.PossibleAnswers[0].Handle))
         {
             sprite1Renderer.enabled = false;

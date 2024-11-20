@@ -199,7 +199,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      beech_leaves_0: -3033368127098692037
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

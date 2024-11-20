@@ -199,7 +199,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      birch_catkin_0: 592237296543524682
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
