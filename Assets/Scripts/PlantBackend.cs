@@ -14,33 +14,11 @@ public enum AnswerDisplayType
 public class AnswerHandle
 {
     public GUID Key { get; } = GUID.Generate();
-    
-    public static bool operator ==(AnswerHandle a, AnswerHandle b)
-    {
-        if (a == null || b == null) throw new NullReferenceException();
-        return a.Key == b.Key;
-    }
-
-    public static bool operator !=(AnswerHandle a, AnswerHandle b)
-    {
-        return !(a == b);
-    }
 }
 
 public class QuestionHandle
 {
     public GUID Key { get; } = GUID.Generate();
-
-    public static bool operator ==(QuestionHandle a, QuestionHandle b)
-    {
-        if (a == null || b == null) throw new NullReferenceException();
-        return a.Key == b.Key;
-    }
-
-    public static bool operator !=(QuestionHandle a, QuestionHandle b)
-    {
-        return !(a == b);
-    }
 }
 
 public class Answer
