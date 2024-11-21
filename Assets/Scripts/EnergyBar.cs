@@ -25,7 +25,7 @@ public class EnergyBar : MonoBehaviour
             { energyLevel.Energy -= energyLevel.cost; }
 
             if (Input.GetKeyDown(KeyCode.E))
-            { energyLevel.Eat(10f); }
+            { energyLevel.Eat(30f); }
 
             if (energyLevel.Energy <= 0)
             {

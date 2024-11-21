@@ -29,10 +29,14 @@ public class PlantSprite : MonoBehaviour
 
     private void OnMouseUpAsButton()
     {
-        _spriteRenderer.enabled = false;
-        if(questionLibrary.questionEntries[answer].answerEntries[0].isCorrect)
+        foreach (var spriteRenderer in GetComponentsInChildren<SpriteRenderer>())
         {
-            level.Eat(10f);
+            spriteRenderer.enabled = false;
+        }
+
+        if (questionLibrary.questionEntries[questionNum].answerEntries[answer].isCorrect)
+        {
+            level.Eat(30f);
         }
         else
         {
