@@ -84,4 +84,9 @@ public class MockBackend : IPlantBackend
         return _questions.SelectMany(question => question.answerEntries).First(answer => answer.Handle == handle)
             .isCorrect;
     }
+
+    public int GetStage(PlantFeatureScriptableObject plantFeature)
+    {
+        throw new NotImplementedException();
+    }
 }
