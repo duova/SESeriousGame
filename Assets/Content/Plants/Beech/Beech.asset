@@ -9,7 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: QuestionLibrary
-  m_EditorClassIdentifier: Main::QuestionLibraryScriptableObject
-  questionEntries: []
+  m_Script: {fileID: 11500000, guid: e5343bff20ea43e780cbbd777c692595, type: 3}
+  m_Name: Beech
+  m_EditorClassIdentifier: 
+  displayName: Beech
+  features: []
+  image: {fileID: 0}
+  description: 
