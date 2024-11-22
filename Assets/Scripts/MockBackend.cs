@@ -19,7 +19,7 @@ public class AnswerEntry
 }
 
 [Serializable]
-public class QuestionEntry
+public class MockQuestionEntry
 {
     public string displayQuestion;
 
@@ -29,19 +29,19 @@ public class QuestionEntry
     public QuestionHandle Handle;
 }
 
-[CreateAssetMenu(fileName = "ForagingScene/QuestionLibraryScriptableObject", menuName = "ScriptableObjects/QuestionLibrary")]
-public class QuestionLibraryScriptableObject : ScriptableObject
+[CreateAssetMenu(fileName = "Data", menuName = "ScriptableObjects/MockQuestionLibrary")]
+public class MockQuestionLibraryScriptableObject : ScriptableObject
 {
-    public List<QuestionEntry> questionEntries;
+    public List<MockQuestionEntry> questionEntries;
 }
 
 public class MockBackend : IPlantBackend
 {
-    private List<QuestionEntry> _questions;
+    private List<MockQuestionEntry> _questions;
 
     private int _questionIterator;
     
-    public MockBackend(QuestionLibraryScriptableObject library)
+    public MockBackend(MockQuestionLibraryScriptableObject library)
     {
         _questions = library.questionEntries;
         //Generate handles we can use to reference the questions and answers.

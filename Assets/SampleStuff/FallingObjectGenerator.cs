@@ -18,7 +18,7 @@ public class FallingObjectGenerator : MonoBehaviour
     private GameObject prefabToSpawn;
 
     [SerializeField]
-    private QuestionLibraryScriptableObject libraryToUse;
+    private MockQuestionLibraryScriptableObject libraryToUse;
     
     private float _intervalTimer;
 
