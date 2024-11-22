@@ -7,6 +7,7 @@ public class Fact
 {
     public int stage;
 
+    [TextArea]
     public string text;
 }
 
@@ -27,7 +28,6 @@ public class PlantFeatureScriptableObject : ScriptableObject
     
     [TextArea]
     public string description;
-
-    [TextArea]
+    
     public List<Fact> facts;
 }

@@ -21,3 +21,6 @@ MonoBehaviour:
   - {fileID: 2357013750471348097, guid: 6dfc5a3e02308584b83352a23beca60a, type: 3}
   - {fileID: -1310959143692092007, guid: f2dc63a7a4c017948a63b13b60878acc, type: 3}
   description: 
+  facts:
+  - stage: 1
+    text: Something interesting.

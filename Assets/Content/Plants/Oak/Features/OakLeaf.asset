@@ -22,3 +22,6 @@ MonoBehaviour:
   - {fileID: -1310959143692092007, guid: f2dc63a7a4c017948a63b13b60878acc, type: 3}
   description: An oak leaf has some great features and is incredibly pretty! But
     some actual facts should go here.
+  facts:
+  - stage: 2
+    text: Something interesting.
