@@ -12,6 +12,10 @@ public enum QuestionLocation
 [Serializable]
 public class QuestionEntry
 {
+    public int stage;
+    
+    public char syllabusReference;
+    
     public QuestionTypeScriptableObject questionType;
 
     public QuestionLocation questionLocation;
@@ -24,8 +28,6 @@ public class QuestionEntry
     
     [Tooltip("0-1.")]
     public float chanceToUseAlternateName;
-
-    public int stage;
 
     public bool useSpecificImage;
     

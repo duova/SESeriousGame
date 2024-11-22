@@ -1,5 +1,14 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
+
+[Serializable]
+public class Fact
+{
+    public int stage;
+
+    public string text;
+}
 
 [CreateAssetMenu(fileName = "Data", menuName = "ScriptableObjects/PlantFeature")]
 public class PlantFeatureScriptableObject : ScriptableObject
@@ -18,4 +27,7 @@ public class PlantFeatureScriptableObject : ScriptableObject
     
     [TextArea]
     public string description;
+
+    [TextArea]
+    public List<Fact> facts;
 }

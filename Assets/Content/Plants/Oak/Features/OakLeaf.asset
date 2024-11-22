@@ -19,5 +19,6 @@ MonoBehaviour:
   featureType: {fileID: 11400000, guid: 6d2ff2c4c8d5be74890713d5a1ebdb99, type: 2}
   sprites:
   - {fileID: 2191403327850977215, guid: ea51d7f04cfa6d341af9eb64f6e5411c, type: 3}
+  - {fileID: -1310959143692092007, guid: f2dc63a7a4c017948a63b13b60878acc, type: 3}
   description: An oak leaf has some great features and is incredibly pretty! But
     some actual facts should go here.
