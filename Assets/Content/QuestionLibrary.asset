@@ -77,9 +77,69 @@ MonoBehaviour:
     syllabusReference: 98
     questionType: {fileID: 11400000, guid: 27ff5b5be58f3bf42b3d6c2f6a4a0c9c, type: 2}
     questionLocation: 0
-    hint: or little cups or hopelessness
+    hint: or little cups
     plant: {fileID: 11400000, guid: eed02bc3a912265469a7b461d2fd3627, type: 2}
     feature: {fileID: 11400000, guid: fe11781517f51cc4fbe8b31a155d66c7, type: 2}
+    chanceToUseAlternateName: 0
+    useSpecificImage: 0
+    specificImageIndex: 0
+  - stage: 3
+    syllabusReference: 100
+    questionType: {fileID: 11400000, guid: a4d7a71ee6c09c24d8d48f6303b4e7c2, type: 2}
+    questionLocation: 0
+    hint: bunches of
+    plant: {fileID: 11400000, guid: eed02bc3a912265469a7b461d2fd3627, type: 2}
+    feature: {fileID: 11400000, guid: 6098a69dd976f504c93159a2023a8b76, type: 2}
+    chanceToUseAlternateName: 0
+    useSpecificImage: 0
+    specificImageIndex: 0
+  - stage: 3
+    syllabusReference: 102
+    questionType: {fileID: 11400000, guid: 4ea769b7fe011cc42ae770d3fee40a7d, type: 2}
+    questionLocation: 0
+    hint: 
+    plant: {fileID: 11400000, guid: eed02bc3a912265469a7b461d2fd3627, type: 2}
+    feature: {fileID: 11400000, guid: 6098a69dd976f504c93159a2023a8b76, type: 2}
+    chanceToUseAlternateName: 0
+    useSpecificImage: 0
+    specificImageIndex: 0
+  - stage: 3
+    syllabusReference: 100
+    questionType: {fileID: 11400000, guid: 4ea769b7fe011cc42ae770d3fee40a7d, type: 2}
+    questionLocation: 0
+    hint: 
+    plant: {fileID: 11400000, guid: eed02bc3a912265469a7b461d2fd3627, type: 2}
+    feature: {fileID: 11400000, guid: fe11781517f51cc4fbe8b31a155d66c7, type: 2}
+    chanceToUseAlternateName: 0
+    useSpecificImage: 0
+    specificImageIndex: 0
+  - stage: 3
+    syllabusReference: 100
+    questionType: {fileID: 11400000, guid: 4ea769b7fe011cc42ae770d3fee40a7d, type: 2}
+    questionLocation: 0
+    hint: 
+    plant: {fileID: 11400000, guid: eed02bc3a912265469a7b461d2fd3627, type: 2}
+    feature: {fileID: 11400000, guid: fe11781517f51cc4fbe8b31a155d66c7, type: 2}
+    chanceToUseAlternateName: 0
+    useSpecificImage: 0
+    specificImageIndex: 0
+  - stage: 4
+    syllabusReference: 97
+    questionType: {fileID: 11400000, guid: 3f1b03aaef8b51f41bff10eb86b07bb9, type: 2}
+    questionLocation: 0
+    hint: long, yellow
+    plant: {fileID: 11400000, guid: eed02bc3a912265469a7b461d2fd3627, type: 2}
+    feature: {fileID: 11400000, guid: 66e9f9bf508a75d459aee0d9955f0881, type: 2}
+    chanceToUseAlternateName: 0
+    useSpecificImage: 0
+    specificImageIndex: 0
+  - stage: 4
+    syllabusReference: 98
+    questionType: {fileID: 11400000, guid: 277a701f31f28bc44bd089100c9c2236, type: 2}
+    questionLocation: 0
+    hint: less densely packed
+    plant: {fileID: 11400000, guid: eed02bc3a912265469a7b461d2fd3627, type: 2}
+    feature: {fileID: 11400000, guid: 66e9f9bf508a75d459aee0d9955f0881, type: 2}
     chanceToUseAlternateName: 0
     useSpecificImage: 0
     specificImageIndex: 0
