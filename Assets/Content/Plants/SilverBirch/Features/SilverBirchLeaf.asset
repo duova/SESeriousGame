@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a86683649e041fca7f3adfc4e399c15, type: 3}
   m_Name: SilverBirchLeaf
   m_EditorClassIdentifier: 
-  displayName: 
-  displayNamePlural: 
-  alternateDisplayName: 
-  alternateDisplayNamePlural: 
-  featureType: {fileID: 0}
+  displayName: Leaf
+  displayNamePlural: Leaves
+  alternateDisplayName: Bud
+  alternateDisplayNamePlural: Buds
+  featureType: {fileID: 11400000, guid: 6d2ff2c4c8d5be74890713d5a1ebdb99, type: 2}
   sprites: []
   description: 
   facts: []

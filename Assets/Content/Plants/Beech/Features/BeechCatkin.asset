@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a86683649e041fca7f3adfc4e399c15, type: 3}
   m_Name: BeechCatkin
   m_EditorClassIdentifier: 
-  displayName: 
-  displayNamePlural: 
-  alternateDisplayName: 
-  alternateDisplayNamePlural: 
-  featureType: {fileID: 0}
+  displayName: Catkin
+  displayNamePlural: Catkins
+  alternateDisplayName: Flower
+  alternateDisplayNamePlural: FLowers
+  featureType: {fileID: 11400000, guid: 11547de509840b04280ff833bed842d9, type: 2}
   sprites: []
   description: 
   facts: []

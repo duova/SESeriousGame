@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a86683649e041fca7f3adfc4e399c15, type: 3}
   m_Name: BeachNut
   m_EditorClassIdentifier: 
-  displayName: 
-  displayNamePlural: 
-  alternateDisplayName: 
-  alternateDisplayNamePlural: 
-  featureType: {fileID: 0}
+  displayName: Nut
+  displayNamePlural: Nuts
+  alternateDisplayName: Fruit
+  alternateDisplayNamePlural: Fruits
+  featureType: {fileID: 11400000, guid: 54dfb9f9c326f1a41b2d7f3916a8ef9a, type: 2}
   sprites: []
   description: 
   facts: []
