@@ -43,10 +43,7 @@ public class FallingObjectGenerator : MonoBehaviour
         //Get a question if there isn't an active question.
         if (_currentQuestion == null)
         {
-            _currentQuestion = Backend.GetQuestion();
-            _uninstantiatedAnswers = _currentQuestion.PossibleAnswers.Count;
-            questionTextBox.text = _currentQuestion.DisplayQuestion;
-            _intervalTimer = interval;
+            _currentQuestion = Backend.GetQuestion(QuestionLocation.Falling);
         }
         
         //Instantiate answers by interval until there are no more uninstantiated answers.

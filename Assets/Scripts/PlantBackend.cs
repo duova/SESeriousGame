@@ -25,6 +25,8 @@ public class Answer
 {
     public AnswerHandle Handle = new AnswerHandle();
 
+    public bool IsCorrect;
+
     public string DisplayText;
 
     public Sprite Sprite;
@@ -43,7 +45,9 @@ public class QuestionSet
 
 public interface IPlantBackend
 {
-    public QuestionSet GetQuestion();
+    public QuestionSet GetQuestion(QuestionLocation questionLocation);
 
     public bool AttemptQuestion(AnswerHandle handle);
+
+    public int GetStage(PlantEntryScriptableObject plant);
 }

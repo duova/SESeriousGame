@@ -54,8 +54,8 @@ public class MockBackend : IPlantBackend
             }
         }
     }
-    
-    public QuestionSet GetQuestion()
+
+    public QuestionSet GetQuestion(QuestionLocation questionLocation)
     {
         if (_questionIterator >= _questions.Count) _questionIterator = 0;
         
@@ -87,5 +87,10 @@ public class MockBackend : IPlantBackend
             }
         }
         return false;
+    }
+
+    public int GetStage(PlantEntryScriptableObject plant)
+    {
+        throw new NotImplementedException();
     }
 }
