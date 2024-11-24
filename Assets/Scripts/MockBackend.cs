@@ -54,8 +54,8 @@ public class MockBackend : IPlantBackend
             }
         }
     }
-    
-    public QuestionSet GetQuestion()
+
+    public QuestionSet GetQuestion(QuestionLocation questionLocation)
     {
         if (_questions.Count >= _questionIterator) _questionIterator = 0;
         

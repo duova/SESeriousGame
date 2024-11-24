@@ -42,7 +42,7 @@ public class FallingObjectGenerator : MonoBehaviour
         //Get a question if there isn't an active question.
         if (_currentQuestion == null)
         {
-            _currentQuestion = Backend.GetQuestion();
+            _currentQuestion = Backend.GetQuestion(QuestionLocation.Falling);
         }
         questionTextBox.text = _currentQuestion.DisplayQuestion;
         _uninstantiatedAnswers = _currentQuestion.PossibleAnswers.Count;

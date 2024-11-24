@@ -45,7 +45,7 @@ public class QuestionSet
 
 public interface IPlantBackend
 {
-    public QuestionSet GetQuestion();
+    public QuestionSet GetQuestion(QuestionLocation questionLocation);
 
     public bool AttemptQuestion(AnswerHandle handle);
 
