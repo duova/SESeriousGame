@@ -13,7 +13,7 @@ public class ForagingController : MonoBehaviour
     public EnergyLevel energy;
 
     [SerializeField]
-    private QuestionLibraryScriptableObject questionLibrary;
+    private MockQuestionLibraryScriptableObject questionLibrary;
     
     private void LoadQuestion(string retrievedQuestion)
     {
@@ -22,8 +22,6 @@ public class ForagingController : MonoBehaviour
 
     private void Start()
     {
-        backend = new MockBackend(questionLibrary);
-        _currentQuestion = backend.GetQuestion();
 
         LoadQuestion(_currentQuestion.DisplayQuestion);
         //GenerateSprites(_currentQuestion.PossibleAnswers);

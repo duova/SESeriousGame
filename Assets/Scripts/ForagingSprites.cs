@@ -23,7 +23,6 @@ public class PlantSprite : MonoBehaviour
         _spriteRenderer = GetComponent<SpriteRenderer>();
         _boxCollider2D = GetComponent<BoxCollider2D>();
 
-        _spriteRenderer.sprite = questionLibrary.questionEntries[questionNum].answerEntries[answer].sprite;
         _boxCollider2D.size = _spriteRenderer.sprite.bounds.size;
     }
 
@@ -33,15 +32,5 @@ public class PlantSprite : MonoBehaviour
         {
             spriteRenderer.enabled = false;
         }
-
-        if (questionLibrary.questionEntries[questionNum].answerEntries[answer].isCorrect)
-        {
-            level.Eat(30f);
-        }
-        else
-        {
-            level.Eat(-5.0f);
-        }
-        
     }
 }
