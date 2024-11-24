@@ -49,5 +49,5 @@ public interface IPlantBackend
 
     public bool AttemptQuestion(AnswerHandle handle);
 
-    public int GetStage(PlantFeatureScriptableObject plantFeature);
+    public int GetStage(PlantEntryScriptableObject plant);
 }

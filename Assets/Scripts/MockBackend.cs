@@ -85,7 +85,7 @@ public class MockBackend : IPlantBackend
             .isCorrect;
     }
 
-    public int GetStage(PlantFeatureScriptableObject plantFeature)
+    public int GetStage(PlantEntryScriptableObject plant)
     {
         throw new NotImplementedException();
     }
