@@ -20,6 +20,216 @@ MonoBehaviour:
     hint: lobed
     plant: {fileID: 11400000, guid: eed02bc3a912265469a7b461d2fd3627, type: 2}
     feature: {fileID: 11400000, guid: 6098a69dd976f504c93159a2023a8b76, type: 2}
-    chanceToUseAlternateName: 0.5
-    useSpecificImage: 1
+    chanceToUseAlternateName: 0
+    useSpecificImage: 0
+    specificImageIndex: 0
+  - stage: 1
+    syllabusReference: 97
+    questionType: {fileID: 11400000, guid: 3f1b03aaef8b51f41bff10eb86b07bb9, type: 2}
+    questionLocation: 0
+    hint: lobed
+    plant: {fileID: 11400000, guid: eed02bc3a912265469a7b461d2fd3627, type: 2}
+    feature: {fileID: 11400000, guid: 6098a69dd976f504c93159a2023a8b76, type: 2}
+    chanceToUseAlternateName: 0
+    useSpecificImage: 0
+    specificImageIndex: 0
+  - stage: 1
+    syllabusReference: 98
+    questionType: {fileID: 11400000, guid: 277a701f31f28bc44bd089100c9c2236, type: 2}
+    questionLocation: 0
+    hint: smooth edged
+    plant: {fileID: 11400000, guid: eed02bc3a912265469a7b461d2fd3627, type: 2}
+    feature: {fileID: 11400000, guid: 6098a69dd976f504c93159a2023a8b76, type: 2}
+    chanceToUseAlternateName: 0
+    useSpecificImage: 0
+    specificImageIndex: 0
+  - stage: 1
+    syllabusReference: 98
+    questionType: {fileID: 11400000, guid: 7e06b4f047ecd0248b5d433d134be758, type: 2}
+    questionLocation: 0
+    hint: smooth edged
+    plant: {fileID: 11400000, guid: eed02bc3a912265469a7b461d2fd3627, type: 2}
+    feature: {fileID: 11400000, guid: 6098a69dd976f504c93159a2023a8b76, type: 2}
+    chanceToUseAlternateName: 0
+    useSpecificImage: 0
+    specificImageIndex: 0
+  - stage: 2
+    syllabusReference: 97
+    questionType: {fileID: 11400000, guid: 7e06b4f047ecd0248b5d433d134be758, type: 2}
+    questionLocation: 0
+    hint: 
+    plant: {fileID: 11400000, guid: eed02bc3a912265469a7b461d2fd3627, type: 2}
+    feature: {fileID: 11400000, guid: fe11781517f51cc4fbe8b31a155d66c7, type: 2}
+    chanceToUseAlternateName: 0
+    useSpecificImage: 0
+    specificImageIndex: 0
+  - stage: 2
+    syllabusReference: 97
+    questionType: {fileID: 11400000, guid: 0b08101d7541a3142913ea532f2ad71d, type: 2}
+    questionLocation: 0
+    hint: 
+    plant: {fileID: 11400000, guid: eed02bc3a912265469a7b461d2fd3627, type: 2}
+    feature: {fileID: 11400000, guid: fe11781517f51cc4fbe8b31a155d66c7, type: 2}
+    chanceToUseAlternateName: 0
+    useSpecificImage: 0
+    specificImageIndex: 0
+  - stage: 2
+    syllabusReference: 98
+    questionType: {fileID: 11400000, guid: 27ff5b5be58f3bf42b3d6c2f6a4a0c9c, type: 2}
+    questionLocation: 0
+    hint: or little cups
+    plant: {fileID: 11400000, guid: eed02bc3a912265469a7b461d2fd3627, type: 2}
+    feature: {fileID: 11400000, guid: fe11781517f51cc4fbe8b31a155d66c7, type: 2}
+    chanceToUseAlternateName: 0
+    useSpecificImage: 0
+    specificImageIndex: 0
+  - stage: 3
+    syllabusReference: 100
+    questionType: {fileID: 11400000, guid: a4d7a71ee6c09c24d8d48f6303b4e7c2, type: 2}
+    questionLocation: 0
+    hint: bunches of
+    plant: {fileID: 11400000, guid: eed02bc3a912265469a7b461d2fd3627, type: 2}
+    feature: {fileID: 11400000, guid: 6098a69dd976f504c93159a2023a8b76, type: 2}
+    chanceToUseAlternateName: 0
+    useSpecificImage: 0
+    specificImageIndex: 0
+  - stage: 3
+    syllabusReference: 102
+    questionType: {fileID: 11400000, guid: 4ea769b7fe011cc42ae770d3fee40a7d, type: 2}
+    questionLocation: 0
+    hint: 
+    plant: {fileID: 11400000, guid: eed02bc3a912265469a7b461d2fd3627, type: 2}
+    feature: {fileID: 11400000, guid: 6098a69dd976f504c93159a2023a8b76, type: 2}
+    chanceToUseAlternateName: 0
+    useSpecificImage: 0
+    specificImageIndex: 0
+  - stage: 3
+    syllabusReference: 100
+    questionType: {fileID: 11400000, guid: 4ea769b7fe011cc42ae770d3fee40a7d, type: 2}
+    questionLocation: 0
+    hint: 
+    plant: {fileID: 11400000, guid: eed02bc3a912265469a7b461d2fd3627, type: 2}
+    feature: {fileID: 11400000, guid: fe11781517f51cc4fbe8b31a155d66c7, type: 2}
+    chanceToUseAlternateName: 0
+    useSpecificImage: 0
+    specificImageIndex: 0
+  - stage: 3
+    syllabusReference: 100
+    questionType: {fileID: 11400000, guid: 4ea769b7fe011cc42ae770d3fee40a7d, type: 2}
+    questionLocation: 0
+    hint: 
+    plant: {fileID: 11400000, guid: eed02bc3a912265469a7b461d2fd3627, type: 2}
+    feature: {fileID: 11400000, guid: fe11781517f51cc4fbe8b31a155d66c7, type: 2}
+    chanceToUseAlternateName: 0
+    useSpecificImage: 0
+    specificImageIndex: 0
+  - stage: 4
+    syllabusReference: 97
+    questionType: {fileID: 11400000, guid: 3f1b03aaef8b51f41bff10eb86b07bb9, type: 2}
+    questionLocation: 0
+    hint: long, yellow
+    plant: {fileID: 11400000, guid: eed02bc3a912265469a7b461d2fd3627, type: 2}
+    feature: {fileID: 11400000, guid: 66e9f9bf508a75d459aee0d9955f0881, type: 2}
+    chanceToUseAlternateName: 0
+    useSpecificImage: 0
+    specificImageIndex: 0
+  - stage: 4
+    syllabusReference: 98
+    questionType: {fileID: 11400000, guid: 277a701f31f28bc44bd089100c9c2236, type: 2}
+    questionLocation: 0
+    hint: less densely packed
+    plant: {fileID: 11400000, guid: eed02bc3a912265469a7b461d2fd3627, type: 2}
+    feature: {fileID: 11400000, guid: 66e9f9bf508a75d459aee0d9955f0881, type: 2}
+    chanceToUseAlternateName: 0
+    useSpecificImage: 0
+    specificImageIndex: 0
+  - stage: 1
+    syllabusReference: 97
+    questionType: {fileID: 11400000, guid: 1bbcf6f5d419d0b44a229be30f230d93, type: 2}
+    questionLocation: 0
+    hint: triangular
+    plant: {fileID: 11400000, guid: 762b40a389194f74f9de1f5527540321, type: 2}
+    feature: {fileID: 11400000, guid: 1a24480e02f5570499d572168d96046f, type: 2}
+    chanceToUseAlternateName: 0
+    useSpecificImage: 0
+    specificImageIndex: 0
+  - stage: 1
+    syllabusReference: 98
+    questionType: {fileID: 11400000, guid: 20f717c797417854baeb154cf4baa124, type: 2}
+    questionLocation: 0
+    hint: toothed edged
+    plant: {fileID: 11400000, guid: 762b40a389194f74f9de1f5527540321, type: 2}
+    feature: {fileID: 11400000, guid: 1a24480e02f5570499d572168d96046f, type: 2}
+    chanceToUseAlternateName: 0
+    useSpecificImage: 0
+    specificImageIndex: 0
+  - stage: 1
+    syllabusReference: 99
+    questionType: {fileID: 11400000, guid: 3784b97ee79d55b4c8b5df051a26da7c, type: 2}
+    questionLocation: 0
+    hint: pointed tipped
+    plant: {fileID: 11400000, guid: 762b40a389194f74f9de1f5527540321, type: 2}
+    feature: {fileID: 11400000, guid: 1a24480e02f5570499d572168d96046f, type: 2}
+    chanceToUseAlternateName: 0
+    useSpecificImage: 0
+    specificImageIndex: 0
+  - stage: 2
+    syllabusReference: 100
+    questionType: {fileID: 11400000, guid: 0b08101d7541a3142913ea532f2ad71d, type: 2}
+    questionLocation: 0
+    hint: light green
+    plant: {fileID: 11400000, guid: 762b40a389194f74f9de1f5527540321, type: 2}
+    feature: {fileID: 11400000, guid: 1a24480e02f5570499d572168d96046f, type: 2}
+    chanceToUseAlternateName: 0
+    useSpecificImage: 0
+    specificImageIndex: 0
+  - stage: 3
+    syllabusReference: 97
+    questionType: {fileID: 11400000, guid: 1c596150ef1d69c4492e42409f8ca0cd, type: 2}
+    questionLocation: 0
+    hint: 
+    plant: {fileID: 11400000, guid: 762b40a389194f74f9de1f5527540321, type: 2}
+    feature: {fileID: 11400000, guid: fc684de80260a6743aea0702fb12a692, type: 2}
+    chanceToUseAlternateName: 0
+    useSpecificImage: 0
+    specificImageIndex: 0
+  - stage: 3
+    syllabusReference: 98
+    questionType: {fileID: 11400000, guid: 1c596150ef1d69c4492e42409f8ca0cd, type: 2}
+    questionLocation: 0
+    hint: pairs of
+    plant: {fileID: 11400000, guid: 762b40a389194f74f9de1f5527540321, type: 2}
+    feature: {fileID: 11400000, guid: fc684de80260a6743aea0702fb12a692, type: 2}
+    chanceToUseAlternateName: 0
+    useSpecificImage: 0
+    specificImageIndex: 0
+  - stage: 4
+    syllabusReference: 97
+    questionType: {fileID: 11400000, guid: 1bbcf6f5d419d0b44a229be30f230d93, type: 2}
+    questionLocation: 0
+    hint: short bright green
+    plant: {fileID: 11400000, guid: 762b40a389194f74f9de1f5527540321, type: 2}
+    feature: {fileID: 11400000, guid: fc684de80260a6743aea0702fb12a692, type: 2}
+    chanceToUseAlternateName: 1
+    useSpecificImage: 0
+    specificImageIndex: 0
+  - stage: 4
+    syllabusReference: 98
+    questionType: {fileID: 11400000, guid: a9346fd01f1739247a795841b9c4aa8e, type: 2}
+    questionLocation: 0
+    hint: dark crimson
+    plant: {fileID: 11400000, guid: 762b40a389194f74f9de1f5527540321, type: 2}
+    feature: {fileID: 11400000, guid: fc684de80260a6743aea0702fb12a692, type: 2}
+    chanceToUseAlternateName: 1
+    useSpecificImage: 0
+    specificImageIndex: 0
+  - stage: 5
+    syllabusReference: 97
+    questionType: {fileID: 11400000, guid: dddbb735a04d4df47828875fcf0ce21d, type: 2}
+    questionLocation: 0
+    hint: 
+    plant: {fileID: 11400000, guid: eed02bc3a912265469a7b461d2fd3627, type: 2}
+    feature: {fileID: 11400000, guid: 6098a69dd976f504c93159a2023a8b76, type: 2}
+    chanceToUseAlternateName: 1
+    useSpecificImage: 0
     specificImageIndex: 0
