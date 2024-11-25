@@ -93,4 +93,9 @@ public class MockBackend : IPlantBackend
     {
         throw new NotImplementedException();
     }
+
+    public List<StageIncrease> EndSession()
+    {
+        throw new NotImplementedException();
+    }
 }
