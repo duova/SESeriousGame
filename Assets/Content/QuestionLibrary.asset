@@ -223,3 +223,13 @@ MonoBehaviour:
     chanceToUseAlternateName: 1
     useSpecificImage: 0
     specificImageIndex: 0
+  - stage: 5
+    syllabusReference: 97
+    questionType: {fileID: 11400000, guid: dddbb735a04d4df47828875fcf0ce21d, type: 2}
+    questionLocation: 0
+    hint: 
+    plant: {fileID: 11400000, guid: eed02bc3a912265469a7b461d2fd3627, type: 2}
+    feature: {fileID: 11400000, guid: 6098a69dd976f504c93159a2023a8b76, type: 2}
+    chanceToUseAlternateName: 1
+    useSpecificImage: 0
+    specificImageIndex: 0
