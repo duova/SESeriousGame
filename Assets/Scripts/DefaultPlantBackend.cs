@@ -1,4 +1,6 @@
-﻿public class DefaultPlantBackend : IPlantBackend
+﻿using System.Collections.Generic;
+
+public class DefaultPlantBackend : IPlantBackend
 {
     private PlantLibraryScriptableObject _plantLibrary;
 
@@ -23,6 +25,11 @@
     }
 
     public int GetStage(PlantEntryScriptableObject plant)
+    {
+        throw new System.NotImplementedException();
+    }
+
+    public List<StageIncrease> EndSession()
     {
         throw new System.NotImplementedException();
     }
