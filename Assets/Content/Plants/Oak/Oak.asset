@@ -16,5 +16,36 @@ MonoBehaviour:
   features:
   - {fileID: 11400000, guid: 6098a69dd976f504c93159a2023a8b76, type: 2}
   image: {fileID: 2191403327850977215, guid: ea51d7f04cfa6d341af9eb64f6e5411c, type: 3}
-  description: The oak tree is a plant found in certain regions on Earth. It is surprisingly
-    not found in space.
+  description: "The English Oak, also known as the Common Oak, is a deciduous tree
+    which is common in southern and central Britain. It has a broad and spreading
+    crown with sturdy branches and can live up to 1000 years old!\r"
+  journalEntries:
+  - stage: 1
+    text: Oak leaves have 4-5 rounded lobes and smooth edges.
+    sprite: {fileID: 0}
+  - stage: 2
+    text: 'Oak trees produce acorns. These are a type of nut that can grow into new
+      Oak trees. Acorns are about 2.5 cm long and sit ina highly textured cup, called
+      a cupule. '
+    sprite: {fileID: 0}
+  - stage: 3
+    text: Oak leaves are arproximately 10 cm long and grow in bunches. You can identify
+      an English Oak by looking at the leaf and acorn stems - the leaves have short
+      stems, whereas the acorns have long stems!
+    sprite: {fileID: 0}
+  - stage: 4
+    text: "The flowers on an English Oak are called catkins. These are yellow and
+      about 6 cm long. The flowers on the catkin are more spreadout than those on
+      other catkins, like those on a Silver Birch. You will tend to find them in
+      April and May. \r"
+    sprite: {fileID: 0}
+  - stage: 5
+    text: "English Oak trees grow to be approximately 20-40m tall. They are easily
+      recognised by their Acorns, which can be found from late September to early
+      November. When ripe, the Acorns turn brown and fall from their cupules, when
+      they are often then found by squirrels as a tasty snack for the winter! Oak
+      trees don't start producing Acorns until they are 40 years old. \r\n \r\nIf
+      you are trying to identify an Oak tree in the late winter, did you know you
+      can look at its buds? They are found in clusters on the stem and are rounded
+      with more than 3 scales. "
+    sprite: {fileID: 0}

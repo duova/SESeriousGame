@@ -43,6 +43,13 @@ public class QuestionSet
     public List<Answer> PossibleAnswers = new List<Answer>();
 }
 
+public class StageIncrease
+{
+    public PlantEntryScriptableObject Plant;
+
+    public int NewStage;
+}
+
 public interface IPlantBackend
 {
     public QuestionSet GetQuestion(QuestionLocation questionLocation);
@@ -50,4 +57,6 @@ public interface IPlantBackend
     public bool AttemptQuestion(AnswerHandle handle);
 
     public int GetStage(PlantEntryScriptableObject plant);
+
+    public List<StageIncrease> EndSession();
 }
