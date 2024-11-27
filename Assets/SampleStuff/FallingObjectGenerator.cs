@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -27,12 +28,12 @@ public class FallingObjectGenerator : MonoBehaviour
 
     private int _uninstantiatedAnswers;
 
-    private List<FallingObject> _instantiatedAnswers = new List<FallingObject>();
+    public List<FallingObject> instantiatedAnswers = new List<FallingObject>();
     
     [SerializeField]
     private TMP_Text questionTextBox;
 
-    private void Start()
+    void Start()
     {
         Backend = new MockBackend(libraryToUse);
     }
@@ -44,8 +45,6 @@ public class FallingObjectGenerator : MonoBehaviour
         {
             _currentQuestion = Backend.GetQuestion(QuestionLocation.Falling);
         }
-        questionTextBox.text = _currentQuestion.DisplayQuestion;
-        _uninstantiatedAnswers = _currentQuestion.PossibleAnswers.Count;
         
         //Instantiate answers by interval until there are no more uninstantiated answers.
         if (_uninstantiatedAnswers > 0)
@@ -58,18 +57,18 @@ public class FallingObjectGenerator : MonoBehaviour
                 float randomizedX = transform.position.x + Random.Range(-spawnAreaWidth / 2, spawnAreaWidth / 2);
                 Vector3 spawnLocation = new Vector3(randomizedX, transform.position.y, 0);
                 GameObject fallingObject = Instantiate(prefabToSpawn, spawnLocation, Quaternion.identity);
-                fallingObject.GetComponent<FallingObject>()
-                    .Setup(_currentQuestion.PossibleAnswers[_uninstantiatedAnswers - 1]);
-                _instantiatedAnswers.Add(fallingObject.GetComponent<FallingObject>());
+                FallingObject fallingObjectComp = fallingObject.GetComponent<FallingObject>();
+                fallingObjectComp.Setup(_currentQuestion.PossibleAnswers[_uninstantiatedAnswers - 1]);
+                instantiatedAnswers.Add(fallingObjectComp);
+                fallingObjectComp.generator = this;
 
                 _uninstantiatedAnswers--;
             }
         }
 
         //Reset question when there are no more answers.
-        if (_instantiatedAnswers.All(answer => answer is null))
+        if (instantiatedAnswers.Count == 0)
         {
-            _instantiatedAnswers.Clear();
             _currentQuestion = null;
         }
     }

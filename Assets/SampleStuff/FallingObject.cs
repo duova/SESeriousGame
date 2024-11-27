@@ -19,6 +19,9 @@ public class FallingObject : MonoBehaviour
     [SerializeField]
     private TMP_Text answerTextBox;
 
+    [HideInInspector]
+    public FallingObjectGenerator generator;
+
     public void Setup(Answer answer)
     {
         _spriteRenderer = GetComponent<SpriteRenderer>();
@@ -31,10 +34,6 @@ public class FallingObject : MonoBehaviour
         {
             answerTextBox.text = answer.DisplayText;
         }
-        else
-        {
-            answerTextBox.text = "";
-        }
     }
 
     void Start()
@@ -45,6 +44,13 @@ public class FallingObject : MonoBehaviour
     
     private void Update()
     {
-        if (transform.position.y < screenBottomY) Destroy(gameObject);
+        if (transform.position.y < screenBottomY)
+        {
+            Destroy(gameObject);
+            if (generator.instantiatedAnswers.Contains(this))
+            {
+                generator.instantiatedAnswers.Remove(this);
+            }
+        }
     }
 }
