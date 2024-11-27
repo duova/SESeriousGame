@@ -3,13 +3,15 @@ using UnityEngine.UI;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
 using TMPro;
+using System.Collections.Generic;
 
 
 public class PlantLibraryEntry : MonoBehaviour, ISelectHandler
 {
     public Button button { get; private set; }
     private UnityAction onSelectAction;
-    private TextMeshProUGUI buttonText;
+    public TextMeshProUGUI buttonText;
+    public PlantEntryScriptableObject parentObject;
 
     public void Initialize(string display, UnityAction action)
     {   
@@ -18,6 +20,7 @@ public class PlantLibraryEntry : MonoBehaviour, ISelectHandler
 
         this.buttonText.text = display;
         this.onSelectAction = action;
+
     }
 
     public void OnSelect(BaseEventData eventData)
