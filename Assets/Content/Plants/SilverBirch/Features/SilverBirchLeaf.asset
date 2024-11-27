@@ -17,6 +17,8 @@ MonoBehaviour:
   alternateDisplayName: Bud
   alternateDisplayNamePlural: Buds
   featureType: {fileID: 11400000, guid: 6d2ff2c4c8d5be74890713d5a1ebdb99, type: 2}
-  sprites: []
-  description: 
-  facts: []
+  sprites:
+  - {fileID: 2732166056168486953, guid: bc8313070650a025cb2b38a8bc359b88, type: 3}
+  - {fileID: 4800817269545437825, guid: 775d7b1742ff49378b7b714eab78276a, type: 3}
+  - {fileID: 2166642616590299923, guid: 51e236687821d8a41b4607b5fa0bdbfe, type: 3}
+  - {fileID: -8963918956276736945, guid: d3f0bb2b05e805844b33778a6561bcce, type: 3}
