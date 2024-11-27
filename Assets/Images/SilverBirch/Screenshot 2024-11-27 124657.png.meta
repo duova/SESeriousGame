@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 70d7119891652351598540e3de479bdb
+guid: 2661794b18db7a8428653f005e2e66fe
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3787694421856247818
-    second: flower_male_catkin_0
+      213: 5297920756443581412
+    second: Screenshot 2024-11-27 124657_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 800
+  spritePixelsToUnits: 200
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -72,6 +72,19 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Win64
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -113,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: flower_male_catkin_0
+      name: Screenshot 2024-11-27 124657_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1494
-        height: 1122
+        width: 387
+        height: 585
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a0068743208909430800000000000000
-      internalID: 3787694421856247818
+      spriteID: 4eb0dffbbdef58940800000000000000
+      internalID: 5297920756443581412
       vertices: []
       indices: 
       edges: []
@@ -148,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      flower_male_catkin_0: 3787694421856247818
+      Screenshot 2024-11-27 124657_0: 5297920756443581412
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
