@@ -1,8 +1,9 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using UnityEngine;
 using Random = UnityEngine.Random;
 
 public class PlantData
@@ -51,7 +52,12 @@ public class DefaultPlantBackend : IPlantBackend
         List<QuestionEntry> questions = new List<QuestionEntry>();
         foreach (var question in _questionLibrary.questionEntries)
         {
-            if (_plantDatas[GetPlantIndex(question.plant)].Stage != question.stage) continue;
+            // Debug.Log("_plantLibrary: " + _plantLibrary.plantEntries.Count); // 1
+            // Debug.Log("_plantDatas: " + _plantDatas.Count);
+            // Debug.Log("GetPlantIndex: " + GetPlantIndex(question.plant)); // -1
+            // Debug.Log("_plantLibrary[0]: " + _plantLibrary.plantEntries[0]); // Oak
+            // Debug.Log("question.plant: " + question.plant); // SilverBirch
+            if (GetPlantIndex(question.plant) == -1 || _plantDatas[GetPlantIndex(question.plant)].Stage != question.stage) continue;
 
             Dictionary<char, SyllabusData> syllabus = _plantDatas[GetPlantIndex(question.plant)].Syllabus;
             if (syllabus.ContainsKey(question.syllabusReference) &&
@@ -93,8 +99,11 @@ public class DefaultPlantBackend : IPlantBackend
 
         _createdQuestionSets.Add(questionSet);
         _createdQuestionEntries.Add(randomQuestion);
-        _plantDatas[GetPlantIndex(randomQuestion.plant)].Syllabus
-            .Add(randomQuestion.syllabusReference, new SyllabusData());
+        if (!_plantDatas[GetPlantIndex(randomQuestion.plant)].Syllabus.ContainsKey(randomQuestion.syllabusReference))
+        {
+            _plantDatas[GetPlantIndex(randomQuestion.plant)].Syllabus
+                .Add(randomQuestion.syllabusReference, new SyllabusData());
+        }
         return questionSet;
     }
 

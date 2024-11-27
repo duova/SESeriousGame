@@ -16,9 +16,6 @@ public class FallingObjectGenerator : MonoBehaviour
 
     [SerializeField]
     private GameObject prefabToSpawn;
-
-    [SerializeField]
-    private MockQuestionLibraryScriptableObject libraryToUse;
     
     private float _intervalTimer;
 
@@ -35,15 +32,16 @@ public class FallingObjectGenerator : MonoBehaviour
 
     void Start()
     {
-        Backend = new MockBackend(libraryToUse);
+        Backend = Persistance.instance.backend;
     }
 
     void Update()
     {
         //Get a question if there isn't an active question.
         if (_currentQuestion == null)
-        {
+        {   
             _currentQuestion = Backend.GetQuestion(QuestionLocation.Falling);
+            Debug.Log(_currentQuestion.DisplayQuestion);
         }
         
         //Instantiate answers by interval until there are no more uninstantiated answers.
@@ -57,6 +55,7 @@ public class FallingObjectGenerator : MonoBehaviour
                 float randomizedX = transform.position.x + Random.Range(-spawnAreaWidth / 2, spawnAreaWidth / 2);
                 Vector3 spawnLocation = new Vector3(randomizedX, transform.position.y, 0);
                 GameObject fallingObject = Instantiate(prefabToSpawn, spawnLocation, Quaternion.identity);
+                Debug.Log("anything");
                 FallingObject fallingObjectComp = fallingObject.GetComponent<FallingObject>();
                 fallingObjectComp.Setup(_currentQuestion.PossibleAnswers[_uninstantiatedAnswers - 1]);
                 instantiatedAnswers.Add(fallingObjectComp);
@@ -65,7 +64,7 @@ public class FallingObjectGenerator : MonoBehaviour
                 _uninstantiatedAnswers--;
             }
         }
-
+        
         //Reset question when there are no more answers.
         if (instantiatedAnswers.Count == 0)
         {
