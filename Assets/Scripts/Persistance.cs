@@ -6,9 +6,10 @@ public class Persistance : MonoBehaviour
 
     public PlantLibraryScriptableObject plantLibrary;
     public QuestionLibraryScriptableObject questionLibrary;
+    public DefaultPlantBackend backend;
     void Start()
     {
-        DefaultPlantBackend backend = new DefaultPlantBackend(plantLibrary, questionLibrary);
+        backend = new DefaultPlantBackend(plantLibrary, questionLibrary);
         DontDestroyOnLoad(this.gameObject);
     }
     
