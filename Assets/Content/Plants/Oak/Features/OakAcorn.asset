@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a86683649e041fca7f3adfc4e399c15, type: 3}
+  m_Name: OakAcorn
+  m_EditorClassIdentifier: 
+  displayName: Acorn
+  displayNamePlural: Acorns
+  alternateDisplayName: Nut
+  alternateDisplayNamePlural: Nuts
+  featureType: {fileID: 11400000, guid: 54dfb9f9c326f1a41b2d7f3916a8ef9a, type: 2}
+  sprites:
+  - {fileID: 2357013750471348097, guid: 6dfc5a3e02308584b83352a23beca60a, type: 3}
+  - {fileID: -1310959143692092007, guid: f2dc63a7a4c017948a63b13b60878acc, type: 3}
