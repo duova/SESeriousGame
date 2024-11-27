@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      acorn-green_0: -3522710182406319301
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

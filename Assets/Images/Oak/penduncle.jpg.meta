@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      penduncle_0: 5032163848378557447
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

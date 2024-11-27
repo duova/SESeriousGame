@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      flower_male_catkin_yellow_0: 8385546786382790277
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

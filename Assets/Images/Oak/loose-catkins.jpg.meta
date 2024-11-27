@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      loose-catkins_0: 6197545384654353615
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

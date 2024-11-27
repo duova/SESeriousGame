@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      fruit_female_catkin_0: 7323731310741679152
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

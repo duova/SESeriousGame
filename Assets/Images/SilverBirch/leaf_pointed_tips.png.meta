@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      leaf_pointed_tips_0: 2732166056168486953
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

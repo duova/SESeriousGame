@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: EnergyLevel
   m_EditorClassIdentifier: 
   cost: 0.08
-  Energy: 100
-  MaxEnergy: 100
+  Energy: 100000
+  MaxEnergy: 100000
   inLevel: 1

@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      yellow-catkins-1_0: 3903544276636738218
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
