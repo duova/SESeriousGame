@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using NUnit.Framework.Interfaces;
+using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
@@ -31,7 +32,7 @@ public class EnergyBar : MonoBehaviour
             {
                 energyLevel.Energy = 0;
                 energyLevel.inLevel = false;
-                SceneManager.LoadScene("ClickingSample");
+                SceneManager.LoadScene("ResultScreen");
             }
         }
         energyBar.fillAmount = energyLevel.Energy / energyLevel.MaxEnergy;
