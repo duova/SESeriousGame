@@ -3,15 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-[Serializable]
-public struct PlantData
-{
-    public string name;
-    
-    public Sprite sprite;
-}
+//[Serializable]
+//public struct PlantData
+//{
+//    public string name;
+//    
+//    public Sprite sprite;
+//}
 
-public class PlantButton : MonoBehaviour
+/*public class PlantButton : MonoBehaviour
 {
     [SerializeField]
     private List<PlantData> PlantDatas = new List<PlantData>();
@@ -39,3 +39,4 @@ public class PlantButton : MonoBehaviour
         print(_selectedPlant.name + " was collected.");
     }
 }
+*/
