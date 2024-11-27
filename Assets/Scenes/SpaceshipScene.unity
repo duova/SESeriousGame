@@ -1207,12 +1207,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 561c9dc7bbaf8514eb487ee286945d55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  plantParent: {fileID: 0}
-  journalParent: {fileID: 0}
+  plantParent: {fileID: 1208924268}
+  journalParent: {fileID: 2065818381}
   libraryEntry: {fileID: 796416859947071378, guid: acaf1432bf2d53942a71b6022f95fe04, type: 3}
   Display: {fileID: 311271834}
   Description: {fileID: 686341934}
-  Image: {fileID: 0}
+  Image: {fileID: 1102892176}
 --- !u!1 &586779526
 GameObject:
   m_ObjectHideFlags: 0
@@ -2414,6 +2414,18 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1907973817}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
