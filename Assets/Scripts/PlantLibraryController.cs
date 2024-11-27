@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.Events;
 
 using System.Collections.Generic;
@@ -6,15 +7,17 @@ using TMPro;
 
 public class PlantLibraryController : MonoBehaviour
 {
-    [Header("Components")]
-    [SerializeField] private GameObject parent;
+    [Header("ScrollBars")]
+    [SerializeField] private GameObject plantParent;
+    [SerializeField] private GameObject journalParent;
 
-    [Header("Plant Button")]
+    [Header("ButtonPrefabs")]
     [SerializeField] private GameObject libraryEntry;
 
-
+    [Header("Fields")]
     [SerializeField] private TextMeshProUGUI Display;
     [SerializeField] private TextMeshProUGUI Description;
+    [SerializeField] private Image Image;
 
     private Dictionary<string, PlantLibraryEntry> currentLibrary = new Dictionary<string, PlantLibraryEntry>();
 
@@ -41,7 +44,7 @@ public class PlantLibraryController : MonoBehaviour
 
     private PlantLibraryEntry InstantiatePlantEntry(PlantEntryScriptableObject plant, UnityAction action)
     {
-        PlantLibraryEntry plantEntry = Instantiate(libraryEntry, parent.transform).GetComponent<PlantLibraryEntry>();
+        PlantLibraryEntry plantEntry = Instantiate(libraryEntry, plantParent.transform).GetComponent<PlantLibraryEntry>();
         plantEntry.name = plant.displayName;
         plantEntry.parentObject = plant;
       
@@ -57,6 +60,8 @@ public class PlantLibraryController : MonoBehaviour
     {
         Display.text = plant.displayName;
         Description.text = plant.description;
-    }
+        Image.sprite = plant.image;
 
+
+    }
 }

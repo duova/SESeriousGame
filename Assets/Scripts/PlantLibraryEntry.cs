@@ -3,7 +3,6 @@ using UnityEngine.UI;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
 using TMPro;
-using System.Collections.Generic;
 
 
 public class PlantLibraryEntry : MonoBehaviour, ISelectHandler

@@ -7,4 +7,9 @@ public class MenuButtons : MonoBehaviour
     {
         SceneManager.LoadSceneAsync(1);
     }
+
+    public void forageButton()
+    {
+        SceneManager.LoadSceneAsync(2);
+    }
 }
