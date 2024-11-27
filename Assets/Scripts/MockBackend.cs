@@ -23,7 +23,7 @@ public class MockQuestionEntry
 {
     public string displayQuestion;
 
-    public List<AnswerEntry> answerEntries;
+    public List<AnswerEntry> answerEntries = new List<AnswerEntry>();
     
     //Transient.
     public QuestionHandle Handle;
@@ -57,7 +57,7 @@ public class MockBackend : IPlantBackend
 
     public QuestionSet GetQuestion(QuestionLocation questionLocation)
     {
-        if (_questions.Count >= _questionIterator) _questionIterator = 0;
+        if (_questionIterator >= _questions.Count) _questionIterator = 0;
         
         var retVal = new QuestionSet();
         retVal.DisplayQuestion = _questions[_questionIterator].displayQuestion;
@@ -79,10 +79,14 @@ public class MockBackend : IPlantBackend
 
     public bool AttemptQuestion(AnswerHandle handle)
     {
-        if (!_questions.Any(question => question.answerEntries.Any(answer => answer.Handle == handle))) throw new Exception("Could not find answer by handle.");
-
-        return _questions.SelectMany(question => question.answerEntries).First(answer => answer.Handle == handle)
-            .isCorrect;
+        foreach (var question in _questions)
+        {
+            foreach (var answerEntry in question.answerEntries)
+            {
+                if (answerEntry.Handle.Key == handle.Key) return answerEntry.isCorrect;
+            }
+        }
+        return false;
     }
 
     public int GetStage(PlantEntryScriptableObject plant)
