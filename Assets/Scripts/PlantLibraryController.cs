@@ -18,17 +18,20 @@ public class PlantLibraryController : MonoBehaviour
     [SerializeField] private TextMeshProUGUI Display;
     [SerializeField] private TextMeshProUGUI Description;
     [SerializeField] private Image Image;
-
+    
+    [Header("Libraries")]
+    [SerializeField] private PlantLibraryScriptableObject plantLibrary;
+        
+        
     private Dictionary<string, PlantLibraryEntry> currentLibrary = new Dictionary<string, PlantLibraryEntry>();
 
     private void Start()
     {
-        for (int i = 0; i < 10; i++) {
-            PlantEntryScriptableObject testObject = ScriptableObject.CreateInstance<PlantEntryScriptableObject>();
-            testObject.displayName = i.ToString();
-
-            PlantLibraryEntry entry =  updateLibrary(testObject, () => {});
-           }
+        Debug.Log(plantLibrary.plantEntries.Count);
+        foreach (PlantEntryScriptableObject plant in plantLibrary.plantEntries)
+        {
+            updateLibrary(plant, () => {});
+        }
     }
 
     public PlantLibraryEntry updateLibrary(PlantEntryScriptableObject plant, UnityAction action) {

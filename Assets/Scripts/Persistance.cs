@@ -6,9 +6,9 @@ public class Persistance : MonoBehaviour
     
     public static Persistance instance { get; private set; }
     
-    public static PlantLibraryScriptableObject plantLibrary;
-    public static QuestionLibraryScriptableObject questionLibrary;
-    public static DefaultPlantBackend backend;
+    public PlantLibraryScriptableObject plantLibrary;
+    public QuestionLibraryScriptableObject questionLibrary;
+    public DefaultPlantBackend backend;
     void Awake()
     {
         DontDestroyOnLoad(this);
