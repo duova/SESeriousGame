@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: SilverBirch
   m_EditorClassIdentifier: 
   displayName: Silver Birch
-  features: []
+  features:
+  - {fileID: 11400000, guid: 1a24480e02f5570499d572168d96046f, type: 2}
   image: {fileID: 0}
   description: 
+  journalEntries: []

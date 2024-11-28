@@ -39,9 +39,11 @@ public class FallingObjectGenerator : MonoBehaviour
     {
         //Get a question if there isn't an active question.
         if (_currentQuestion == null)
-        {   
+        {
             _currentQuestion = Backend.GetQuestion(QuestionLocation.Falling);
-            Debug.Log(_currentQuestion.DisplayQuestion);
+            _uninstantiatedAnswers = _currentQuestion.PossibleAnswers.Count;
+            questionTextBox.text = _currentQuestion.DisplayQuestion;
+            _intervalTimer = interval;
         }
         
         //Instantiate answers by interval until there are no more uninstantiated answers.
@@ -55,7 +57,6 @@ public class FallingObjectGenerator : MonoBehaviour
                 float randomizedX = transform.position.x + Random.Range(-spawnAreaWidth / 2, spawnAreaWidth / 2);
                 Vector3 spawnLocation = new Vector3(randomizedX, transform.position.y, 0);
                 GameObject fallingObject = Instantiate(prefabToSpawn, spawnLocation, Quaternion.identity);
-                Debug.Log("anything");
                 FallingObject fallingObjectComp = fallingObject.GetComponent<FallingObject>();
                 fallingObjectComp.Setup(_currentQuestion.PossibleAnswers[_uninstantiatedAnswers - 1]);
                 instantiatedAnswers.Add(fallingObjectComp);
@@ -64,7 +65,7 @@ public class FallingObjectGenerator : MonoBehaviour
                 _uninstantiatedAnswers--;
             }
         }
-        
+
         //Reset question when there are no more answers.
         if (instantiatedAnswers.Count == 0)
         {

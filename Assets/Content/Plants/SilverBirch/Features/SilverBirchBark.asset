@@ -17,6 +17,5 @@ MonoBehaviour:
   alternateDisplayName: Twig
   alternateDisplayNamePlural: Twigs
   featureType: {fileID: 11400000, guid: 906e7a6618a773d42a84bbe606a90bb3, type: 2}
-  sprites: []
-  description: 
-  facts: []
+  sprites:
+  - {fileID: -6829251474560479502, guid: 8f8e3cdf6d4c25826aec9aa812f4c89a, type: 3}

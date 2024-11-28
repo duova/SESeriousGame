@@ -71,11 +71,10 @@ public class DefaultPlantBackend : IPlantBackend
         // if the list has no question for a particular plant, increase the stage of plant
         foreach (var plantEntry in _plantLibrary.plantEntries)
         {
-            if (questions.Any(question => question.plant == plantEntry))
+            if (questions.All(question => question.plant != plantEntry))
             {
                 HandleIncreasePlantLevel(plantEntry);
             }
-                
         }
 
         // random choose a question from list
@@ -135,7 +134,7 @@ public class DefaultPlantBackend : IPlantBackend
         {
             foreach (var plantFeature in plant.features)
             {
-                if (plantFeature.featureType == randomQuestion.feature.featureType)
+                if (plantFeature.featureType == randomQuestion.feature.featureType && plantFeature != randomQuestion.feature)
                 {
                     wrongAnswers.Add(plantFeature);
                 }
