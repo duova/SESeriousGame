@@ -61,21 +61,26 @@ public class PlantLibraryController : MonoBehaviour
 
     private void openPlant(PlantEntryScriptableObject plant, int jpage)
     {
-        Debug.Log(plant.journalEntries.Count);
+        Debug.Log(Persistance.instance.backend.GetStage(plant));
         this.currentPlant = plant;
         Display.text = plant.displayName;
         Description.text = plant.description;
         Image.sprite = plant.image;
 
-        if (plant.journalEntries.Count >= jpage)
+        if ((plant.journalEntries.Count >= jpage) && (plant.journalEntries.Count != 0) && (Persistance.instance.backend.GetStage(plant) >= plant.journalEntries[jpage].stage))
         {
-            Debug.Log("Yeet");
             JournalDescription.text = plant.journalEntries[jpage].text;
             JournalDiagram.sprite = plant.journalEntries[jpage].sprite;
             pageDisp.text = jpage.ToString();
+            Page = jpage;
         }
         else
         {
+            if(JournalDescription.text != "Not Unlocked!")
+            {
+                pageDisp.text = jpage.ToString();
+                Page = jpage;
+            }
             JournalDescription.text = "Not Unlocked!";
             JournalDiagram.sprite = null;
         }
@@ -83,7 +88,9 @@ public class PlantLibraryController : MonoBehaviour
 
     public void updateJournalPage(int direction)
     {
+        PlantEntryScriptableObject plant = currentLibrary[Display.text].parentObject;
         int newPage = Page + direction;
-        openPlant(currentPlant, newPage);
+        Debug.Log("page: " + newPage + " " + Page);
+        openPlant(plant, newPage);
     }
 }
