@@ -61,7 +61,6 @@ public class PlantLibraryController : MonoBehaviour
 
     private void openPlant(PlantEntryScriptableObject plant, int jpage)
     {
-        Debug.Log(Persistance.instance.backend.GetStage(plant));
         this.currentPlant = plant;
         Display.text = plant.displayName;
         Description.text = plant.description;
@@ -90,7 +89,6 @@ public class PlantLibraryController : MonoBehaviour
     {
         PlantEntryScriptableObject plant = currentLibrary[Display.text].parentObject;
         int newPage = Page + direction;
-        Debug.Log("page: " + newPage + " " + Page);
         openPlant(plant, newPage);
     }
 }
