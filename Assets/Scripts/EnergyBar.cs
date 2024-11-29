@@ -32,7 +32,7 @@ public class EnergyBar : MonoBehaviour
             {
                 energyLevel.Energy = 0;
                 energyLevel.inLevel = false;
-                SceneManager.LoadScene("ResultScreen");
+                SceneManager.LoadScene("ResultScene");
             }
         }
         energyBar.fillAmount = energyLevel.Energy / energyLevel.MaxEnergy;

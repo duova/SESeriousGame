@@ -9,7 +9,6 @@ public class PlantLibraryController : MonoBehaviour
 {
     [Header("ScrollBars")]
     [SerializeField] private GameObject plantParent;
-    [SerializeField] private GameObject journalParent;
 
     [Header("ButtonPrefabs")]
     [SerializeField] private GameObject libraryEntry;
@@ -17,32 +16,33 @@ public class PlantLibraryController : MonoBehaviour
     [Header("Fields")]
     [SerializeField] private TextMeshProUGUI Display;
     [SerializeField] private TextMeshProUGUI Description;
+    [SerializeField] private TextMeshProUGUI JournalDescription;
+    [SerializeField] private TextMeshProUGUI pageDisp;
+
+    [Header("Images")]
     [SerializeField] private Image Image;
+    [SerializeField] private Image JournalDiagram;
     
     [Header("Libraries")]
     [SerializeField] private PlantLibraryScriptableObject plantLibrary;
-        
-        
+
+    private int Page;
+    private PlantEntryScriptableObject currentPlant;
     private Dictionary<string, PlantLibraryEntry> currentLibrary = new Dictionary<string, PlantLibraryEntry>();
 
     private void Start()
     {
-        Debug.Log(plantLibrary.plantEntries.Count);
         foreach (PlantEntryScriptableObject plant in plantLibrary.plantEntries)
         {
-            updateLibrary(plant, () => {});
+            updateLibrary(plant, () => { });
         }
     }
 
-    public PlantLibraryEntry updateLibrary(PlantEntryScriptableObject plant, UnityAction action) {
-        PlantLibraryEntry plantLibraryEntry = null;
+    public void updateLibrary(PlantEntryScriptableObject plant, UnityAction action) {
         if (!currentLibrary.ContainsKey(plant.displayName))
         {
-            plantLibraryEntry = InstantiatePlantEntry(plant, action);
+            InstantiatePlantEntry(plant, action);
         }
-        else {
-            plantLibraryEntry = currentLibrary[plant.displayName];
-        } return plantLibraryEntry;
     }
 
     private PlantLibraryEntry InstantiatePlantEntry(PlantEntryScriptableObject plant, UnityAction action)
@@ -50,21 +50,40 @@ public class PlantLibraryController : MonoBehaviour
         PlantLibraryEntry plantEntry = Instantiate(libraryEntry, plantParent.transform).GetComponent<PlantLibraryEntry>();
         plantEntry.name = plant.displayName;
         plantEntry.parentObject = plant;
-      
+
 
         plantEntry.Initialize(plant.displayName, action);
         currentLibrary[plant.displayName] = plantEntry;
 
-        plantEntry.button.onClick.AddListener(() => openPlant(plant));
+        plantEntry.button.onClick.AddListener(() => openPlant(plant, 0));
         return plantEntry;
     }
 
-    private void openPlant(PlantEntryScriptableObject plant)
+    private void openPlant(PlantEntryScriptableObject plant, int jpage)
     {
+        Debug.Log(plant.journalEntries.Count);
+        this.currentPlant = plant;
         Display.text = plant.displayName;
         Description.text = plant.description;
         Image.sprite = plant.image;
 
+        if (plant.journalEntries.Count >= jpage)
+        {
+            Debug.Log("Yeet");
+            JournalDescription.text = plant.journalEntries[jpage].text;
+            JournalDiagram.sprite = plant.journalEntries[jpage].sprite;
+            pageDisp.text = jpage.ToString();
+        }
+        else
+        {
+            JournalDescription.text = "Not Unlocked!";
+            JournalDiagram.sprite = null;
+        }
+    }
 
+    public void updateJournalPage(int direction)
+    {
+        int newPage = Page + direction;
+        openPlant(currentPlant, newPage);
     }
 }
