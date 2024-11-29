@@ -67,7 +67,7 @@ public class PlantLibraryController : MonoBehaviour
         Description.text = plant.description;
         Image.sprite = plant.image;
 
-        if ((plant.journalEntries.Count >= jpage) && (plant.journalEntries.Count != 0) && (Persistance.instance.backend.GetStage(plant) >= plant.journalEntries[jpage].stage))
+        if ((plant.journalEntries.Count >= jpage) && (plant.journalEntries.Count != 0) && (Persistance.instance.backend.GetStage(plant) >= plant.journalEntries[jpage].stage) && (jpage >= 0))
         {
             JournalDescription.text = plant.journalEntries[jpage].text;
             JournalDiagram.sprite = plant.journalEntries[jpage].sprite;
