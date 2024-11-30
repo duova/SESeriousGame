@@ -31,6 +31,8 @@ public class DefaultPlantBackend : IPlantBackend
 
     private List<QuestionEntry> _createdQuestionEntries = new List<QuestionEntry>();
 
+    private List<StageIncrease> _mostRecentStageIncreases = new List<StageIncrease>();
+
     public DefaultPlantBackend(PlantLibraryScriptableObject plantLibrary,
         QuestionLibraryScriptableObject questionLibrary)
     {
@@ -239,6 +241,13 @@ public class DefaultPlantBackend : IPlantBackend
                 stageIncreases.Add(stageIncrease);
             }
         }
+
+        _mostRecentStageIncreases = stageIncreases;
         return stageIncreases;
+    }
+
+    public List<StageIncrease> GetMostRecentStageIncreases()
+    {
+        return _mostRecentStageIncreases;
     }
 }
