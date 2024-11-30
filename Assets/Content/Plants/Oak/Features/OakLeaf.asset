@@ -16,6 +16,7 @@ MonoBehaviour:
   displayNamePlural: Leaves
   alternateDisplayName: AlternateLeaf
   alternateDisplayNamePlural: AlternateLeaves
+  isEdible: 1
   featureType: {fileID: 11400000, guid: 6d2ff2c4c8d5be74890713d5a1ebdb99, type: 2}
   sprites:
   - {fileID: 2191403327850977215, guid: ea51d7f04cfa6d341af9eb64f6e5411c, type: 3}

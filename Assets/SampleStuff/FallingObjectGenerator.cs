@@ -32,11 +32,14 @@ public class FallingObjectGenerator : MonoBehaviour
 
     void Start()
     {
-        Backend = Persistance.instance.backend;
+        Backend = GameManager.Instance.Backend;
     }
 
     void Update()
     {
+        //Tick energy.
+        GameManager.Instance.energyLevel.energy -= GameManager.Instance.energyLevel.tickedCost * Time.deltaTime;
+        
         //Get a question if there isn't an active question.
         if (_currentQuestion == null)
         {

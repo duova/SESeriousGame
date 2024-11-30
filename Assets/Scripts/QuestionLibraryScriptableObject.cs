@@ -12,6 +12,8 @@ public enum QuestionLocation
 [Serializable]
 public class QuestionEntry
 {
+    public int environment;
+    
     public int stage;
     
     public char syllabusReference;

@@ -13,8 +13,11 @@ MonoBehaviour:
   m_Name: Oak
   m_EditorClassIdentifier: 
   displayName: Oak
+  environment: 0
   features:
   - {fileID: 11400000, guid: 6098a69dd976f504c93159a2023a8b76, type: 2}
+  - {fileID: 11400000, guid: fe11781517f51cc4fbe8b31a155d66c7, type: 2}
+  - {fileID: 11400000, guid: 66e9f9bf508a75d459aee0d9955f0881, type: 2}
   image: {fileID: 2191403327850977215, guid: ea51d7f04cfa6d341af9eb64f6e5411c, type: 3}
   description: "The English Oak, also known as the Common Oak, is a deciduous tree
     which is common in southern and central Britain. It has a broad and spreading

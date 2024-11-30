@@ -36,6 +36,11 @@ public class FallingObjectCatcher : MonoBehaviour
                 transform.position += Vector3.right * (velocity * Time.deltaTime);
             }
         }
+
+        if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.RightArrow))
+        {
+            GameManager.Instance.energyLevel.energy -= GameManager.Instance.energyLevel.moveCost * Time.deltaTime;
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other)

@@ -17,6 +17,8 @@ public class JournalEntry
 public class PlantEntryScriptableObject : ScriptableObject
 {
     public string displayName;
+
+    public int environment;
     
     public List<PlantFeatureScriptableObject> features;
 

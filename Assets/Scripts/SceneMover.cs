@@ -15,7 +15,7 @@ public class SceneMover : MonoBehaviour
 
     void TaskOnClick()
     {
-        if (level.Energy >= 70)
+        if (level.energy >= 70)
         {
             SceneManager.LoadScene("SampleScene");
         }

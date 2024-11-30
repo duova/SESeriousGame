@@ -12,6 +12,8 @@ public class PlantFeatureScriptableObject : ScriptableObject
     public string alternateDisplayName;
 
     public string alternateDisplayNamePlural;
+
+    public bool isEdible;
     
     public PlantFeatureTypeScriptableObject featureType;
 

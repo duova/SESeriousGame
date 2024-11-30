@@ -12,7 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5343bff20ea43e780cbbd777c692595, type: 3}
   m_Name: Beech
   m_EditorClassIdentifier: 
-  displayName: 
-  features: []
+  displayName: beech
+  environment: 0
+  features:
+  - {fileID: 11400000, guid: ad0e16622a79b2a40bf481633279ca9a, type: 2}
+  - {fileID: 11400000, guid: 9044829ddeca06b439cb021bb104f2e6, type: 2}
+  - {fileID: 11400000, guid: 9eee16e967a2c5b478f25710e910f371, type: 2}
+  - {fileID: 11400000, guid: 1e96f521bf03d1f4c8694360872c1e79, type: 2}
   image: {fileID: 0}
   description: 
+  journalEntries: []
