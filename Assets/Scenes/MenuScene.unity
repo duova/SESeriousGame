@@ -1244,7 +1244,7 @@ MonoBehaviour:
   questionLibrary: {fileID: 11400000, guid: 701d55fb25d61754cae9688019f012a4, type: 2}
   fadeOut: 1
   fadeTime: 0.5
-  resultScreenIndex: 1
+  resultScreenIndex: 4
   energyLevel:
     tickedCost: 2
     moveCost: 2

@@ -60,5 +60,9 @@ public class FallingObject : MonoBehaviour
         {
             spriteRenderer.enabled = false;
         }
+        foreach (var col in GetComponentsInChildren<Collider2D>())
+        {
+            col.enabled = false;
+        }
     }
 }

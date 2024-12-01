@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -11,6 +12,11 @@ public class GameManager : MonoBehaviour
     public PlantLibraryScriptableObject plantLibrary;
     public QuestionLibraryScriptableObject questionLibrary;
     public DefaultPlantBackend Backend;
+
+    public int lastSessionStreak;
+
+    public bool tutorialDone;
+    
     void Awake()
     {
         DontDestroyOnLoad(this);
@@ -63,7 +69,7 @@ public class GameManager : MonoBehaviour
     {
         if (energyLevel.energy <= 0)
         {
-            energyLevel.energy = 1;
+            energyLevel.energy = 50;
             Backend.EndSession();
             Change(resultScreenIndex);
         }

@@ -30,6 +30,7 @@ public class FallingObjectCatcher : MonoBehaviour
     private void Start()
     {
         _cachedFontSize = textBox.fontSize;
+        GameManager.Instance.lastSessionStreak = 0;
     }
 
     void Update()
@@ -76,6 +77,11 @@ public class FallingObjectCatcher : MonoBehaviour
         {
             _streak = 0;
             Instantiate(wrongIndicator, transform.position, Quaternion.identity);
+        }
+
+        if (GameManager.Instance.lastSessionStreak < _streak)
+        {
+            GameManager.Instance.lastSessionStreak = _streak;
         }
 
         objectTouched.Hide();

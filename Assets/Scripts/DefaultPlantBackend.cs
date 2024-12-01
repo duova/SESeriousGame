@@ -98,6 +98,9 @@ public class DefaultPlantBackend : IPlantBackend
             possibleAnswers.Add(ConvertPlantFeatureToAnswer(feature, false, randomQuestion));
         }
 
+        //Shuffle.
+        possibleAnswers = possibleAnswers.OrderBy(_ => Random.Range(0, 1f)).ToList();
+        
         questionSet.PossibleAnswers = possibleAnswers;
 
         _createdQuestionSets.Add(questionSet);
