@@ -14,13 +14,31 @@ public class FallingObjectCatcher : MonoBehaviour
     [SerializeField]
     private TMP_Text textBox;
 
-    private int _score;
+    private float _cachedFontSize;
+
+    private int _streak;
 
     [SerializeField]
     private FallingObjectGenerator generator;
 
+    [SerializeField]
+    private GameObject correctIndicator;
+
+    [SerializeField]
+    private GameObject wrongIndicator;
+
+    private void Start()
+    {
+        _cachedFontSize = textBox.fontSize;
+    }
+
     void Update()
     {
+        if (textBox.fontSize > _cachedFontSize)
+        {
+            textBox.fontSize -= Time.deltaTime * 150;
+        }
+        
         if (Input.GetKey(KeyCode.LeftArrow))
         {
             if (transform.position.x > -clampWidth / 2)
@@ -50,13 +68,17 @@ public class FallingObjectCatcher : MonoBehaviour
         bool success = generator.Backend.AttemptQuestion(objectTouched.Answer.Handle);
         if (success)
         {
-            _score++;
+            _streak++;
+            textBox.fontSize *= 2;
+            Instantiate(correctIndicator, transform.position, Quaternion.identity);
         }
-        else if (_score > 0)
+        else
         {
-            _score--;
+            _streak = 0;
+            Instantiate(wrongIndicator, transform.position, Quaternion.identity);
         }
 
-        textBox.text = _score.ToString();
+        objectTouched.Hide();
+        textBox.text = _streak.ToString();
     }
 }

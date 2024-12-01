@@ -70,6 +70,8 @@ public class DefaultPlantBackend : IPlantBackend
             questions.Add(question);
         }
 
+        questions.RemoveAll(question => question.feature.sprites.Count <= 0);
+
         // if the list has no question for a particular plant, increase the stage of plant
         foreach (var plantEntry in _plantLibrary.plantEntries)
         {
@@ -136,6 +138,7 @@ public class DefaultPlantBackend : IPlantBackend
         {
             foreach (var plantFeature in plant.features)
             {
+                if (plantFeature.sprites.Count <= 0) continue;
                 if (plantFeature.featureType == randomQuestion.feature.featureType && plantFeature != randomQuestion.feature)
                 {
                     wrongAnswers.Add(plantFeature);
@@ -229,7 +232,7 @@ public class DefaultPlantBackend : IPlantBackend
             PlantData plantData = _plantDatas[i];
             if (plantData.PendingStageIncrease)
             {
-                plantData.Stage ++;
+                plantData.Stage++;
                 plantData.PendingStageIncrease = false;
                 plantData.Syllabus.Clear();
                 

@@ -1244,10 +1244,10 @@ MonoBehaviour:
   questionLibrary: {fileID: 11400000, guid: 701d55fb25d61754cae9688019f012a4, type: 2}
   fadeOut: 1
   fadeTime: 0.5
-  resultScreenIndex: 0
+  resultScreenIndex: 1
   energyLevel:
-    tickedCost: 1
-    moveCost: 1
+    tickedCost: 2
+    moveCost: 2
     energy: 50
     maxEnergy: 100
 --- !u!4 &1856454980

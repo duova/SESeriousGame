@@ -64,6 +64,7 @@ public class GameManager : MonoBehaviour
         if (energyLevel.energy <= 0)
         {
             energyLevel.energy = 1;
+            Backend.EndSession();
             Change(resultScreenIndex);
         }
     }

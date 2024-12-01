@@ -70,8 +70,10 @@ public class ForagingController : MonoBehaviour
         if (!_setup)
         {
             _setup = true;
-            informationText.color = new Color(informationText.color.r, informationText.color.g, informationText.color.b, 0);
-        
+            //informationText.color = new Color(informationText.color.r, informationText.color.g, informationText.color.b, 0);
+
+            GameManager.Instance.energyLevel.energy = GameManager.Instance.energyLevel.maxEnergy * 0.5f;
+            
             _backend = GameManager.Instance.Backend;
             _plantLib = GameManager.Instance.plantLibrary;
             questionObject.SetActive(false);

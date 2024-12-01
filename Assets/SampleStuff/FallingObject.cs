@@ -53,4 +53,12 @@ public class FallingObject : MonoBehaviour
             }
         }
     }
+
+    public void Hide()
+    {
+        foreach (var spriteRenderer in GetComponentsInChildren<SpriteRenderer>())
+        {
+            spriteRenderer.enabled = false;
+        }
+    }
 }
