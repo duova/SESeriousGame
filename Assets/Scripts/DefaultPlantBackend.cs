@@ -44,6 +44,11 @@ public class DefaultPlantBackend : IPlantBackend
         }
     }
 
+    public void SetPlantStage(PlantEntryScriptableObject plant, int stage)
+    {
+        _plantDatas[GetPlantIndex(plant)].Stage = stage;
+    }
+
     public int GetPlantIndex(PlantEntryScriptableObject entry)
     {
         return _plantLibrary.plantEntries.FindIndex(item => item == entry);
@@ -54,6 +59,8 @@ public class DefaultPlantBackend : IPlantBackend
         List<QuestionEntry> questions = new List<QuestionEntry>();
         foreach (var question in _questionLibrary.questionEntries)
         {
+            if (question.environment != GameManager.Instance.environment) continue;
+            
             // Debug.Log("_plantLibrary: " + _plantLibrary.plantEntries.Count); // 1
             // Debug.Log("_plantDatas: " + _plantDatas.Count);
             // Debug.Log("GetPlantIndex: " + GetPlantIndex(question.plant)); // -1

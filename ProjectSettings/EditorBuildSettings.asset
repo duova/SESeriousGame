@@ -23,6 +23,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/NewInfoScreen.unity
     guid: 1f67a24033a614d80a9df48329d1e62f
+  - enabled: 1
+    path: Assets/Scenes/EndScene.unity
+    guid: 9dc718fef81fc654295cc8d73a995dc6
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

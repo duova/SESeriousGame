@@ -1244,6 +1244,7 @@ MonoBehaviour:
   questionLibrary: {fileID: 11400000, guid: 701d55fb25d61754cae9688019f012a4, type: 2}
   lastSessionStreak: 0
   tutorialDone: 0
+  endSceneIndex: 6
   fadeOut: 1
   fadeTime: 0.5
   resultScreenIndex: 4

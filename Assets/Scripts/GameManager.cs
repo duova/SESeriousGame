@@ -16,6 +16,8 @@ public class GameManager : MonoBehaviour
     public int lastSessionStreak;
 
     public bool tutorialDone;
+
+    public int endSceneIndex;
     
     void Awake()
     {
@@ -73,5 +75,10 @@ public class GameManager : MonoBehaviour
             Backend.EndSession();
             Change(resultScreenIndex);
         }
+    }
+
+    public void EndGame()
+    {
+        Change(endSceneIndex);
     }
 }

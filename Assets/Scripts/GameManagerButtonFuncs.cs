@@ -13,6 +13,11 @@ public class GameManagerButtonFuncs : MonoBehaviour
         GameManager.Instance.Change(level);
     }
 
+    public void Quit()
+    {
+        GameManager.Instance.Quit();
+    }
+
     public void ChangeLevelSpaceshipOrJournal()
     {
         List<JournalEntry> newJournalEntries = new List<JournalEntry>();
