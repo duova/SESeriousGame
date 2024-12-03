@@ -234,6 +234,11 @@ public class DefaultPlantBackend : IPlantBackend
         return _plantDatas[GetPlantIndex(plant)].Stage;
     }
 
+    public void SetStage(PlantEntryScriptableObject plant, int stage)
+    {
+        _plantDatas[GetPlantIndex(plant)].Stage = stage;
+    }
+
     public List<StageIncrease> EndSession()
     {
         List<StageIncrease> stageIncreases = new List<StageIncrease>();

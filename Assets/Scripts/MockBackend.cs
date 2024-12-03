@@ -93,6 +93,7 @@ public class MockBackend : IPlantBackend
     {
         throw new NotImplementedException();
     }
+    
 
     public List<StageIncrease> EndSession()
     {

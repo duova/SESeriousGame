@@ -1,7 +1,9 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.IO;
 
 [Serializable]
 public class EnergyLevel
@@ -98,3 +100,5 @@ public class GameManager : MonoBehaviour
         Change(endSceneIndex);
     }
 }
+
+
