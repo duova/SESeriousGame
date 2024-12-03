@@ -12,11 +12,11 @@ public class SaveButton : MonoBehaviour
     
     public void Save()
     {
-        List<(PlantEntryScriptableObject, int)> plantEntries = new();
+        List<int> plantEntries = new();
 
         foreach (var plant in GameManager.Instance.plantLibrary.plantEntries)
         {
-            plantEntries.Add((plant, GameManager.Instance.Backend.GetStage(plant)));
+            plantEntries.Add(GameManager.Instance.Backend.GetStage(plant));
         }
        
         SaveTemplate newSave = new SaveTemplate
@@ -42,16 +42,18 @@ public class SaveButton : MonoBehaviour
     {
         string saveData = File.ReadAllText(SaveLocation + "/save.txt");
         SaveTemplate loadedData = JsonUtility.FromJson<SaveTemplate>(saveData);
+        var x = 0;
 
         foreach (var plant in GameManager.Instance.plantLibrary.plantEntries)
         {
+            GameManager.Instance.Backend.SetPlantStage(plant, loadedData.plantStages[x]);
         }
         GameManager.Instance.tutorialDone = loadedData.TutorialDone;
     }
     
     private class SaveTemplate
     {
-        public List<(PlantEntryScriptableObject, int)> plantStages;
+        public List<int> plantStages;
         public bool TutorialDone;
     }
 }
