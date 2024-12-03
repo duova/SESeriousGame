@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a86683649e041fca7f3adfc4e399c15, type: 3}
-  m_Name: OakAcorn
+  m_Name: Strawberry
   m_EditorClassIdentifier: 
-  displayName: Acorn
-  displayNamePlural: Acorns
-  alternateDisplayName: Nut
-  alternateDisplayNamePlural: Nuts
-  isEdible: 0
+  displayName: Strawberry
+  displayNamePlural: Strawberries
+  alternateDisplayName: Straw
+  alternateDisplayNamePlural: Straws
+  isEdible: 1
   featureType: {fileID: 11400000, guid: 54dfb9f9c326f1a41b2d7f3916a8ef9a, type: 2}
   sprites:
-  - {fileID: 1303434514861407028, guid: 681bf26bc214dee3fac0819bb4c212b3, type: 3}
+  - {fileID: -2391722850750093724, guid: 7b661b356d6960f00a5260bb9601a16e, type: 3}

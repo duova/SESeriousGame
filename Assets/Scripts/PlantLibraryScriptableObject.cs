@@ -6,4 +6,5 @@ using UnityEngine;
 public class PlantLibraryScriptableObject : ScriptableObject
 {
     public List<PlantEntryScriptableObject> plantEntries;
+    public List<PlantEntryScriptableObject> fruitEntries;
 }

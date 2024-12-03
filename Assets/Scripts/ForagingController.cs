@@ -51,6 +51,7 @@ public class ForagingController : MonoBehaviour
     private int _correctAnswerText;
 
     readonly Dictionary<PlantFeatureScriptableObject, PlantEntryScriptableObject> usablePlantFeatures = new Dictionary<PlantFeatureScriptableObject, PlantEntryScriptableObject>();
+    readonly Dictionary<PlantFeatureScriptableObject, PlantEntryScriptableObject> ediblePlantFeatures = new Dictionary<PlantFeatureScriptableObject, PlantEntryScriptableObject>();
 
     private GameObject _selectedFood;
 
@@ -87,20 +88,56 @@ public class ForagingController : MonoBehaviour
                     usablePlantFeatures.Add(feature, plant);
                 }
             }
-        
+
+            foreach (var fruit in _plantLib.fruitEntries)
+            {
+                if (fruit.environment != GameManager.Instance.environment) continue;
+                foreach (var feature in fruit.features)
+                {
+                    if (feature.sprites.Count <= 0) continue;
+                    ediblePlantFeatures.Add(feature, fruit);
+                }
+            }
+
+            var count = 0;
+            var ediblePlacement1 = Random.Range(0, foods.Count);
+            var ediblePlacement2 = Random.Range(0, foods.Count);
             foreach (var food in foods)
             {
-                var rand = Random.Range(0, usablePlantFeatures.Count);
-                int i = 0;
-                foreach (var pair in usablePlantFeatures)
+                if (count == ediblePlacement1 || count == ediblePlacement2)
                 {
-                    if (i == rand)
+                    var rand = Random.Range(0, ediblePlantFeatures.Count);
+                    var i = 0;
+                    foreach (var pair in ediblePlantFeatures)
                     {
-                        food.SetFood(this, pair.Value, pair.Key, pair.Key.sprites[Random.Range(0, pair.Key.sprites.Count)]);
-                        break;
+                        if (i == rand)
+                        {
+                            food.SetFood(this, pair.Value, pair.Key,
+                                pair.Key.sprites[Random.Range(0, pair.Key.sprites.Count)]);
+                            break;
+                        }
+
+                        i++;
                     }
-                    i++;
                 }
+                else
+                {
+                    var rand = Random.Range(0, usablePlantFeatures.Count);
+                    var i = 0;
+                    foreach (var pair in usablePlantFeatures)
+                    {
+                        if (i == rand)
+                        {
+                            food.SetFood(this, pair.Value, pair.Key,
+                                pair.Key.sprites[Random.Range(0, pair.Key.sprites.Count)]);
+                            break;
+                        }
+
+                        i++;
+                    }
+                }
+
+                count++;
             }
         }
         
@@ -116,7 +153,7 @@ public class ForagingController : MonoBehaviour
             questionObject.SetActive(true);
             questionText.text = "Only eat what you know for certain! What is this?";
             //Temporarily remove the correct feature to only have incorrect features.
-            usablePlantFeatures.Remove(feature);
+            //usablePlantFeatures.Remove(feature);
             List<ForagingAnswer> incorrectAnswers = new();
             //-1 as we need one less incorrect answer than all answers.
             for (int i = 0; i < questionAnswerTexts.Count - 1; i++)
@@ -139,7 +176,7 @@ public class ForagingController : MonoBehaviour
                     j++;
                 }
             }
-            usablePlantFeatures.Add(feature, plant);
+            //usablePlantFeatures.Add(feature, plant);
             foreach (var answer in incorrectAnswers)
             {
                 usablePlantFeatures.Add(answer.Feature, answer.Plant);

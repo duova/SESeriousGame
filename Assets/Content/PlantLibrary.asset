@@ -15,3 +15,5 @@ MonoBehaviour:
   plantEntries:
   - {fileID: 11400000, guid: eed02bc3a912265469a7b461d2fd3627, type: 2}
   - {fileID: 11400000, guid: 762b40a389194f74f9de1f5527540321, type: 2}
+  fruitEntries:
+  - {fileID: 11400000, guid: 5f33478d8067afd0e87b3f3f30d7f7d2, type: 2}
