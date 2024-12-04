@@ -47,6 +47,7 @@ public class SaveButton : MonoBehaviour
         foreach (var plant in GameManager.Instance.plantLibrary.plantEntries)
         {
             GameManager.Instance.Backend.SetPlantStage(plant, loadedData.plantStages[x]);
+            x++;
         }
         GameManager.Instance.tutorialDone = loadedData.TutorialDone;
     }
