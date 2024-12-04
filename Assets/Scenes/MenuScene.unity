@@ -1674,11 +1674,11 @@ MonoBehaviour:
   lastSessionStreak: 0
   tutorialDone: 0
   endSceneIndex: 6
-  fadeOut: 0
+  fadeOut: 1
   fadeTime: 0.5
   resultScreenIndex: 4
   energyLevel:
-    tickedCost: 0.08
+    tickedCost: 1
     moveCost: 1
     energy: 100
     maxEnergy: 100
