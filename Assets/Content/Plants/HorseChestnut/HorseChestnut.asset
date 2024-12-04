@@ -15,5 +15,33 @@ MonoBehaviour:
   displayName: Horse Chestnut
   features: []
   image: {fileID: 0}
-  description: 
-  journalEntries: []
+  description: 'Beloved by children across the generations, Horse Chestnut trees
+    are rarely found in woodland but are common across parks, along roadsides and
+    village greens throughout the country. They can grow up to 40 meters tall. '
+  journalEntries:
+  - stage: 1
+    text: "The Horse Chestnut tree has compound leaves \u2013 meaning that each leaf
+      is made up of smaller leaflets. These are arranged like fingers on a hand (palmate)
+      \u2013 all radiating out from a single point. There are between 5-7 leaflets
+      on each leaf, and each one is pointed with toothed (serrated) edges."
+    sprite: {fileID: 0}
+  - stage: 2
+    text: "The most iconic feature of the Horse Chestnut tree is it Conkers. They
+      fall in the autumn and grow inside a spiky green shell. The seeds inside are
+      glossy and red-brown in colour \u2013 why not find some and play a game of
+      conkers? Get a grown up to help you thread it on some string. "
+    sprite: {fileID: 0}
+  - stage: 3
+    text: 'Horse Chestnut trees produce very pretty flowers. Appearing in May, each
+      flower spike is shaped like a cone and has large pinky-white petals. '
+    sprite: {fileID: 0}
+  - stage: 4
+    text: "Horse Chestnut trees produce very pretty flowers. Appearing in May, each
+      flower spike is New leaf buds are oval, dark red and shiny. If you were to
+      touch one you\u2019d also find it very sticky!"
+    sprite: {fileID: 0}
+  - stage: 5
+    text: 'Should you find a young Horse Chestnut tree, you will notice its bark
+      is smooth and pinky-grey in colour. It gets darker as it gets older, and develops
+      scaly plates.  '
+    sprite: {fileID: 0}
