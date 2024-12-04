@@ -1679,8 +1679,8 @@ MonoBehaviour:
   resultScreenIndex: 4
   energyLevel:
     tickedCost: 1
-    moveCost: 2
-    energy: 50
+    moveCost: 1
+    energy: 100
     maxEnergy: 100
 --- !u!4 &1856454980
 Transform:

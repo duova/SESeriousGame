@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -60,13 +59,14 @@ public class DefaultPlantBackend : IPlantBackend
         foreach (var question in _questionLibrary.questionEntries)
         {
             if (question.environment != GameManager.Instance.environment) continue;
-            
+
             // Debug.Log("_plantLibrary: " + _plantLibrary.plantEntries.Count); // 1
             // Debug.Log("_plantDatas: " + _plantDatas.Count);
             // Debug.Log("GetPlantIndex: " + GetPlantIndex(question.plant)); // -1
             // Debug.Log("_plantLibrary[0]: " + _plantLibrary.plantEntries[0]); // Oak
             // Debug.Log("question.plant: " + question.plant); // SilverBirch
-            if (GetPlantIndex(question.plant) == -1 || _plantDatas[GetPlantIndex(question.plant)].Stage != question.stage) continue;
+            if (GetPlantIndex(question.plant) == -1 ||
+                _plantDatas[GetPlantIndex(question.plant)].Stage != question.stage) continue;
 
             Dictionary<char, SyllabusData> syllabus = _plantDatas[GetPlantIndex(question.plant)].Syllabus;
             if (syllabus.ContainsKey(question.syllabusReference) &&
@@ -93,7 +93,9 @@ public class DefaultPlantBackend : IPlantBackend
         QuestionSet questionSet = new();
 
         PlantData plantData = _plantDatas[GetPlantIndex(randomQuestion.plant)];
-        bool includeHint = plantData.Syllabus.ContainsKey(randomQuestion.syllabusReference);
+        bool includeHint = plantData.Syllabus.ContainsKey(randomQuestion.syllabusReference) &&
+                           !plantData.PendingStageIncrease &&
+                           randomQuestion.stage == plantData.Stage;
         questionSet.DisplayQuestion = FillQuestionString(randomQuestion, includeHint);
 
         // get possible answers (right & wrong)
@@ -107,7 +109,7 @@ public class DefaultPlantBackend : IPlantBackend
 
         //Shuffle.
         possibleAnswers = possibleAnswers.OrderBy(_ => Random.Range(0, 1f)).ToList();
-        
+
         questionSet.PossibleAnswers = possibleAnswers;
 
         _createdQuestionSets.Add(questionSet);
@@ -117,6 +119,7 @@ public class DefaultPlantBackend : IPlantBackend
             _plantDatas[GetPlantIndex(randomQuestion.plant)].Syllabus
                 .Add(randomQuestion.syllabusReference, new SyllabusData());
         }
+
         return questionSet;
     }
 
@@ -149,7 +152,8 @@ public class DefaultPlantBackend : IPlantBackend
             foreach (var plantFeature in plant.features)
             {
                 if (plantFeature.sprites.Count <= 0) continue;
-                if (plantFeature.featureType == randomQuestion.feature.featureType && plantFeature != randomQuestion.feature)
+                if (plantFeature.featureType == randomQuestion.feature.featureType &&
+                    plantFeature != randomQuestion.feature)
                 {
                     wrongAnswers.Add(plantFeature);
                 }
@@ -242,7 +246,7 @@ public class DefaultPlantBackend : IPlantBackend
     public List<StageIncrease> EndSession()
     {
         List<StageIncrease> stageIncreases = new List<StageIncrease>();
-        for (int i=0; i<_plantDatas.Count; i++)
+        for (int i = 0; i < _plantDatas.Count; i++)
         {
             PlantData plantData = _plantDatas[i];
             if (plantData.PendingStageIncrease)
@@ -250,7 +254,7 @@ public class DefaultPlantBackend : IPlantBackend
                 plantData.Stage++;
                 plantData.PendingStageIncrease = false;
                 plantData.Syllabus.Clear();
-                
+
                 StageIncrease stageIncrease = new StageIncrease
                 {
                     Plant = _plantLibrary.plantEntries[i],
