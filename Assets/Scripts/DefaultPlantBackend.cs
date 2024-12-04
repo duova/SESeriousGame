@@ -55,7 +55,8 @@ public class DefaultPlantBackend : IPlantBackend
 
     public QuestionSet GetQuestion(QuestionLocation questionLocation)
     {
-        List<QuestionEntry> questions = new List<QuestionEntry>();
+        List<QuestionEntry> newQuestions = new List<QuestionEntry>();
+        List<QuestionEntry> oldQuestions = new List<QuestionEntry>();
         foreach (var question in _questionLibrary.questionEntries)
         {
             if (question.environment != GameManager.Instance.environment) continue;
@@ -65,31 +66,47 @@ public class DefaultPlantBackend : IPlantBackend
             // Debug.Log("GetPlantIndex: " + GetPlantIndex(question.plant)); // -1
             // Debug.Log("_plantLibrary[0]: " + _plantLibrary.plantEntries[0]); // Oak
             // Debug.Log("question.plant: " + question.plant); // SilverBirch
+
             if (GetPlantIndex(question.plant) == -1 ||
                 _plantDatas[GetPlantIndex(question.plant)].Stage != question.stage) continue;
-
             Dictionary<char, SyllabusData> syllabus = _plantDatas[GetPlantIndex(question.plant)].Syllabus;
             if (syllabus.ContainsKey(question.syllabusReference) &&
                 (syllabus[question.syllabusReference].Streak >= 2 ||
                  syllabus[question.syllabusReference].CorrectAnswers >= 3)) continue;
 
             // add to list
-            questions.Add(question);
+            newQuestions.Add(question);
         }
 
-        questions.RemoveAll(question => question.feature.sprites.Count <= 0);
+        foreach (var question in _questionLibrary.questionEntries)
+        {
+            if (question.environment != GameManager.Instance.environment) continue;
+
+            if (GetPlantIndex(question.plant) != -1 &&
+                _plantDatas[GetPlantIndex(question.plant)].Stage > question.stage)
+            {
+                // add to list
+                oldQuestions.Add(question);
+            }
+        }
+
+        newQuestions.RemoveAll(question => question.feature.sprites.Count <= 0);
+        oldQuestions.RemoveAll(question => question.feature.sprites.Count <= 0);
 
         // if the list has no question for a particular plant, increase the stage of plant
         foreach (var plantEntry in _plantLibrary.plantEntries)
         {
-            if (questions.All(question => question.plant != plantEntry))
+            if (newQuestions.All(question => question.plant != plantEntry))
             {
                 HandleIncreasePlantLevel(plantEntry);
             }
         }
 
         // random choose a question from list
-        QuestionEntry randomQuestion = questions[Random.Range(0, questions.Count)];
+        // QuestionEntry randomQuestion = newQuestions[Random.Range(0, newQuestions.Count)];
+        QuestionEntry randomQuestion = (oldQuestions.Count > 0 && Random.Range(0, 100) < 20)
+            ? oldQuestions[Random.Range(0, oldQuestions.Count)]
+            : newQuestions[Random.Range(0, newQuestions.Count)];
         QuestionSet questionSet = new();
 
         PlantData plantData = _plantDatas[GetPlantIndex(randomQuestion.plant)];
@@ -210,15 +227,27 @@ public class DefaultPlantBackend : IPlantBackend
                 if (possibleAnswer.IsCorrect)
                 {
                     // if correct add syllabus streak+1 and correctAnswer+1
-                    _plantDatas[GetPlantIndex(_createdQuestionEntries[i].plant)].Syllabus
-                        [_createdQuestionEntries[i].syllabusReference].Streak += 1;
-                    _plantDatas[GetPlantIndex(_createdQuestionEntries[i].plant)].Syllabus
-                        [_createdQuestionEntries[i].syllabusReference].CorrectAnswers += 1;
+                    if (_createdQuestionEntries[i].stage ==
+                        _plantDatas[GetPlantIndex(_createdQuestionEntries[i].plant)].Stage &&
+                        _plantDatas[GetPlantIndex(_createdQuestionEntries[i].plant)].Syllabus
+                            .ContainsKey(_createdQuestionEntries[i].syllabusReference))
+                    {
+                        _plantDatas[GetPlantIndex(_createdQuestionEntries[i].plant)].Syllabus
+                            [_createdQuestionEntries[i].syllabusReference].Streak += 1;
+                        _plantDatas[GetPlantIndex(_createdQuestionEntries[i].plant)].Syllabus
+                            [_createdQuestionEntries[i].syllabusReference].CorrectAnswers += 1;
+                    }
+
                     return true;
                 }
 
-                _plantDatas[GetPlantIndex(_createdQuestionEntries[i].plant)].Syllabus
-                    [_createdQuestionEntries[i].syllabusReference].Streak = 0;
+                if (_createdQuestionEntries[i].stage ==
+                    _plantDatas[GetPlantIndex(_createdQuestionEntries[i].plant)].Stage)
+                {
+                    _plantDatas[GetPlantIndex(_createdQuestionEntries[i].plant)].Syllabus
+                        [_createdQuestionEntries[i].syllabusReference].Streak = 0;
+                }
+
                 return false;
             }
         }
