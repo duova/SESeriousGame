@@ -1,1 +1,1 @@
-{"plantStages":[2,2],"TutorialDone":true}
+{"plantStages":[5,5,5],"TutorialDone":true}

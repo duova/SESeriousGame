@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a86683649e041fca7f3adfc4e399c15, type: 3}
-  m_Name: BeechCatkin
+  m_Name: HCLeaf
   m_EditorClassIdentifier: 
-  displayName: Catkin
-  displayNamePlural: Catkins
-  alternateDisplayName: Flower
-  alternateDisplayNamePlural: Flowers
-  featureType: {fileID: 11400000, guid: 11547de509840b04280ff833bed842d9, type: 2}
+  displayName: Leaf
+  displayNamePlural: Leaves
+  alternateDisplayName: AltLeaf
+  alternateDisplayNamePlural: AltLeaves
+  featureType: {fileID: 0}
   sprites: []
