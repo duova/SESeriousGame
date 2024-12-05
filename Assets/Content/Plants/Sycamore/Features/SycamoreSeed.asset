@@ -10,14 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a86683649e041fca7f3adfc4e399c15, type: 3}
-  m_Name: BeechCatkin
+  m_Name: SycamoreSeed
   m_EditorClassIdentifier: 
-  displayName: Catkin
-  displayNamePlural: Catkins
-  alternateDisplayName: Flower
-  alternateDisplayNamePlural: Flowers
-  isEdible: 0
-  featureType: {fileID: 11400000, guid: 11547de509840b04280ff833bed842d9, type: 2}
-  sprites:
-  - {fileID: 6181680848891408719, guid: 1b932121f970194a2a886cb3dc9bde70, type: 3}
-
+  displayName: Seed
+  displayNamePlural: Seeds
+  alternateDisplayName: Helicopter
+  alternateDisplayNamePlural: Helicopters
+  featureType: {fileID: 11400000, guid: 54dfb9f9c326f1a41b2d7f3916a8ef9a, type: 2}
+  sprites: []

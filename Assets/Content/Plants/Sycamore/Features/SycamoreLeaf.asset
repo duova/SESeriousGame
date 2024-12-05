@@ -10,14 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a86683649e041fca7f3adfc4e399c15, type: 3}
-  m_Name: BeechCatkin
+  m_Name: SycamoreLeaf
   m_EditorClassIdentifier: 
-  displayName: Catkin
-  displayNamePlural: Catkins
-  alternateDisplayName: Flower
-  alternateDisplayNamePlural: Flowers
-  isEdible: 0
-  featureType: {fileID: 11400000, guid: 11547de509840b04280ff833bed842d9, type: 2}
-  sprites:
-  - {fileID: 6181680848891408719, guid: 1b932121f970194a2a886cb3dc9bde70, type: 3}
-
+  displayName: Leaf
+  displayNamePlural: Leaves
+  alternateDisplayName: AltLeaf
+  alternateDisplayNamePlural: AltLeaves
+  featureType: {fileID: 11400000, guid: 6d2ff2c4c8d5be74890713d5a1ebdb99, type: 2}
+  sprites: []
