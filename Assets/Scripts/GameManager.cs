@@ -34,6 +34,7 @@ public class GameManager : MonoBehaviour
     public int lastSessionStreak;
 
     public bool tutorialDone;
+    public bool foragingTutorialDone;
 
     public int endSceneIndex;
     

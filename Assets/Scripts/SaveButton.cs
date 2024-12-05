@@ -23,13 +23,11 @@ public class SaveButton : MonoBehaviour
         {
             plantStages = plantEntries,
             TutorialDone = GameManager.Instance.tutorialDone,
+            forageTutorialDone = GameManager.Instance.foragingTutorialDone,
         };
 
         string saveData = JsonUtility.ToJson(newSave);
-
-        Debug.Log(GameManager.Instance.tutorialDone);
-        Debug.Log(saveData);
-
+        
         if (!Directory.Exists(SaveLocation))
         {
             Directory.CreateDirectory((SaveLocation));
@@ -50,11 +48,13 @@ public class SaveButton : MonoBehaviour
             x++;
         }
         GameManager.Instance.tutorialDone = loadedData.TutorialDone;
+        GameManager.Instance.foragingTutorialDone = loadedData.forageTutorialDone;
     }
     
     private class SaveTemplate
     {
         public List<int> plantStages;
         public bool TutorialDone;
+        public bool forageTutorialDone;
     }
 }

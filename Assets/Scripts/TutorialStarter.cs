@@ -11,4 +11,9 @@ public class TutorialStarter : MonoBehaviour
 
         GameManager.Instance.tutorialDone = true;
     }
+    
+    public void forageTutorial()
+    {
+        GameManager.Instance.foragingTutorialDone = true;
+    }
 }

@@ -28,6 +28,9 @@ public class ForagingController : MonoBehaviour
     [SerializeField]
     private GameObject questionObject;
 
+    [SerializeField] 
+    private GameObject tutorial;
+
     [SerializeField]
     private TMP_Text questionText;
     
@@ -64,6 +67,11 @@ public class ForagingController : MonoBehaviour
     private void Awake()
     {
         Instance = this;
+        if (!GameManager.Instance.foragingTutorialDone)
+        {
+            tutorial.SetActive(true);
+            GameManager.Instance.foragingTutorialDone = true;
+        }
     }
 
     private void Update()
