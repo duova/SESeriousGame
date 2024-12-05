@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5343bff20ea43e780cbbd777c692595, type: 3}
   m_Name: Ash
   m_EditorClassIdentifier: 
-  displayName: 
+  displayName: Ash
+  environment: 1
   features: []
   image: {fileID: 0}
   description: Growing up to 35 meters, Ash trees are one of the biggest trees you

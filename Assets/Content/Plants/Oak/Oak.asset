@@ -28,7 +28,7 @@ MonoBehaviour:
     sprite: {fileID: 0}
   - stage: 2
     text: 'Oak trees produce acorns. These are a type of nut that can grow into new
-      Oak trees. Acorns are about 2.5 cm long and sit ina highly textured cup, called
+      Oak trees. Acorns are about 2.5 cm long and sit in a highly textured cup, called
       a cupule. '
     sprite: {fileID: 0}
   - stage: 3

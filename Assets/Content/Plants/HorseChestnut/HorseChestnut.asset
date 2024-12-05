@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: HorseChestnut
   m_EditorClassIdentifier: 
   displayName: Horse Chestnut
+  environment: 0
   features: []
   image: {fileID: 0}
   description: 'Beloved by children across the generations, Horse Chestnut trees

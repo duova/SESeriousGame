@@ -34,7 +34,21 @@ public class PlantLibraryController : MonoBehaviour
     {
         foreach (PlantEntryScriptableObject plant in plantLibrary.plantEntries)
         {
-            updateLibrary(plant, () => { });
+            if (plant.environment <= GameManager.Instance.environment)
+            {
+                updateLibrary(plant, () => { });
+            }
+        }
+    }
+
+    public void checkUpdate()
+    {
+        foreach (PlantEntryScriptableObject plant in plantLibrary.plantEntries)
+        {
+            if (plant.environment <= GameManager.Instance.environment)
+            {
+                updateLibrary(plant, () => { });
+            }
         }
     }
 

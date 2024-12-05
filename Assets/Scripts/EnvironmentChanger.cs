@@ -67,6 +67,13 @@ public class EnvironmentChanger : MonoBehaviour
         _backend = GameManager.Instance.Backend;
         
         CloseAllPages();
+        Debug.Log(_plantLib.plantEntries.Where(plant => plant.environment == GameManager.Instance.environment));
+
+        foreach (var plant in _plantLib.plantEntries.Where(plant => plant.environment == GameManager.Instance.environment))
+        {
+            Debug.Log(plant.displayName);
+            Debug.Log(plant.environment);
+        }
         
         if (_plantLib.plantEntries.Where(plant => plant.environment == GameManager.Instance.environment)
             .All(plant => _backend.GetStage(plant) >= stageForNewEnvironment))

@@ -16,5 +16,10 @@ MonoBehaviour:
   - {fileID: 11400000, guid: eed02bc3a912265469a7b461d2fd3627, type: 2}
   - {fileID: 11400000, guid: 762b40a389194f74f9de1f5527540321, type: 2}
   - {fileID: 11400000, guid: 8157e23aeb7276248b88aadeb44ff570, type: 2}
+  - {fileID: 11400000, guid: f153ec2489be15d4595237d069ed878b, type: 2}
+  - {fileID: 11400000, guid: 35e94aed3d210784f86e06eb56fd681b, type: 2}
+  - {fileID: 11400000, guid: 95fec2fe40f9a4340ae01655aee849ea, type: 2}
+  - {fileID: 11400000, guid: 2c563d5c255de7c42a0f9c620412e113, type: 2}
+  - {fileID: 11400000, guid: 7c9e686d97134394da1d37cf8bc3e021, type: 2}
   fruitEntries:
   - {fileID: 11400000, guid: 5f33478d8067afd0e87b3f3f30d7f7d2, type: 2}
