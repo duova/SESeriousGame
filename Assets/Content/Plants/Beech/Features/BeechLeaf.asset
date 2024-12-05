@@ -16,7 +16,14 @@ MonoBehaviour:
   displayNamePlural: Leaves
   alternateDisplayName: Bud
   alternateDisplayNamePlural: Buds
+  isEdible: 0
   featureType: {fileID: 11400000, guid: 6d2ff2c4c8d5be74890713d5a1ebdb99, type: 2}
-  sprites: []
-  description: 
-  facts: []
+  sprites:
+  - {fileID: 8999539213241671409, guid: 5f899ddceba855a96a864eb4ed29c783, type: 3}
+  - {fileID: 9061891985514779856, guid: f893aedfe77285b6abd42445b08b482a, type: 3}
+  - {fileID: 4512040349640941735, guid: 7f60b460a709f8825b59fd8f795502b8, type: 3}
+  - {fileID: 4275766209704453507, guid: ab68205d020da5183898a258c98ff2c0, type: 3}
+  - {fileID: 1765020779403530038, guid: 41bb3693cf6c55f08aa3897672ebeabb, type: 3}
+  - {fileID: -3573140815808451518, guid: 26232e1496d6f4dedaa267e867f7bcda, type: 3}
+  - {fileID: -7502055344769897372, guid: 21daf40883cbb037e907403faa3019bf, type: 3}
+  - {fileID: 5024774733904404216, guid: d59013f916e52fe3da86f189f02ae865, type: 3}
