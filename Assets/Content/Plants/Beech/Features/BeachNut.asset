@@ -16,7 +16,8 @@ MonoBehaviour:
   displayNamePlural: Nuts
   alternateDisplayName: Fruit
   alternateDisplayNamePlural: Fruits
+  isEdible: 0
   featureType: {fileID: 11400000, guid: 54dfb9f9c326f1a41b2d7f3916a8ef9a, type: 2}
-  sprites: []
-  description: 
-  facts: []
+  sprites:
+  - {fileID: -8130087515595298856, guid: 80d31f7c59e134bea8d136894a0d81ec, type: 3}
+  - {fileID: 2960115790008866030, guid: 037d1b486c59038aabd9ab7a1db73fdc, type: 3}

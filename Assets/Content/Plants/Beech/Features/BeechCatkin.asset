@@ -16,5 +16,8 @@ MonoBehaviour:
   displayNamePlural: Catkins
   alternateDisplayName: Flower
   alternateDisplayNamePlural: Flowers
+  isEdible: 0
   featureType: {fileID: 11400000, guid: 11547de509840b04280ff833bed842d9, type: 2}
-  sprites: []
+  sprites:
+  - {fileID: 6181680848891408719, guid: 1b932121f970194a2a886cb3dc9bde70, type: 3}
+
