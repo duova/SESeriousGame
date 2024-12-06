@@ -11411,13 +11411,12 @@ MonoBehaviour:
     - 45m
     - 67m
   - environment: 0
-    question: Silver Birch catkins hang in branches, either in 2's or another number.
-      What is that number?
-    correctAnswer: 4
+    question: When do the tiny seed of the Silver Beech get dispersed?
+    correctAnswer: Autumn
     wrongAnswers:
-    - 10
-    - 3
-    - 6
+    - Summer
+    - Spring
+    - Winter
   - environment: 0
     question: Which of these is an accurate description of Beech Bark?
     correctAnswer: Smooth and Grey
@@ -11426,12 +11425,41 @@ MonoBehaviour:
     - Smooth and Tan
     - Rough and Grey
   - environment: 0
-    question: Which Plant do Conkers fall from?
-    correctAnswer: Horse Chestnut Tree
+    question: When do the flowers of the Horse Chestnut tree begin to bloom?
+    correctAnswer: April
     wrongAnswers:
-    - Oak Tree
-    - Beech Tree
-    - Silver Birch Tree
+    - May
+    - June
+    - August
+  - environment: 1
+    question: The leaves of the Ash tree move towards something. What is it?
+    correctAnswer: The Sun
+    wrongAnswers:
+    - The Moon
+    - The nearest body of Water
+    - The clouds
+  - environment: 1
+    question: What colour are the twigs of a Sycamore Tree?
+    correctAnswer: Pink-Brown
+    wrongAnswers:
+    - Brown
+    - White
+    - Orange
+  - environment: 1
+    question: Which of these lengths would make sense for the leaflet of a Rowan
+      Tree?
+    correctAnswer: 4cm
+    wrongAnswers:
+    - 2cm
+    - 10cm
+    - 7cm
+  - environment: 1
+    question: Which of these describe the scent of a cherry blossom?
+    correctAnswer: Almond-Like
+    wrongAnswers:
+    - Minty
+    - Grassy
+    - Burnt
 --- !u!1 &1373198597
 GameObject:
   m_ObjectHideFlags: 0
