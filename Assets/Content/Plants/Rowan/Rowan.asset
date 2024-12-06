@@ -15,5 +15,38 @@ MonoBehaviour:
   displayName: 
   features: []
   image: {fileID: 0}
-  description: 
-  journalEntries: []
+  description: 'A tree with a rich history, the elegant Rowan has juicy berries which
+    makes it a favourite with birds and wildlife. Sometimes called the mountain ash,
+    due to the similarity with Ash tree leaves, the Rowan is actually a member of
+    the Rose family. Only growing to 15 meters, it is much smaller than Ash and can
+    be found in towns and woods, more commonly in Scotland and the north of England.  '
+  journalEntries:
+  - stage: 1
+    text: 'Rowan leaves are pinnately compound, which means they are made up smaller
+      leaflets arranged like a feather. Each leaf has 11-15 smaller leaflets that
+      grow in pairs, with one terminal leaf at the end. Leaflets are long, oval and
+      have serrated edges. '
+    sprite: {fileID: 0}
+  - stage: 2
+    text: 'Look really closely, and you will notice that the pairs of Rowan leaflets
+      are placed alternately and not directly opposite to each other. This is a good
+      way to tell their leaves apart from Ash tree leaves. Each leaflet is 3-6 cm
+      long. '
+    sprite: {fileID: 0}
+  - stage: 3
+    text: "In the late summer and early autumn, you will find bright red berries
+      on the Rowan that are about 1 cm across. Have a closer look \u2013 each fruit
+      has a tiny \u201Cstar\u201D in the middle! They are a great food source for
+      birds and wildlife. "
+    sprite: {fileID: 0}
+  - stage: 4
+    text: 'Rowan flowers grow in dense clusters and have five creamy white petals.
+      If you can without damaging them, have a sniff. They are heavily scented! Each
+      pollinated flower will develop into a berry so do not pick them. '
+    sprite: {fileID: 0}
+  - stage: 5
+    text: 'The bark of the Rowan is smooth and silvery grey. In autumn, the Rowans
+      leaves will turn a beautiful orange-red colour and fall off. Watch out for
+      the new bud growth. These are purple and hairy and can help you identify the
+      tree in early spring. '
+    sprite: {fileID: 0}
