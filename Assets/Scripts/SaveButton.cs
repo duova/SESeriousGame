@@ -1,7 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
-using Unity.Plastic.Newtonsoft.Json;
 using UnityEngine;
 using UnityEngine.IO;
 using UnityEngine.SceneManagement;
@@ -24,6 +23,7 @@ public class SaveButton : MonoBehaviour
             plantStages = plantEntries,
             TutorialDone = GameManager.Instance.tutorialDone,
             forageTutorialDone = GameManager.Instance.foragingTutorialDone,
+            environmentNum = GameManager.Instance.environment,
         };
 
         string saveData = JsonUtility.ToJson(newSave);
@@ -49,11 +49,13 @@ public class SaveButton : MonoBehaviour
         }
         GameManager.Instance.tutorialDone = loadedData.TutorialDone;
         GameManager.Instance.foragingTutorialDone = loadedData.forageTutorialDone;
+        GameManager.Instance.environment = loadedData.environmentNum;
     }
     
     private class SaveTemplate
     {
         public List<int> plantStages;
+        public int environmentNum;
         public bool TutorialDone;
         public bool forageTutorialDone;
     }
