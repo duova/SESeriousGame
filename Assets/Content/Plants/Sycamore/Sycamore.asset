@@ -16,5 +16,37 @@ MonoBehaviour:
   environment: 1
   features: []
   image: {fileID: 0}
-  description: 
-  journalEntries: []
+  description: 'A member of the maple family, sycamore trees are recognisable by
+    their distinctive helicopter seeds. Growing up to 35 meters tall, board and with
+    dense foliage, they can be found in parkland, hedgerows and woodlands throughout
+    the United Kingdom. '
+  journalEntries:
+  - stage: 1
+    text: "Sycamore leaves have five pointed lobes arranged like a spread out hand.
+      This shape is called palmate, and is a common feature of leaves in the maple
+      family. They are quite large, measuring 7-16 cm. Notice the toothed margins
+      \u2013 these are specific to sycamores."
+    sprite: {fileID: 0}
+  - stage: 2
+    text: "One of the most identifiable features of the sycamore is its winged \u201Chelicopter\u201D
+      seeds, called samaras. Forming in pairs, when you through them up, they spin
+      around and spiral slowly to the ground. Try it! In the spring, get up close
+      to the tree and look at the leaf stalks. It may surprise you to find that they
+      are a distinctive red colour. "
+    sprite: {fileID: 0}
+  - stage: 3
+    text: "Find a sycamore leaf and you may notice \u2018tar\u2019 spots on it. These
+      are common and are caused by a type of fungus. Turn the leaf over, and you
+      will find that the leaf veins are hairy. Sycamores also produce flowers. They
+      are small and yellow-green, and hang in spikes called \u201Cracemes\u201D. "
+    sprite: {fileID: 0}
+  - stage: 4
+    text: Have a look at the bark of the sycamore tree. It has a dark pinky grey
+      hue when young. Over time, flat plates of bark will fall off to reveal orangy
+      brown bark below. The twigs are pinky-brown!
+    sprite: {fileID: 0}
+  - stage: 5
+    text: 'Did you know, it is thought that the sycamore was introduced to the UK
+      the Romans! Traditionally, Sycamore wood is used to make Welsh Love Spoons
+      and violins. '
+    sprite: {fileID: 0}

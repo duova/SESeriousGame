@@ -16,5 +16,33 @@ MonoBehaviour:
   environment: 1
   features: []
   image: {fileID: 0}
-  description: 
-  journalEntries: []
+  description: 'You might find Wild Cherry trees planted as ornamental trees in towns,
+    but this beautiful tree also grows wild in woods and hedges. Known for producing
+    stunning blossoms and cherries for wildlife to feast on, it can grow up to 30
+    meters tall. '
+  journalEntries:
+  - stage: 1
+    text: Wild Cherry leaves are oval and green, with pointed tips. Look at the edges 
+      - they are serrated.
+    sprite: {fileID: 0}
+  - stage: 2
+    text: "Wild Cherries are covered in white or pinky blossoms throughout May, with
+      flowers sometimes appearing before the leaves. Blossoms form in clusters of
+      2 to 6, and individual flowers have 5 petals. Carefully smell the blossoms
+      without damaging them \u2013 can you notice the almond-like scent? In the Autumn,
+      leaves turn through orange to a deep red. "
+    sprite: {fileID: 0}
+  - stage: 3
+    text: "Have a look at the base of the leaf stems \u2013 can you find the distinctive
+      two red glands? In the Summer, you can find deep red cherries hanging from
+      the tree in clusters on long stalks. "
+    sprite: {fileID: 0}
+  - stage: 4
+    text: "Watch out in the winter for the buds. These are oval shaped and form in
+      clusters. Winter is also a good time to notice the trees\u2019 shape \u2013
+      see how lower branches spread out and the rest point upwards. "
+    sprite: {fileID: 0}
+  - stage: 5
+    text: 'The Wild Cherry tree has a shiny dark reddish brown bark, often with distinct
+      cream-coloured horizontal lines. This can help you identify the tree in winter. '
+    sprite: {fileID: 0}
