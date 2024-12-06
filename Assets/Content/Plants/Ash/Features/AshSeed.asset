@@ -16,5 +16,11 @@ MonoBehaviour:
   displayNamePlural: Seeds
   alternateDisplayName: Key
   alternateDisplayNamePlural: Keys
+  isEdible: 0
   featureType: {fileID: 11400000, guid: 54dfb9f9c326f1a41b2d7f3916a8ef9a, type: 2}
-  sprites: []
+  sprites:
+  - {fileID: 3611115770551817757, guid: 1271511c22229134e81571a400433c82, type: 3}
+  - {fileID: 4132789448540030317, guid: 428a39245213b5e4fb4ac192cc897954, type: 3}
+  - {fileID: -6585775648323528720, guid: 6851f63cce4d7ad40935ad3c4a325fa2, type: 3}
+  - {fileID: 4336215716369962202, guid: 5ae403c9f22aaf9419da0558ca4fb008, type: 3}
+  - {fileID: -3308412907212735806, guid: 0e223c92cfb2b75449166a954a86fed6, type: 3}
