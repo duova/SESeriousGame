@@ -16,5 +16,10 @@ MonoBehaviour:
   displayNamePlural: Seeds
   alternateDisplayName: Helicopter
   alternateDisplayNamePlural: Helicopters
+  isEdible: 0
   featureType: {fileID: 11400000, guid: 54dfb9f9c326f1a41b2d7f3916a8ef9a, type: 2}
-  sprites: []
+  sprites:
+  - {fileID: 3773254725744076596, guid: 07d03c809555e77d0aa39bbe4251d125, type: 3}
+  - {fileID: -7410069654545536185, guid: a9a35a24a0b74576ab32815488aa61ff, type: 3}
+  - {fileID: -827055494425248188, guid: a1e2c049abb94405bb361c4d181d9ce9, type: 3}
+  - {fileID: -7105474773538344959, guid: cb0404b652f9daf109df8a0cd597d301, type: 3}

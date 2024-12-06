@@ -16,5 +16,8 @@ MonoBehaviour:
   displayNamePlural: Flowers
   alternateDisplayName: Raceme
   alternateDisplayNamePlural: Racemes
+  isEdible: 0
   featureType: {fileID: 11400000, guid: 11547de509840b04280ff833bed842d9, type: 2}
-  sprites: []
+  sprites:
+  - {fileID: 6759663756090033835, guid: fb2a1d7a940a40a0c9921a3531e1df90, type: 3}
+  - {fileID: 6357990498890858568, guid: 9c183132a0b6a3c089e4d865c9fc167b, type: 3}
