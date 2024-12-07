@@ -13,12 +13,12 @@ public enum AnswerDisplayType
 
 public class AnswerHandle
 {
-    public GUID Key { get; } = GUID.Generate();
+    public Guid Key { get; } = Guid.NewGuid();
 }
 
 public class QuestionHandle
 {
-    public GUID Key { get; } = GUID.Generate();
+    public Guid Key { get; } = Guid.NewGuid();
 }
 
 public class Answer
