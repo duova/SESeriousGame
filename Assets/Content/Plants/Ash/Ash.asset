@@ -15,7 +15,7 @@ MonoBehaviour:
   displayName: Ash
   environment: 1
   features: []
-  image: {fileID: 0}
+  image: {fileID: 8692862176653117272, guid: 45371ee3f2d93ba498652f7ebc5092f4, type: 3}
   description: Growing up to 35 meters, Ash trees are one of the biggest trees you
     might find in UK hedgerows. However, despite being found throughout Britain,
     their existence is threatened by a disease called Ash dieback.

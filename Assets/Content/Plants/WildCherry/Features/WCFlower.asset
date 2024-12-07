@@ -16,5 +16,12 @@ MonoBehaviour:
   displayNamePlural: Flowers
   alternateDisplayName: Blossom
   alternateDisplayNamePlural: Blossoms
+  isEdible: 0
   featureType: {fileID: 11400000, guid: 11547de509840b04280ff833bed842d9, type: 2}
-  sprites: []
+  sprites:
+  - {fileID: -8387262298219598768, guid: f3a5c5e76ab6e624e8601297cd337cec, type: 3}
+  - {fileID: -9182879673329667282, guid: 729dc103b5a5c9641af40d9a06b4831e, type: 3}
+  - {fileID: -7232707965538041455, guid: fcd12cc24678c7f418ecb47433f7b923, type: 3}
+  - {fileID: 7656253316842023406, guid: 47b18d1b77334ec4a8967ea0506d002b, type: 3}
+  - {fileID: 6597829147977670438, guid: bb79b1b56365815448184be458edacb9, type: 3}
+  - {fileID: 6076452086506751807, guid: 6bcac8884f27fa643a90f928b3b90a8a, type: 3}

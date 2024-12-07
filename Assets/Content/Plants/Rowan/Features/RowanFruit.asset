@@ -16,5 +16,12 @@ MonoBehaviour:
   displayNamePlural: Fruits
   alternateDisplayName: Seed
   alternateDisplayNamePlural: Seeds
+  isEdible: 0
   featureType: {fileID: 11400000, guid: 54dfb9f9c326f1a41b2d7f3916a8ef9a, type: 2}
-  sprites: []
+  sprites:
+  - {fileID: 812188003391536964, guid: d7b9dfc5a248cfd449ad51ac7de1faf0, type: 3}
+  - {fileID: 4180589000090190463, guid: eda850bedefe27a40826ed769f5095e5, type: 3}
+  - {fileID: 411290872444100379, guid: 6974e82ce54076648bde3e3d7cf55caf, type: 3}
+  - {fileID: -7451484434555547146, guid: 3382774295d79c7479599e518f78a47d, type: 3}
+  - {fileID: 7801947810560868169, guid: 0eb83767c08df4a448c028015622180b, type: 3}
+  - {fileID: 2735850661393871921, guid: 2548525e30dd68b44b92180158998514, type: 3}

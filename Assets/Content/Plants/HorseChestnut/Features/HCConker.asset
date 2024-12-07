@@ -16,5 +16,12 @@ MonoBehaviour:
   displayNamePlural: Conkers
   alternateDisplayName: Fruit
   alternateDisplayNamePlural: Fruit
+  isEdible: 0
   featureType: {fileID: 0}
-  sprites: []
+  sprites:
+  - {fileID: 7185062251167280711, guid: 1cddef0cea0f0f34b9266579c8690d93, type: 3}
+  - {fileID: -5957244527719105043, guid: 52fd988413829f246919e5814a31e030, type: 3}
+  - {fileID: 4882375850337568812, guid: 532cbcc38ea6ca348b1c2c49f53aa843, type: 3}
+  - {fileID: 6733380770369567552, guid: 71af3999b01d7fb4f94ced9a45a719a3, type: 3}
+  - {fileID: -4914521230326719326, guid: 835665fb3a011c04995bb3ee6d9f8023, type: 3}
+  - {fileID: -6099926694060461410, guid: bff6454f212a32f46ac538c8fa4fd9d9, type: 3}

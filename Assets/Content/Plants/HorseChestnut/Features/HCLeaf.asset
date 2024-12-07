@@ -16,5 +16,11 @@ MonoBehaviour:
   displayNamePlural: Leaves
   alternateDisplayName: AltLeaf
   alternateDisplayNamePlural: AltLeaves
+  isEdible: 0
   featureType: {fileID: 0}
-  sprites: []
+  sprites:
+  - {fileID: -7677403281708775532, guid: 7b1fd6e26b63a9647bf53eb578d9f8f2, type: 3}
+  - {fileID: -5262590653901506571, guid: a93d389aea74bf043a239cf2ae6034a5, type: 3}
+  - {fileID: -1883824344562465300, guid: ec22f1f0cad408944820e92a6152ff1c, type: 3}
+  - {fileID: 8366302026099353142, guid: 0e50eb39cae279f4da215a3f5fe859df, type: 3}
+  - {fileID: 8501106986257994913, guid: 0003de53c2c35ce4b886b7ac6c2b346f, type: 3}

@@ -16,5 +16,10 @@ MonoBehaviour:
   displayNamePlural: 
   alternateDisplayName: 
   alternateDisplayNamePlural: 
+  isEdible: 0
   featureType: {fileID: 11400000, guid: 11547de509840b04280ff833bed842d9, type: 2}
-  sprites: []
+  sprites:
+  - {fileID: 13092972696264680, guid: 1c28e2f82f8e6a9438be417f3e00f71a, type: 3}
+  - {fileID: 7129909608745293141, guid: e5df06b31bdf0be41b5b951eec8a0f82, type: 3}
+  - {fileID: -666956094424373779, guid: 6ec6c740c71e9a74194262fc4ca27038, type: 3}
+  - {fileID: 811083931051494370, guid: 0076d93e8d0f63e44ac942ec94f09294, type: 3}

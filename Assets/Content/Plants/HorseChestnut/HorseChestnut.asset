@@ -15,7 +15,7 @@ MonoBehaviour:
   displayName: Horse Chestnut
   environment: 0
   features: []
-  image: {fileID: 0}
+  image: {fileID: -4290150213641364266, guid: a533c6175a599564298cd36858fba98b, type: 3}
   description: 'Beloved by children across the generations, Horse Chestnut trees
     are rarely found in woodland but are common across parks, along roadsides and
     village greens throughout the country. They can grow up to 40 meters tall. '
