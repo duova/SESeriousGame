@@ -25,25 +25,25 @@ MonoBehaviour:
       arranged in pairs with a terminal leaf at the tip. This arrangement is called
       pinnately compound \u2013 it looks a bit like a feather. The leaflets are light
       green and oval in shape, with the leaf measuring up to 40cm long. "
-    sprite: {fileID: 0}
+    sprite: {fileID: 3397788309564097079, guid: 95909c1bb56b64d4cabb754e513126a9, type: 3}
   - stage: 2
     text: 'Ash trees have purple flowers which grow before the leaves appear in spring.
       You will find the flowers at the tips of the twigs. '
-    sprite: {fileID: 0}
+    sprite: {fileID: -8514841597829317307, guid: 42bca53bae128f44bbfad208a5ff62d8, type: 3}
   - stage: 3
     text: 'Ash trees tend to grow together in clumps. If you find one, have a look
       at its neighbour too! Did you know you can recognise an Ash tree by looking
       at its buds? They are black and velvety, and are arranged opposite each other
       on the smooth twig. '
-    sprite: {fileID: 0}
+    sprite: {fileID: -4127462431047174900, guid: aae49ebcda7d62643b74d61b161673ff, type: 3}
   - stage: 4
     text: "Ash trees are deciduous, but did you know their leaves fall when they
       are still green? In late summer or early autumn, you will be able to find distinctive
       winged fruits called \u201Ckeys\u201D. These will fall from the tree in the
       winter or early spring. "
-    sprite: {fileID: 0}
+    sprite: {fileID: 2250585527359136912, guid: 0c885af3e35574a4cb1216d9544d527e, type: 3}
   - stage: 5
     text: The leaves on an Ash tree will move in the direction of the Sun, but it
       may surprise you to learn that the whole tree may lean! Have a look on a sunny
       day and see if you can spot this!
-    sprite: {fileID: 0}
+    sprite: {fileID: 3047969901842270411, guid: 01e2ec7248e0f3e419baaf7c3b7559cd, type: 3}

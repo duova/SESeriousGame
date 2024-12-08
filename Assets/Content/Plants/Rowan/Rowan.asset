@@ -27,27 +27,27 @@ MonoBehaviour:
       leaflets arranged like a feather. Each leaf has 11-15 smaller leaflets that
       grow in pairs, with one terminal leaf at the end. Leaflets are long, oval and
       have serrated edges. '
-    sprite: {fileID: 0}
+    sprite: {fileID: -8400114656581232851, guid: 9ed9ea059ed33f84eb637047c9dbe8ff, type: 3}
   - stage: 2
     text: 'Look really closely, and you will notice that the pairs of Rowan leaflets
       are placed alternately and not directly opposite to each other. This is a good
       way to tell their leaves apart from Ash tree leaves. Each leaflet is 3-6 cm
       long. '
-    sprite: {fileID: 0}
+    sprite: {fileID: 117543574474196385, guid: f11345dd0661c23478679bae82c7fac5, type: 3}
   - stage: 3
     text: "In the late summer and early autumn, you will find bright red berries
       on the Rowan that are about 1 cm across. Have a closer look \u2013 each fruit
       has a tiny \u201Cstar\u201D in the middle! They are a great food source for
       birds and wildlife. "
-    sprite: {fileID: 0}
+    sprite: {fileID: 5384892701662292388, guid: b3523876c1b01ad42ad6c0470ec74a68, type: 3}
   - stage: 4
     text: 'Rowan flowers grow in dense clusters and have five creamy white petals.
       If you can without damaging them, have a sniff. They are heavily scented! Each
       pollinated flower will develop into a berry so do not pick them. '
-    sprite: {fileID: 0}
+    sprite: {fileID: 7492210183330770576, guid: 595a601282ef1ae4387171dffe902b8d, type: 3}
   - stage: 5
     text: 'The bark of the Rowan is smooth and silvery grey. In autumn, the Rowans
       leaves will turn a beautiful orange-red colour and fall off. Watch out for
       the new bud growth. These are purple and hairy and can help you identify the
       tree in early spring. '
-    sprite: {fileID: 0}
+    sprite: {fileID: 2682925804830898064, guid: 5dd5e9d38a500d24e8b537b1962a45b6, type: 3}

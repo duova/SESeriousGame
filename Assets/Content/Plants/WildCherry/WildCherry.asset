@@ -24,25 +24,25 @@ MonoBehaviour:
   - stage: 1
     text: Wild Cherry leaves are oval and green, with pointed tips. Look at the edges 
       - they are serrated.
-    sprite: {fileID: 0}
+    sprite: {fileID: 556941997793231405, guid: 5f9942263387a1944a2cfe5e2263d994, type: 3}
   - stage: 2
     text: "Wild Cherries are covered in white or pinky blossoms throughout May, with
       flowers sometimes appearing before the leaves. Blossoms form in clusters of
       2 to 6, and individual flowers have 5 petals. Carefully smell the blossoms
       without damaging them \u2013 can you notice the almond-like scent? In the Autumn,
       leaves turn through orange to a deep red. "
-    sprite: {fileID: 0}
+    sprite: {fileID: 6334585174090120285, guid: d7cf4171b4e9d8f48b50dafe3f9fdf56, type: 3}
   - stage: 3
     text: "Have a look at the base of the leaf stems \u2013 can you find the distinctive
       two red glands? In the Summer, you can find deep red cherries hanging from
       the tree in clusters on long stalks. "
-    sprite: {fileID: 0}
+    sprite: {fileID: 3708229856826520842, guid: cfc228f88a6272548a31b308d8ab9680, type: 3}
   - stage: 4
     text: "Watch out in the winter for the buds. These are oval shaped and form in
       clusters. Winter is also a good time to notice the trees\u2019 shape \u2013
       see how lower branches spread out and the rest point upwards. "
-    sprite: {fileID: 0}
+    sprite: {fileID: 7202133884907312719, guid: e955c42e22ce286439ec4deae2c9f656, type: 3}
   - stage: 5
     text: 'The Wild Cherry tree has a shiny dark reddish brown bark, often with distinct
       cream-coloured horizontal lines. This can help you identify the tree in winter. '
-    sprite: {fileID: 0}
+    sprite: {fileID: 8290270409816088148, guid: 7935c646a5e2a364f885a6292e56a7ba, type: 3}

@@ -25,24 +25,24 @@ MonoBehaviour:
       is made up of smaller leaflets. These are arranged like fingers on a hand (palmate)
       \u2013 all radiating out from a single point. There are between 5-7 leaflets
       on each leaf, and each one is pointed with toothed (serrated) edges."
-    sprite: {fileID: 0}
+    sprite: {fileID: -8286890254866229528, guid: 569e6519d613d6f46ad97bddadbda485, type: 3}
   - stage: 2
     text: "The most iconic feature of the Horse Chestnut tree is it Conkers. They
       fall in the autumn and grow inside a spiky green shell. The seeds inside are
       glossy and red-brown in colour \u2013 why not find some and play a game of
       conkers? Get a grown up to help you thread it on some string. "
-    sprite: {fileID: 0}
+    sprite: {fileID: -6547819381187557397, guid: 7e9fe70f45cb5e64eb81cf6f850ca114, type: 3}
   - stage: 3
     text: 'Horse Chestnut trees produce very pretty flowers. Appearing in May, each
       flower spike is shaped like a cone and has large pinky-white petals. '
-    sprite: {fileID: 0}
+    sprite: {fileID: 8745169264632949477, guid: d4ef96b6c84a17a4c9a293423df55fd6, type: 3}
   - stage: 4
     text: "Horse Chestnut trees produce very pretty flowers. Appearing in May, each
       flower spike is New leaf buds are oval, dark red and shiny. If you were to
       touch one you\u2019d also find it very sticky!"
-    sprite: {fileID: 0}
+    sprite: {fileID: 2526570672835879263, guid: a5caaeec7889f094a99c6fbe001c4b16, type: 3}
   - stage: 5
     text: 'Should you find a young Horse Chestnut tree, you will notice its bark
       is smooth and pinky-grey in colour. It gets darker as it gets older, and develops
       scaly plates.  '
-    sprite: {fileID: 0}
+    sprite: {fileID: -5009672154170499068, guid: b6d9d181e2d1ee749a4538d7b1c2a1e9, type: 3}
