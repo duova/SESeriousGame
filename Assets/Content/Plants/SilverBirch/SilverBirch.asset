@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: SilverBirch
   m_EditorClassIdentifier: 
   displayName: Silver Birch
+  environment: 0
   features: []
   image: {fileID: 5297920756443581412, guid: 2661794b18db7a8428653f005e2e66fe, type: 3}
   description: 'Silver Birch trees are easily identified by their striking white
@@ -22,24 +23,24 @@ MonoBehaviour:
     text: 'Although most recognizable by their bark, you can also identify Silver
       Birches from their triangular shaped leaves. These have pointed tips and serrated
       edges. '
-    sprite: {fileID: 0}
+    sprite: {fileID: -6441229802890313384, guid: a19c1084280c77e418fe6ed5f3bd2aaf, type: 3}
   - stage: 2
     text: "Silver Birch leaves are light green in colour. The white bark sheds like
       tissue paper. You can also notice dark, diamond shaped fissures in the bark
       as the tree matures.\r"
-    sprite: {fileID: 0}
+    sprite: {fileID: -613489223144527530, guid: b4658d2451df5374fa67d9f1f1bd7d81, type: 3}
   - stage: 3
     text: 'The Silver Birch Tree produces both male and female catkins. Male catkins
       are yellow, and hang in groups of 2 or 4. They are typically 4-5cm long. '
-    sprite: {fileID: 0}
+    sprite: {fileID: 5429159758282100788, guid: 1e9cd53a580bfa8438e014686b002834, type: 3}
   - stage: 4
     text: 'Female catkins are shorter than the male catkins and stand up right. They
       are bright green and can often be found around from March through to May. '
-    sprite: {fileID: 0}
+    sprite: {fileID: -834704943247990027, guid: f19dd8554a2ae1640b10c28717612e7c, type: 3}
   - stage: 5
     text: The seeds of the Silver Birch are tiny and are released by the female catkins
       in the autumn. Did you know, it is sometimes easy to confuse a Silver Birch
       with a Downy Birch? You can tell them apart by their shoots. New shoots on
       a Silver Birch are hairless and warty. Instead, the shoots on the Downy Birch
       are smooth and covered in soft hairs!
-    sprite: {fileID: 0}
+    sprite: {fileID: 6980554248276464202, guid: bd9faf2c818e7a44192a6371cbc261e8, type: 3}

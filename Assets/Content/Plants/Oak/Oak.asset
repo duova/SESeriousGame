@@ -25,23 +25,23 @@ MonoBehaviour:
   journalEntries:
   - stage: 1
     text: Oak leaves have 4-5 rounded lobes and smooth edges.
-    sprite: {fileID: 0}
+    sprite: {fileID: 6201648127724934190, guid: 1f1be3ed70f06474db011b6c91a562d3, type: 3}
   - stage: 2
     text: 'Oak trees produce acorns. These are a type of nut that can grow into new
       Oak trees. Acorns are about 2.5 cm long and sit in a highly textured cup, called
       a cupule. '
-    sprite: {fileID: 0}
+    sprite: {fileID: -3627446522714914643, guid: c62777f146585df49aaf1167f06b77e5, type: 3}
   - stage: 3
     text: Oak leaves are arproximately 10 cm long and grow in bunches. You can identify
       an English Oak by looking at the leaf and acorn stems - the leaves have short
       stems, whereas the acorns have long stems!
-    sprite: {fileID: 0}
+    sprite: {fileID: 6402419658061355460, guid: 14fbf0a39669bbb4da2a64683bee1bc3, type: 3}
   - stage: 4
     text: "The flowers on an English Oak are called catkins. These are yellow and
       about 6 cm long. The flowers on the catkin are more spreadout than those on
       other catkins, like those on a Silver Birch. You will tend to find them in
       April and May. \r"
-    sprite: {fileID: 0}
+    sprite: {fileID: 3138714271978905316, guid: ec186922ec08e1348b03d903b25ab779, type: 3}
   - stage: 5
     text: "English Oak trees grow to be approximately 20-40m tall. They are easily
       recognised by their Acorns, which can be found from late September to early
@@ -51,4 +51,4 @@ MonoBehaviour:
       you are trying to identify an Oak tree in the late winter, did you know you
       can look at its buds? They are found in clusters on the stem and are rounded
       with more than 3 scales. "
-    sprite: {fileID: 0}
+    sprite: {fileID: 1517406330785025712, guid: a40f8d5bc08f2f743a1017e4e75d3aec, type: 3}
