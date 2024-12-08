@@ -16,5 +16,11 @@ MonoBehaviour:
   displayNamePlural: Flowers
   alternateDisplayName: AltFlower
   alternateDisplayNamePlural: AltFlowers
+  isEdible: 0
   featureType: {fileID: 0}
-  sprites: []
+  sprites:
+  - {fileID: -9210151902220923653, guid: 364a843420c2b154c8528a2ef82e8e40, type: 3}
+  - {fileID: -7385028448431600279, guid: 55eaa67961b74aa43804584493477753, type: 3}
+  - {fileID: -8650190668372458085, guid: 3d68e413e19b296498daade013acc8bf, type: 3}
+  - {fileID: 7247816305539915221, guid: 1c65ebec4cd997c4c97ee3201287d8ea, type: 3}
+  - {fileID: 1344478089347018300, guid: c93bd59cd6e957b49bd150b371f680d9, type: 3}

@@ -16,5 +16,11 @@ MonoBehaviour:
   displayNamePlural: Fruits
   alternateDisplayName: Cherry
   alternateDisplayNamePlural: Cherries
+  isEdible: 0
   featureType: {fileID: 11400000, guid: 54dfb9f9c326f1a41b2d7f3916a8ef9a, type: 2}
-  sprites: []
+  sprites:
+  - {fileID: -4287690510496466594, guid: ee783082d4f29cc42add317e5de2fd10, type: 3}
+  - {fileID: 459843977534381917, guid: 52a45d7e22db2364899dd921e0d132a3, type: 3}
+  - {fileID: -1806327976346830541, guid: 1096e80f47589c940a72b21c7dca909d, type: 3}
+  - {fileID: -2726792049021925039, guid: 2737d547f78e6c946a78751b14facfcd, type: 3}
+  - {fileID: -1989786618755722392, guid: d15f864e3efc21e459770c2d8d5866fd, type: 3}

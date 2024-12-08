@@ -16,5 +16,9 @@ MonoBehaviour:
   displayNamePlural: Bark
   alternateDisplayName: Bud
   alternateDisplayNamePlural: Buds
+  isEdible: 0
   featureType: {fileID: 11400000, guid: 906e7a6618a773d42a84bbe606a90bb3, type: 2}
-  sprites: []
+  sprites:
+  - {fileID: -3047607559861296486, guid: 9c82f3c136ee4214e854b802839c39e9, type: 3}
+  - {fileID: 4597860685489556678, guid: 406bb6f933352564a80f4971cd8e4afa, type: 3}
+  - {fileID: 1399081794667735575, guid: 47a6e0df1e9e7884db83a9768413f967, type: 3}

@@ -16,5 +16,10 @@ MonoBehaviour:
   displayNamePlural: Leaves
   alternateDisplayName: Leaflet
   alternateDisplayNamePlural: Leaflets
+  isEdible: 0
   featureType: {fileID: 11400000, guid: 6d2ff2c4c8d5be74890713d5a1ebdb99, type: 2}
-  sprites: []
+  sprites:
+  - {fileID: 4624025402263682593, guid: e8aa88c7312cd7146a2f64c741d991f3, type: 3}
+  - {fileID: -9060799276967045506, guid: 3bde18464fbbe8141aa51c403bbfd93f, type: 3}
+  - {fileID: -8528898586896196792, guid: d2b60179fa24c854189d7871273323b2, type: 3}
+  - {fileID: -8841514443399239871, guid: c9e9fc02821b5de42bc40c4722f6c241, type: 3}
