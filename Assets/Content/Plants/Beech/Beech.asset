@@ -19,7 +19,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 9044829ddeca06b439cb021bb104f2e6, type: 2}
   - {fileID: 11400000, guid: 9eee16e967a2c5b478f25710e910f371, type: 2}
   - {fileID: 11400000, guid: 1e96f521bf03d1f4c8694360872c1e79, type: 2}
-  image: {fileID: 0}
+  image: {fileID: -7128481269758959703, guid: fb50b186abd0ad247948e7b7b97c58c6, type: 3}
   description: 'A deciduous tree can grow up to 40 meters tall, Beech trees are wide
     spread across central and southern England and south-east Wales. They have dense
     canopies, with a domed crown made of many branches. '
