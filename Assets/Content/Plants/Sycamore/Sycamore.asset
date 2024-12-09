@@ -26,27 +26,27 @@ MonoBehaviour:
       This shape is called palmate, and is a common feature of leaves in the maple
       family. They are quite large, measuring 7-16 cm. Notice the toothed margins
       \u2013 these are specific to sycamores."
-    sprite: {fileID: 0}
+    sprite: {fileID: -88839545109809743, guid: 402e05609d7f7a548a26907fe4701a41, type: 3}
   - stage: 2
     text: "One of the most identifiable features of the sycamore is its winged \u201Chelicopter\u201D
       seeds, called samaras. Forming in pairs, when you through them up, they spin
       around and spiral slowly to the ground. Try it! In the spring, get up close
       to the tree and look at the leaf stalks. It may surprise you to find that they
       are a distinctive red colour. "
-    sprite: {fileID: 0}
+    sprite: {fileID: -8689230825791101777, guid: 09b05567439968b489cb7fd4153091fa, type: 3}
   - stage: 3
     text: "Find a sycamore leaf and you may notice \u2018tar\u2019 spots on it. These
       are common and are caused by a type of fungus. Turn the leaf over, and you
       will find that the leaf veins are hairy. Sycamores also produce flowers. They
       are small and yellow-green, and hang in spikes called \u201Cracemes\u201D. "
-    sprite: {fileID: 0}
+    sprite: {fileID: -7546228083480306700, guid: 4cbcf63182f33ca49a968ef29bbbdcd5, type: 3}
   - stage: 4
     text: Have a look at the bark of the sycamore tree. It has a dark pinky grey
       hue when young. Over time, flat plates of bark will fall off to reveal orangy
       brown bark below. The twigs are pinky-brown!
-    sprite: {fileID: 0}
+    sprite: {fileID: 2066839671752775206, guid: e90237c1baf9ad4459d160c4a180c690, type: 3}
   - stage: 5
     text: 'Did you know, it is thought that the sycamore was introduced to the UK
       the Romans! Traditionally, Sycamore wood is used to make Welsh Love Spoons
       and violins. '
-    sprite: {fileID: 0}
+    sprite: {fileID: 6459438541937557647, guid: 68a9ca868b83afa4e90b732ce8a68bb6, type: 3}
