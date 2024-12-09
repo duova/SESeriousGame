@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      wild_cherry_stage_4_0: 7202133884907312719
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      beech_stage_2_0: 6840709714680601448
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

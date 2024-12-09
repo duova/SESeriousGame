@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      oak_stage_5_0: 1517406330785025712
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

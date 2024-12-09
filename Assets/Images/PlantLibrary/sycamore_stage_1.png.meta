@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      sycamore_stage_1_0: -88839545109809743
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

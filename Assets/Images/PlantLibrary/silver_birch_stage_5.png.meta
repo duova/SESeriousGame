@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      silver_birch_stage_5_0: 6980554248276464202
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

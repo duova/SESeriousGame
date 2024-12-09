@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      horse_chestnut_stage_1_0: -8286890254866229528
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
