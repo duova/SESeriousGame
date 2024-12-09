@@ -20,6 +20,7 @@ https://gallery.nen.gov.uk/asset61946-.html
 https://gallery.nen.gov.uk/asset61944_280-e2bn.html
 https://www.woodlandtrust.org.uk/trees-woods-and-wildlife/british-trees/a-z-of-british-trees/english-oak/
 https://gallery.nen.gov.uk/asset61950-.html
+https://www.exmoortrees.co.uk/products/english-oak-1?_pos=2&_sid=bb40a8104&_ss=r
 
 ## Silver Birch
 
@@ -34,6 +35,7 @@ https://nativetreesfromseed.com/identify/silver-birch
 https://www.euforgen.org/species/betula-pendula
 https://www.historic-uk.com/CultureUK/The-English-Oak/
 https://harrodsoutdoor.com/product/english-oak-trees-quercus-robur/
+https://www.exmoortrees.co.uk/products/silver-birch-1
 
 ## Beech
 
@@ -43,6 +45,7 @@ https://www.wildfooduk.com/wild-plants/beech-tree/
 https://www.vdberk.com/trees/fagus-sylvatica/
 https://www.treeguideuk.co.uk/mini-guides/71-2/
 https://www.wildlifetrusts.org/wildlife-explorer/trees-and-shrubs/common-beech
+https://www.exmoortrees.co.uk/products/beech
 
 ## Sycamore
 
@@ -55,6 +58,7 @@ https://jennifertetlow.co.uk/raining-sycamore-flowers
 https://www.science-sparks.com/flying-helicopter-seeds/
 https://paulkirtley.co.uk/2011/bark-buds-common-european-deciduous-trees-winter-identification/
 https://thehazeltree.co.uk/2017/10/06/sycamore-colonist-or-custodian/
+https://www.exmoortrees.co.uk/products/sycamore
 
 ## Ash
 
@@ -88,3 +92,7 @@ https://www.woodlandtrust.org.uk/trees-woods-and-wildlife/british-trees/a-z-of-b
 https://www.treeguideuk.co.uk/horse-chestnut/
 http://www.seasonalwildflowers.com/horse-chestnut.html
 https://www.tree-guide.com/horsechestnut
+
+# Sounds
+
+Royalty free music for the game have been selected from Pixabay (https://pixabay.com). We are unable to list the individual sound sources because the platform doesn't provide individual links for each sound.
