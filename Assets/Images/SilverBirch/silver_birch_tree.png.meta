@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: bd9faf2c818e7a44192a6371cbc261e8
+guid: 3e5e724c5a41e1a49874730d7cfc889c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6980554248276464202
-    second: silver_birch_stage_5_0
+      213: 254962053157129232
+    second: silver_birch_tree_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 300
+  spritePixelsToUnits: 800
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -139,13 +139,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: silver_birch_stage_5_0
+      name: silver_birch_tree_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 500
-        height: 500
+        width: 1498
+        height: 1498
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a42dcdfaa19efd060800000000000000
-      internalID: 6980554248276464202
+      spriteID: 01c82a1f2aec98300800000000000000
+      internalID: 254962053157129232
       vertices: []
       indices: 
       edges: []
@@ -174,7 +174,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      silver_birch_stage_5_0: 6980554248276464202
+      silver_birch_tree_0: 254962053157129232
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
