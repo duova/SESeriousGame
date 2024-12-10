@@ -17,7 +17,7 @@ MonoBehaviour:
   alternateDisplayName: AltFlower
   alternateDisplayNamePlural: AltFlowers
   isEdible: 0
-  featureType: {fileID: 0}
+  featureType: {fileID: 11400000, guid: 11547de509840b04280ff833bed842d9, type: 2}
   sprites:
   - {fileID: -9210151902220923653, guid: 364a843420c2b154c8528a2ef82e8e40, type: 3}
   - {fileID: -7385028448431600279, guid: 55eaa67961b74aa43804584493477753, type: 3}

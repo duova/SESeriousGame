@@ -14,7 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   displayName: Wild Cherry
   environment: 1
-  features: []
+  features:
+  - {fileID: 11400000, guid: fa7a65f22c5fe5146b7464b8d61b2867, type: 2}
+  - {fileID: 11400000, guid: f1104cf836f60d642b2330b3566fa749, type: 2}
+  - {fileID: 11400000, guid: d4b0a2b7e0332f94c88924c2d8ff362d, type: 2}
+  - {fileID: 11400000, guid: 6f4ded7d0fcc88347876645748058751, type: 2}
   image: {fileID: 9038440140423764205, guid: 5dc5f47d048e61e418fdda316f3d7e7e, type: 3}
   description: 'You might find Wild Cherry trees planted as ornamental trees in towns,
     but this beautiful tree also grows wild in woods and hedges. Known for producing

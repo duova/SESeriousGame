@@ -14,7 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   displayName: Rowan
   environment: 1
-  features: []
+  features:
+  - {fileID: 11400000, guid: aa2d94b1106fb174abdaba41f4bd9838, type: 2}
+  - {fileID: 11400000, guid: 8cdda1a071433fd428492685216c4b64, type: 2}
+  - {fileID: 11400000, guid: 4a1f37d2842682146a061c352f11d001, type: 2}
+  - {fileID: 11400000, guid: e199f8914fc5be6488350abb8c87708b, type: 2}
   image: {fileID: -5176821636147404198, guid: f3012e9d4aa67cf44b3d1f8eb38dd38d, type: 3}
   description: 'A tree with a rich history, the elegant Rowan has juicy berries which
     makes it a favourite with birds and wildlife. Sometimes called the mountain ash,

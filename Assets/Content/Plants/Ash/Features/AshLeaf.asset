@@ -17,7 +17,7 @@ MonoBehaviour:
   alternateDisplayName: AltLeaf
   alternateDisplayNamePlural: AltLeaves
   isEdible: 0
-  featureType: {fileID: 0}
+  featureType: {fileID: 11400000, guid: 6d2ff2c4c8d5be74890713d5a1ebdb99, type: 2}
   sprites:
   - {fileID: -6491679904017253308, guid: 62cff60e524507341aa5f21a141727f3, type: 3}
   - {fileID: -8944474694484179404, guid: ae15a327801a5bc498f3ed6d047da5df, type: 3}

@@ -14,7 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   displayName: Silver Birch
   environment: 0
-  features: []
+  features:
+  - {fileID: 11400000, guid: 48bced8af2f602b47a3808cbf694687d, type: 2}
+  - {fileID: 11400000, guid: fc684de80260a6743aea0702fb12a692, type: 2}
+  - {fileID: 11400000, guid: cd98ecc77a48e5149ba143f316a5fcd4, type: 2}
+  - {fileID: 11400000, guid: 1a24480e02f5570499d572168d96046f, type: 2}
   image: {fileID: 254962053157129232, guid: 3e5e724c5a41e1a49874730d7cfc889c, type: 3}
   description: 'Silver Birch trees are easily identified by their striking white
     bark. Growing up to 30 meters tall, they have elegant drooping branches. '

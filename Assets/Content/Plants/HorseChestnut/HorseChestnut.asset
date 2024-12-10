@@ -14,7 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   displayName: Horse Chestnut
   environment: 0
-  features: []
+  features:
+  - {fileID: 11400000, guid: 9a04a9591b3a2bc428b0b79aeb390a70, type: 2}
+  - {fileID: 11400000, guid: e523b76a3b89bae4ebb5729311e174de, type: 2}
+  - {fileID: 11400000, guid: 46ce7013d404158409eb341bc5723a3f, type: 2}
   image: {fileID: -4290150213641364266, guid: a533c6175a599564298cd36858fba98b, type: 3}
   description: 'Beloved by children across the generations, Horse Chestnut trees
     are rarely found in woodland but are common across parks, along roadsides and

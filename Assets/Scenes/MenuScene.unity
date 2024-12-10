@@ -1669,10 +1669,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   environment: 0
+  maxStage: 6
   plantLibrary: {fileID: 11400000, guid: 557d057e844ae304599fb3fe8398cac8, type: 2}
   questionLibrary: {fileID: 11400000, guid: 701d55fb25d61754cae9688019f012a4, type: 2}
   lastSessionStreak: 0
   tutorialDone: 0
+  foragingTutorialDone: 0
   endSceneIndex: 6
   fadeOut: 1
   fadeTime: 0.5

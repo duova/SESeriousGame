@@ -14,7 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   displayName: Sycamore
   environment: 1
-  features: []
+  features:
+  - {fileID: 11400000, guid: 2c990956042c7994a81d41a0646b3d05, type: 2}
+  - {fileID: 11400000, guid: 77a98808128cfd54e8913da69efde84d, type: 2}
+  - {fileID: 11400000, guid: d68ea71379c422546b383d5c652d858b, type: 2}
   image: {fileID: 6755726727279038392, guid: d0c12c1895ef65146b46cfe6c7e703fc, type: 3}
   description: 'A member of the maple family, sycamore trees are recognisable by
     their distinctive helicopter seeds. Growing up to 35 meters tall, board and with

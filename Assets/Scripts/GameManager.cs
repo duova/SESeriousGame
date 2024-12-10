@@ -26,6 +26,8 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance { get; private set; }
 
     public int environment;
+
+    public int maxStage;
     
     public PlantLibraryScriptableObject plantLibrary;
     public QuestionLibraryScriptableObject questionLibrary;

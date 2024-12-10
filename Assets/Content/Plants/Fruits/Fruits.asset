@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5343bff20ea43e780cbbd777c692595, type: 3}
   m_Name: Fruits
   m_EditorClassIdentifier: 
-  displayName: Fruits
+  displayName: 
   environment: 0
   features:
   - {fileID: 11400000, guid: 590726f7e9fc15e1d9d627d23e07419c, type: 2}

@@ -17,7 +17,7 @@ MonoBehaviour:
   alternateDisplayName: Fruit
   alternateDisplayNamePlural: Fruit
   isEdible: 0
-  featureType: {fileID: 0}
+  featureType: {fileID: 11400000, guid: 54dfb9f9c326f1a41b2d7f3916a8ef9a, type: 2}
   sprites:
   - {fileID: 7185062251167280711, guid: 1cddef0cea0f0f34b9266579c8690d93, type: 3}
   - {fileID: -5957244527719105043, guid: 52fd988413829f246919e5814a31e030, type: 3}

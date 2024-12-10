@@ -14,7 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   displayName: Ash
   environment: 1
-  features: []
+  features:
+  - {fileID: 11400000, guid: 8b330ce089ea8f347b4b06fc40374dd9, type: 2}
+  - {fileID: 11400000, guid: afaf06400eed1984a93a7fdef7e3f198, type: 2}
+  - {fileID: 11400000, guid: 8cbfe5e94b7cb1a4a8771bc9f44706b6, type: 2}
+  - {fileID: 11400000, guid: 0fa16b03d7bd76245bbb13b87f4305a1, type: 2}
   image: {fileID: 8692862176653117272, guid: 45371ee3f2d93ba498652f7ebc5092f4, type: 3}
   description: Growing up to 35 meters, Ash trees are one of the biggest trees you
     might find in UK hedgerows. However, despite being found throughout Britain,

@@ -57,6 +57,7 @@ public class DefaultPlantBackend : IPlantBackend
     {
         List<QuestionEntry> newQuestions = new List<QuestionEntry>();
         List<QuestionEntry> oldQuestions = new List<QuestionEntry>();
+        
         foreach (var question in _questionLibrary.questionEntries)
         {
             if (question.environment != GameManager.Instance.environment) continue;
@@ -67,9 +68,10 @@ public class DefaultPlantBackend : IPlantBackend
             // Debug.Log("_plantLibrary[0]: " + _plantLibrary.plantEntries[0]); // Oak
             // Debug.Log("question.plant: " + question.plant); // SilverBirch
 
-            if (GetPlantIndex(question.plant) == -1 ||
-                _plantDatas[GetPlantIndex(question.plant)].Stage != question.stage) continue;
-            Dictionary<char, SyllabusData> syllabus = _plantDatas[GetPlantIndex(question.plant)].Syllabus;
+            int plantIndex = GetPlantIndex(question.plant);
+            if (plantIndex == -1 ||
+                _plantDatas[plantIndex].Stage != question.stage) continue;
+            Dictionary<char, SyllabusData> syllabus = _plantDatas[plantIndex].Syllabus;
             if (syllabus.ContainsKey(question.syllabusReference) &&
                 (syllabus[question.syllabusReference].Streak >= 2 ||
                  syllabus[question.syllabusReference].CorrectAnswers >= 3)) continue;
@@ -106,7 +108,7 @@ public class DefaultPlantBackend : IPlantBackend
         // QuestionEntry randomQuestion = newQuestions[Random.Range(0, newQuestions.Count)];
         QuestionEntry randomQuestion = (oldQuestions.Count > 0 && Random.Range(0, 100) < 20)
             ? oldQuestions[Random.Range(0, oldQuestions.Count)]
-            : newQuestions[Random.Range(0, newQuestions.Count)];
+            : RandomBySyllabus(newQuestions);
         QuestionSet questionSet = new();
 
         PlantData plantData = _plantDatas[GetPlantIndex(randomQuestion.plant)];
@@ -166,6 +168,7 @@ public class DefaultPlantBackend : IPlantBackend
         List<PlantFeatureScriptableObject> wrongAnswers = new List<PlantFeatureScriptableObject>();
         foreach (var plant in _plantLibrary.plantEntries)
         {
+            if (plant.environment != GameManager.Instance.environment) continue;
             foreach (var plantFeature in plant.features)
             {
                 if (plantFeature.sprites.Count <= 0) continue;
@@ -280,16 +283,19 @@ public class DefaultPlantBackend : IPlantBackend
             PlantData plantData = _plantDatas[i];
             if (plantData.PendingStageIncrease)
             {
-                plantData.Stage++;
+                if (plantData.Stage < GameManager.Instance.maxStage)
+                {
+                    plantData.Stage++;
+                    StageIncrease stageIncrease = new StageIncrease
+                    {
+                        Plant = _plantLibrary.plantEntries[i],
+                        NewStage = plantData.Stage
+                    };
+                    stageIncreases.Add(stageIncrease);
+                }
+
                 plantData.PendingStageIncrease = false;
                 plantData.Syllabus.Clear();
-
-                StageIncrease stageIncrease = new StageIncrease
-                {
-                    Plant = _plantLibrary.plantEntries[i],
-                    NewStage = plantData.Stage
-                };
-                stageIncreases.Add(stageIncrease);
             }
         }
 
@@ -300,5 +306,58 @@ public class DefaultPlantBackend : IPlantBackend
     public List<StageIncrease> GetMostRecentStageIncreases()
     {
         return _mostRecentStageIncreases;
+    }
+
+    public QuestionEntry RandomBySyllabus(List<QuestionEntry> questions)
+    {
+        if (questions.Count <= 0) return new QuestionEntry();
+        
+        Dictionary<PlantEntryScriptableObject, HashSet<char>> syllabus =
+            new Dictionary<PlantEntryScriptableObject, HashSet<char>>();
+
+        foreach (var question in questions)
+        {
+            if (syllabus.ContainsKey(question.plant))
+            {
+                if (!syllabus[question.plant].Contains(question.syllabusReference))
+                {
+                    syllabus[question.plant].Add(question.syllabusReference);
+                }
+            }
+            else
+            {
+                syllabus.Add(question.plant, new HashSet<char>());
+                syllabus[question.plant].Add(question.syllabusReference);
+            }
+        }
+
+        int totalSyllabusCount = 0;
+        foreach (var pair in syllabus)
+        {
+            totalSyllabusCount += pair.Value.Count;
+        }
+
+        int rand = Random.Range(0, totalSyllabusCount);
+        int i = 0;
+        PlantEntryScriptableObject selectedPlant = null;
+        char selectedCharacter = default;
+        foreach (var pair in syllabus)
+        {
+            foreach (var character in pair.Value)
+            {
+                if (i == rand)
+                {
+                    selectedPlant = pair.Key;
+                    selectedCharacter = character;
+                    break;
+                }
+                i++;
+            }
+            if (selectedPlant != null) break;
+        }
+
+        var questionsOfChosenSyllabus = questions.Where(question =>
+            question.syllabusReference == selectedCharacter && question.plant == selectedPlant).ToList();
+        return questionsOfChosenSyllabus[Random.Range(0, questionsOfChosenSyllabus.Count)];
     }
 }
