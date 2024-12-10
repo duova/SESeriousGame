@@ -1,1 +1,1 @@
-{"plantStages":[4,4,4,4,1,1,1,1],"environmentNum":0,"TutorialDone":true,"forageTutorialDone":true}
+{"plantStages":[1,1,1,1,1,1,1,1],"environmentNum":0,"TutorialDone":true,"forageTutorialDone":false}

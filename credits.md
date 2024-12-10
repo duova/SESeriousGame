@@ -93,6 +93,10 @@ https://www.treeguideuk.co.uk/horse-chestnut/
 http://www.seasonalwildflowers.com/horse-chestnut.html
 https://www.tree-guide.com/horsechestnut
 
+## Strawberry
+
+https://www.freepik.com/free-psd/view-ripe-sweet-fruit_37298510.htm#fromView=keyword&page=1&position=12&uuid=6a5fe11d-d55f-42b0-b07a-f74eedf598e6
+
 # Sounds
 
 Royalty free music for the game have been selected from Pixabay (https://pixabay.com). We are unable to list the individual sound sources because the platform doesn't provide individual links for each sound.
