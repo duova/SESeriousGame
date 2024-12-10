@@ -59,4 +59,10 @@ public class SaveButton : MonoBehaviour
         public bool TutorialDone;
         public bool forageTutorialDone;
     }
+
+    public void SaveAndQuit()
+    {
+        Save();
+        Application.Quit();
+    }
 }

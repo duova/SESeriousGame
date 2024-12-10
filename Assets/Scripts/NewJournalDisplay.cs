@@ -26,11 +26,14 @@ public class NewJournalDisplay : MonoBehaviour
         {
             newJournalEntries.AddRange(increase.Plant.journalEntries.Where(entry => entry.stage == increase.NewStage));
         }
+
+        float centeringOffset = ((newJournalEntries.Count - 1) / 2f) * journalDisplayOffset;
         
         foreach (var entry in newJournalEntries)
         {
             var display = Instantiate(journalDisplayPrefab, journalDisplayRoot.transform);
-            display.transform.localPosition += new Vector3(0, _journalDisplayCurrentOffset, 0);
+            display.transform.localPosition += new Vector3(_journalDisplayCurrentOffset, 0, 0);
+            display.transform.localPosition -= new Vector3(centeringOffset, 0, 0);
             display.GetComponentInChildren<TMP_Text>().text = entry.text;
             display.GetComponentInChildren<Image>().sprite = entry.sprite;
 

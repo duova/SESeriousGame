@@ -27,6 +27,12 @@ public class FallingObjectCatcher : MonoBehaviour
     [SerializeField]
     private GameObject wrongIndicator;
 
+    [SerializeField]
+    private AudioSource rightAnswerSound;
+    
+    [SerializeField]
+    private AudioSource wrongAnswerSound;
+
     private void Start()
     {
         _cachedFontSize = textBox.fontSize;
@@ -72,11 +78,13 @@ public class FallingObjectCatcher : MonoBehaviour
             _streak++;
             textBox.fontSize *= 2;
             Instantiate(correctIndicator, transform.position, Quaternion.identity);
+            rightAnswerSound.Play();
         }
         else
         {
             _streak = 0;
             Instantiate(wrongIndicator, transform.position, Quaternion.identity);
+            wrongAnswerSound.Play();
         }
 
         if (GameManager.Instance.lastSessionStreak < _streak)

@@ -60,7 +60,7 @@ public class DefaultPlantBackend : IPlantBackend
         
         foreach (var question in _questionLibrary.questionEntries)
         {
-            if (question.environment != GameManager.Instance.environment) continue;
+            if (question.plant.environment != GameManager.Instance.environment) continue;
 
             // Debug.Log("_plantLibrary: " + _plantLibrary.plantEntries.Count); // 1
             // Debug.Log("_plantDatas: " + _plantDatas.Count);
@@ -82,7 +82,7 @@ public class DefaultPlantBackend : IPlantBackend
 
         foreach (var question in _questionLibrary.questionEntries)
         {
-            if (question.environment != GameManager.Instance.environment) continue;
+            if (question.plant.environment != GameManager.Instance.environment) continue;
 
             if (GetPlantIndex(question.plant) != -1 &&
                 _plantDatas[GetPlantIndex(question.plant)].Stage > question.stage)
@@ -95,9 +95,10 @@ public class DefaultPlantBackend : IPlantBackend
         newQuestions.RemoveAll(question => question.feature.sprites.Count <= 0);
         oldQuestions.RemoveAll(question => question.feature.sprites.Count <= 0);
 
-        // if the list has no question for a particular plant, increase the stage of plant
+        // if the list has no question for a particular plant, unless it's not in this environment increase the stage of plant
         foreach (var plantEntry in _plantLibrary.plantEntries)
         {
+            if (plantEntry.environment != GameManager.Instance.environment) continue;
             if (newQuestions.All(question => question.plant != plantEntry))
             {
                 HandleIncreasePlantLevel(plantEntry);
@@ -106,7 +107,7 @@ public class DefaultPlantBackend : IPlantBackend
 
         // random choose a question from list
         // QuestionEntry randomQuestion = newQuestions[Random.Range(0, newQuestions.Count)];
-        QuestionEntry randomQuestion = (oldQuestions.Count > 0 && Random.Range(0, 100) < 20)
+        QuestionEntry randomQuestion = (oldQuestions.Count > 0 && Random.Range(0, 100) < 10)
             ? oldQuestions[Random.Range(0, oldQuestions.Count)]
             : RandomBySyllabus(newQuestions);
         QuestionSet questionSet = new();
@@ -331,29 +332,35 @@ public class DefaultPlantBackend : IPlantBackend
             }
         }
 
-        int totalSyllabusCount = 0;
-        foreach (var pair in syllabus)
-        {
-            totalSyllabusCount += pair.Value.Count;
-        }
-
-        int rand = Random.Range(0, totalSyllabusCount);
-        int i = 0;
+        //We want to random equally by plant then by syllabus so nearly completed plants don't have less of a chance to show up.
+        
         PlantEntryScriptableObject selectedPlant = null;
         char selectedCharacter = default;
+        int randPlantIndex = Random.Range(0, syllabus.Count);
+        int i = 0;
         foreach (var pair in syllabus)
         {
-            foreach (var character in pair.Value)
+            if (i == randPlantIndex)
             {
-                if (i == rand)
+                selectedPlant = pair.Key;
+                break;
+            }
+            i++;
+        }
+
+        if (selectedPlant != null)
+        {
+            int randCharIndex = Random.Range(0, syllabus[selectedPlant].Count);
+            i = 0;
+            foreach (var character in syllabus[selectedPlant])
+            {
+                if (i == randCharIndex)
                 {
-                    selectedPlant = pair.Key;
                     selectedCharacter = character;
                     break;
                 }
                 i++;
             }
-            if (selectedPlant != null) break;
         }
 
         var questionsOfChosenSyllabus = questions.Where(question =>
