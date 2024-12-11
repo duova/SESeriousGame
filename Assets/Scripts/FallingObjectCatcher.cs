@@ -79,6 +79,13 @@ public class FallingObjectCatcher : MonoBehaviour
             textBox.fontSize *= 2;
             Instantiate(correctIndicator, transform.position, Quaternion.identity);
             rightAnswerSound.Play();
+
+            foreach (var fallingObject in generator.instantiatedAnswers)
+            {
+                Destroy(fallingObject.gameObject);
+            }
+            generator.instantiatedAnswers.Clear();
+            generator.UninstantiatedAnswers = 0;
         }
         else
         {

@@ -95,7 +95,11 @@ https://www.tree-guide.com/horsechestnut
 
 ## Strawberry
 
-https://www.freepik.com/free-psd/view-ripe-sweet-fruit_37298510.htm#fromView=keyword&page=1&position=12&uuid=6a5fe11d-d55f-42b0-b07a-f74eedf598e6
+https://www.pexels.com/photo/closeup-of-wild-strawberry-in-natural-habitat-29619970/
+
+## Blackberry
+
+https://pixabay.com/photos/berry-fruit-ripe-blackberry-sweet-5373268/
 
 # Sounds
 

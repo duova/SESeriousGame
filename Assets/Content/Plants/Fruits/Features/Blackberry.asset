@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a86683649e041fca7f3adfc4e399c15, type: 3}
-  m_Name: Strawberry
+  m_Name: Blackberry
   m_EditorClassIdentifier: 
-  displayName: Strawberry
-  displayNamePlural: Strawberries
-  alternateDisplayName: Straw
-  alternateDisplayNamePlural: Straws
+  displayName: Blackberry
+  displayNamePlural: Blackberries
+  alternateDisplayName: Berry
+  alternateDisplayNamePlural: Berries
   isEdible: 1
   featureType: {fileID: 11400000, guid: 54dfb9f9c326f1a41b2d7f3916a8ef9a, type: 2}
   sprites:
-  - {fileID: 1775669009216684005, guid: 90cd7e46e2a0f8d1ca087afa3f332623, type: 3}
+  - {fileID: 1617826241060244454, guid: 34ecc334b75a35a4a975e17a759dd79f, type: 3}

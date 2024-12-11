@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 7b661b356d6960f00a5260bb9601a16e
+guid: 34ecc334b75a35a4a975e17a759dd79f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2391722850750093724
-    second: 11zon_resized_0
+      213: 1617826241060244454
+    second: Blackberry_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 475
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -152,13 +152,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 11zon_resized_0
+      name: Blackberry_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 268
-        height: 421
+        width: 1280
+        height: 960
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -167,8 +167,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4662bd73db4eeced0800000000000000
-      internalID: -2391722850750093724
+      spriteID: 6eb83b6056ca37610800000000000000
+      internalID: 1617826241060244454
       vertices: []
       indices: 
       edges: []
@@ -187,7 +187,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      11zon_resized_0: -2391722850750093724
+      Blackberry_0: 1617826241060244454
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

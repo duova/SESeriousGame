@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using TMPro;
 using Unity.VisualScripting;
+using UnityEditor;
 using UnityEngine;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 using Random = UnityEngine.Random;
 
@@ -24,7 +26,8 @@ public class FallingObjectGenerator : MonoBehaviour
 
     private QuestionSet _currentQuestion = null;
 
-    private int _uninstantiatedAnswers;
+    [HideInInspector]
+    public int UninstantiatedAnswers;
 
     public List<FallingObject> instantiatedAnswers = new List<FallingObject>();
     
@@ -50,6 +53,8 @@ public class FallingObjectGenerator : MonoBehaviour
     private Color defaultColor;
     
     private float _glowTimer;
+
+    public float FallingSpeed = 2;
     
 
     void Start()
@@ -90,6 +95,8 @@ public class FallingObjectGenerator : MonoBehaviour
 
     void Update()
     {
+        FallingSpeed += Time.deltaTime * 0.05f;
+        
         //Tick energy.
         GameManager.Instance.energyLevel.energy -= GameManager.Instance.energyLevel.tickedCost * Time.deltaTime;
         
@@ -100,13 +107,13 @@ public class FallingObjectGenerator : MonoBehaviour
         if (_currentQuestion == null)
         {
             _currentQuestion = Backend.GetQuestion(QuestionLocation.Falling);
-            _uninstantiatedAnswers = _currentQuestion.PossibleAnswers.Count;
+            UninstantiatedAnswers = _currentQuestion.PossibleAnswers.Count;
             questionTextBox.text = _currentQuestion.DisplayQuestion;
             _intervalTimer = interval;
         }
         
         //Instantiate answers by interval until there are no more uninstantiated answers.
-        if (_uninstantiatedAnswers > 0)
+        if (UninstantiatedAnswers > 0)
         {
             _intervalTimer += Time.deltaTime;
             if (_intervalTimer > interval)
@@ -117,11 +124,11 @@ public class FallingObjectGenerator : MonoBehaviour
                 Vector3 spawnLocation = new Vector3(randomizedX, transform.position.y, 0);
                 GameObject fallingObject = Instantiate(prefabToSpawn, spawnLocation, Quaternion.identity);
                 FallingObject fallingObjectComp = fallingObject.GetComponent<FallingObject>();
-                fallingObjectComp.Setup(_currentQuestion.PossibleAnswers[_uninstantiatedAnswers - 1]);
+                fallingObjectComp.Setup(_currentQuestion.PossibleAnswers[UninstantiatedAnswers - 1]);
                 instantiatedAnswers.Add(fallingObjectComp);
                 fallingObjectComp.generator = this;
 
-                _uninstantiatedAnswers--;
+                UninstantiatedAnswers--;
             }
         }
 
