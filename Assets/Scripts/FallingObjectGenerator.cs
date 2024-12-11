@@ -51,6 +51,8 @@ public class FallingObjectGenerator : MonoBehaviour
 
     [SerializeField]
     private Color defaultColor;
+
+    [SerializeField] private GameObject Tutorial;
     
     private float _glowTimer;
 
@@ -93,49 +95,69 @@ public class FallingObjectGenerator : MonoBehaviour
         _glowTimer = glowCooldown;
     }
 
+    public void tutorial()
+    {
+        Tutorial.SetActive(false);
+        GameManager.Instance.fallingTutorialDone = true;
+    }
+
     void Update()
     {
-        FallingSpeed += Time.deltaTime * 0.05f;
-        
-        //Tick energy.
-        GameManager.Instance.energyLevel.energy -= GameManager.Instance.energyLevel.tickedCost * Time.deltaTime;
-        
-        //Tick glow.
-        _glowTimer -= Time.deltaTime;
-        
-        //Get a question if there isn't an active question.
-        if (_currentQuestion == null)
-        {
-            _currentQuestion = Backend.GetQuestion(QuestionLocation.Falling);
-            UninstantiatedAnswers = _currentQuestion.PossibleAnswers.Count;
-            questionTextBox.text = _currentQuestion.DisplayQuestion;
-            _intervalTimer = interval;
-        }
-        
-        //Instantiate answers by interval until there are no more uninstantiated answers.
-        if (UninstantiatedAnswers > 0)
-        {
-            _intervalTimer += Time.deltaTime;
-            if (_intervalTimer > interval)
+        if(GameManager.Instance.fallingTutorialDone){
+            
+            FallingSpeed += Time.deltaTime * 0.05f;
+            
+            //Tick energy.
+            GameManager.Instance.energyLevel.energy -= GameManager.Instance.energyLevel.tickedCost * Time.deltaTime;
+            
+            //Tick glow.
+            _glowTimer -= Time.deltaTime;
+            
+            //Get a question if there isn't an active question.
+            if (_currentQuestion == null)
             {
-                _intervalTimer = 0;
+                //Tick energy.
+                GameManager.Instance.energyLevel.energy -= GameManager.Instance.energyLevel.tickedCost * Time.deltaTime;
 
-                float randomizedX = transform.position.x + Random.Range(-spawnAreaWidth / 2, spawnAreaWidth / 2);
-                Vector3 spawnLocation = new Vector3(randomizedX, transform.position.y, 0);
-                GameObject fallingObject = Instantiate(prefabToSpawn, spawnLocation, Quaternion.identity);
-                FallingObject fallingObjectComp = fallingObject.GetComponent<FallingObject>();
-                fallingObjectComp.Setup(_currentQuestion.PossibleAnswers[UninstantiatedAnswers - 1]);
-                instantiatedAnswers.Add(fallingObjectComp);
-                fallingObjectComp.generator = this;
+                //Tick glow.
+                _glowTimer -= Time.deltaTime;
 
-                UninstantiatedAnswers--;
+                //Get a question if there isn't an active question.
+                if (_currentQuestion == null)
+                {
+                    _currentQuestion = Backend.GetQuestion(QuestionLocation.Falling);
+                    UninstantiatedAnswers = _currentQuestion.PossibleAnswers.Count;
+                    questionTextBox.text = _currentQuestion.DisplayQuestion;
+                    _intervalTimer = interval;
+                }
+
+                //Instantiate answers by interval until there are no more uninstantiated answers.
+                if (UninstantiatedAnswers > 0)
+                {
+                    _intervalTimer += Time.deltaTime;
+                    if (_intervalTimer > interval)
+                    {
+                        _intervalTimer = 0;
+
+                        float randomizedX = transform.position.x + Random.Range(-spawnAreaWidth / 2, spawnAreaWidth / 2);
+                        Vector3 spawnLocation = new Vector3(randomizedX, transform.position.y, 0);
+                        GameObject fallingObject = Instantiate(prefabToSpawn, spawnLocation, Quaternion.identity);
+                        FallingObject fallingObjectComp = fallingObject.GetComponent<FallingObject>();
+                        fallingObjectComp.Setup(_currentQuestion.PossibleAnswers[UninstantiatedAnswers - 1]);
+                        instantiatedAnswers.Add(fallingObjectComp);
+                        fallingObjectComp.generator = this;
+
+                        UninstantiatedAnswers--;
+                    }
+                }
+
+                //Reset question when there are no more answers.
+                if (instantiatedAnswers.Count == 0)
+                {
+                    _currentQuestion = null;
+                }
             }
         }
-
-        //Reset question when there are no more answers.
-        if (instantiatedAnswers.Count == 0)
-        {
-            _currentQuestion = null;
-        }
+        
     }
 }

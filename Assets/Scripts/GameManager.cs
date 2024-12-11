@@ -37,6 +37,7 @@ public class GameManager : MonoBehaviour
 
     public bool tutorialDone;
     public bool foragingTutorialDone;
+    public bool fallingTutorialDone = false;
 
     public int endSceneIndex;
     
