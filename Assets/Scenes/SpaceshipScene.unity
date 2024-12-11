@@ -7701,7 +7701,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &737045988
 Transform:
   m_ObjectHideFlags: 0
@@ -7785,7 +7785,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: And from here, you can enter the Earth!
+  m_text: And from here, you can enter the Earth! On Earth, as you learn more about
+    plants, you will level up! Till eventually I get to test you. If you pass I'll
+    tell you about more plants!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -18486,7 +18488,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: You can look through the information you've learned about each tree you've
-    unlocked here!
+    unlocked here, and can unlock more as you level up!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
