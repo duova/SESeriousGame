@@ -391,16 +391,6 @@ MonoBehaviour:
     plant: {fileID: 11400000, guid: 8157e23aeb7276248b88aadeb44ff570, type: 2}
     feature: {fileID: 11400000, guid: 9044829ddeca06b439cb021bb104f2e6, type: 2}
     chanceToUseAlternateName: 1
-    useSpecificImage: 0
-    specificImageIndex: 0
-  - stage: 4
-    syllabusReference: 99
-    questionType: {fileID: 11400000, guid: 20f717c797417854baeb154cf4baa124, type: 2}
-    questionLocation: 0
-    hint: orange budded
-    plant: {fileID: 11400000, guid: 8157e23aeb7276248b88aadeb44ff570, type: 2}
-    feature: {fileID: 11400000, guid: 9044829ddeca06b439cb021bb104f2e6, type: 2}
-    chanceToUseAlternateName: 1
     useSpecificImage: 1
     specificImageIndex: 2
   - stage: 1
