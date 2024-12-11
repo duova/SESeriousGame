@@ -64,6 +64,14 @@ public class FallingObjectGenerator : MonoBehaviour
         Backend = GameManager.Instance.Backend;
     }
 
+    private void Awake()
+    {
+        if (GameManager.Instance.fallingTutorialDone != true)
+        {
+            Tutorial.SetActive(true);
+        }
+    }
+
     private void FixedUpdate()
     {
         if (_glowTimer > glowCooldown - glowTime)
