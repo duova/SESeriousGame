@@ -20,3 +20,4 @@ MonoBehaviour:
   featureType: {fileID: 11400000, guid: 54dfb9f9c326f1a41b2d7f3916a8ef9a, type: 2}
   sprites:
   - {fileID: 1303434514861407028, guid: 681bf26bc214dee3fac0819bb4c212b3, type: 3}
+  - {fileID: 1303434514861407028, guid: 681bf26bc214dee3fac0819bb4c212b3, type: 3}
