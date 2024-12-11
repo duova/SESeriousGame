@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using TMPro;
 using Unity.VisualScripting;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
@@ -52,6 +53,8 @@ public class FallingObjectGenerator : MonoBehaviour
     private Color defaultColor;
     
     private float _glowTimer;
+
+    public float FallingSpeed = 2;
     
 
     void Start()
@@ -92,6 +95,8 @@ public class FallingObjectGenerator : MonoBehaviour
 
     void Update()
     {
+        FallingSpeed += Time.deltaTime * 0.05f;
+        
         //Tick energy.
         GameManager.Instance.energyLevel.energy -= GameManager.Instance.energyLevel.tickedCost * Time.deltaTime;
         

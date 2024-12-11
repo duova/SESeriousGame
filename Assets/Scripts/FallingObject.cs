@@ -47,6 +47,7 @@ public class FallingObject : MonoBehaviour
     
     private void Update()
     {
+        fallVelocity = generator.FallingSpeed;
         if (transform.position.y < screenBottomY)
         {
             Destroy(gameObject);
