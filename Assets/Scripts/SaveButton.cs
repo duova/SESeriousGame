@@ -29,6 +29,7 @@ public class SaveButton : MonoBehaviour
             TutorialDone = GameManager.Instance.tutorialDone,
             forageTutorialDone = GameManager.Instance.foragingTutorialDone,
             environmentNum = GameManager.Instance.environment,
+            fallingTutorialDone = GameManager.Instance.fallingTutorialDone,
         };
 
         string saveData = JsonUtility.ToJson(newSave);
@@ -55,6 +56,7 @@ public class SaveButton : MonoBehaviour
         GameManager.Instance.tutorialDone = loadedData.TutorialDone;
         GameManager.Instance.foragingTutorialDone = loadedData.forageTutorialDone;
         GameManager.Instance.environment = loadedData.environmentNum;
+        GameManager.Instance.fallingTutorialDone = loadedData.fallingTutorialDone;
     }
     
     private class SaveTemplate
@@ -63,6 +65,7 @@ public class SaveButton : MonoBehaviour
         public int environmentNum;
         public bool TutorialDone;
         public bool forageTutorialDone;
+        public bool fallingTutorialDone;
     }
 
     public void SaveAndQuit()
