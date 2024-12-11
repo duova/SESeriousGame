@@ -7,7 +7,12 @@ using UnityEngine.SceneManagement;
 
 public class SaveButton : MonoBehaviour
 {
-    private static readonly string SaveLocation = Application.dataPath + "/Saves";
+    private static string SaveLocation;
+    
+    private void Awake()
+    {
+        SaveLocation = Application.persistentDataPath + "/Saves";
+    }
     
     public void Save()
     {
