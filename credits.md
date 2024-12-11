@@ -46,6 +46,7 @@ https://www.vdberk.com/trees/fagus-sylvatica/
 https://www.treeguideuk.co.uk/mini-guides/71-2/
 https://www.wildlifetrusts.org/wildlife-explorer/trees-and-shrubs/common-beech
 https://www.exmoortrees.co.uk/products/beech
+https://www.saps.org.uk/trees/beech.htm
 
 ## Sycamore
 
@@ -84,6 +85,8 @@ https://www.woodlandtrust.org.uk/trees-woods-and-wildlife/british-trees/a-z-of-b
 https://heartofenglandforest.org/rowan
 https://cotswoldtrees.com/shop/large-trees/rowan-tree-mountain-ash-sorbus-aucuparia-2m-3m-tall/
 https://www.treescapes.co.uk/sorbus-apricot-queen-mountain-ash-rowan.htm
+https://www.exetertrees.uk/rowan.html
+https://paulkirtley.co.uk/2011/bark-buds-common-european-deciduous-trees-winter-identification/
 
 ## Horse Chestnut
 
