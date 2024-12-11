@@ -20,3 +20,9 @@ MonoBehaviour:
   featureType: {fileID: 11400000, guid: 6d2ff2c4c8d5be74890713d5a1ebdb99, type: 2}
   sprites:
   - {fileID: 2191403327850977215, guid: ea51d7f04cfa6d341af9eb64f6e5411c, type: 3}
+  - {fileID: -1511145387829489776, guid: 00683e44d31d36af790e83ee20b221a9, type: 3}
+  - {fileID: 8475838177021765568, guid: 6cd6992c196a7962c80c48f0580b5c40, type: 3}
+  - {fileID: 3764774760803466013, guid: 68a1b3d0e96930692b2acafba5c64c69, type: 3}
+  - {fileID: -3069255199163257465, guid: e2bbef349a263c9c190f0a31388e3b6a, type: 3}
+  - {fileID: 5904391685015316843, guid: 0b01220173ee622ca9ea216dba3bcdfe, type: 3}
+  - {fileID: -1854582747537885508, guid: 0799b7feef589da118a98f95ebb33b35, type: 3}

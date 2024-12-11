@@ -294,15 +294,15 @@ MonoBehaviour:
     useSpecificImage: 0
     specificImageIndex: 0
   - stage: 4
-    syllabusReference: 97
+    syllabusReference: 98
     questionType: {fileID: 11400000, guid: 3f1b03aaef8b51f41bff10eb86b07bb9, type: 2}
     questionLocation: 0
     hint: black, velvety
     plant: {fileID: 11400000, guid: 35e94aed3d210784f86e06eb56fd681b, type: 2}
     feature: {fileID: 11400000, guid: 8b330ce089ea8f347b4b06fc40374dd9, type: 2}
     chanceToUseAlternateName: 0
-    useSpecificImage: 0
-    specificImageIndex: 0
+    useSpecificImage: 1
+    specificImageIndex: 4
   - stage: 1
     syllabusReference: 97
     questionType: {fileID: 11400000, guid: 0b08101d7541a3142913ea532f2ad71d, type: 2}
@@ -401,8 +401,8 @@ MonoBehaviour:
     plant: {fileID: 11400000, guid: 8157e23aeb7276248b88aadeb44ff570, type: 2}
     feature: {fileID: 11400000, guid: 9044829ddeca06b439cb021bb104f2e6, type: 2}
     chanceToUseAlternateName: 1
-    useSpecificImage: 0
-    specificImageIndex: 0
+    useSpecificImage: 1
+    specificImageIndex: 2
   - stage: 1
     syllabusReference: 97
     questionType: {fileID: 11400000, guid: 8591e8f8be9098144b973b4180b2253c, type: 2}
@@ -561,8 +561,8 @@ MonoBehaviour:
     plant: {fileID: 11400000, guid: 95fec2fe40f9a4340ae01655aee849ea, type: 2}
     feature: {fileID: 11400000, guid: aa2d94b1106fb174abdaba41f4bd9838, type: 2}
     chanceToUseAlternateName: 0
-    useSpecificImage: 0
-    specificImageIndex: 0
+    useSpecificImage: 1
+    specificImageIndex: 1
   - stage: 1
     syllabusReference: 97
     questionType: {fileID: 11400000, guid: 20f717c797417854baeb154cf4baa124, type: 2}
@@ -731,5 +731,5 @@ MonoBehaviour:
     plant: {fileID: 11400000, guid: 2c563d5c255de7c42a0f9c620412e113, type: 2}
     feature: {fileID: 11400000, guid: fa7a65f22c5fe5146b7464b8d61b2867, type: 2}
     chanceToUseAlternateName: 1
-    useSpecificImage: 0
-    specificImageIndex: 0
+    useSpecificImage: 1
+    specificImageIndex: 3
