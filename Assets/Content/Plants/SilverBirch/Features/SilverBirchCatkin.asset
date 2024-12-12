@@ -16,10 +16,10 @@ MonoBehaviour:
   displayNamePlural: Catkins
   alternateDisplayName: Female Catkin
   alternateDisplayNamePlural: Female Catkin
+  isEdible: 0
   featureType: {fileID: 11400000, guid: 11547de509840b04280ff833bed842d9, type: 2}
   sprites:
   - {fileID: 3312253343504335054, guid: ee8bca4b3083bf4e89043099b8fee62e, type: 3}
   - {fileID: -7164424280129933481, guid: 0e054d339bd42de0bb9c45d8dad73d81, type: 3}
   - {fileID: 3787694421856247818, guid: 70d7119891652351598540e3de479bdb, type: 3}
   - {fileID: 8385546786382790277, guid: 81fd24fb774d7483a93eb942875e3f25, type: 3}
-  - {fileID: 7323731310741679152, guid: 12a40ebf64dd20dff827a760d5f8f6bc, type: 3}
