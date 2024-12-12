@@ -47,6 +47,8 @@ https://www.treeguideuk.co.uk/mini-guides/71-2/
 https://www.wildlifetrusts.org/wildlife-explorer/trees-and-shrubs/common-beech
 https://www.exmoortrees.co.uk/products/beech
 https://www.saps.org.uk/trees/beech.htm
+https://www.wildfoodie.co.uk/post/beech-tree-and-beechnuts
+https://www.motherearthgardener.com/plant-profiles/family-foraging-beech-nut-ze0z1910zbut/
 
 ## Sycamore
 
