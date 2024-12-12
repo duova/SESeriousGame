@@ -19,5 +19,4 @@ MonoBehaviour:
   isEdible: 0
   featureType: {fileID: 11400000, guid: 54dfb9f9c326f1a41b2d7f3916a8ef9a, type: 2}
   sprites:
-  - {fileID: 1127410923693762448, guid: 35567223cb66429dd9b9d1c04e8efbbb, type: 3}
   - {fileID: 7323731310741679152, guid: 12a40ebf64dd20dff827a760d5f8f6bc, type: 3}

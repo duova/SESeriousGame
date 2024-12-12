@@ -83,46 +83,6 @@ MonoBehaviour:
     chanceToUseAlternateName: 0
     useSpecificImage: 0
     specificImageIndex: 0
-  - stage: 3
-    syllabusReference: 100
-    questionType: {fileID: 11400000, guid: a4d7a71ee6c09c24d8d48f6303b4e7c2, type: 2}
-    questionLocation: 0
-    hint: bunches of
-    plant: {fileID: 11400000, guid: eed02bc3a912265469a7b461d2fd3627, type: 2}
-    feature: {fileID: 11400000, guid: 6098a69dd976f504c93159a2023a8b76, type: 2}
-    chanceToUseAlternateName: 0
-    useSpecificImage: 0
-    specificImageIndex: 0
-  - stage: 3
-    syllabusReference: 102
-    questionType: {fileID: 11400000, guid: 4ea769b7fe011cc42ae770d3fee40a7d, type: 2}
-    questionLocation: 0
-    hint: 
-    plant: {fileID: 11400000, guid: eed02bc3a912265469a7b461d2fd3627, type: 2}
-    feature: {fileID: 11400000, guid: 6098a69dd976f504c93159a2023a8b76, type: 2}
-    chanceToUseAlternateName: 0
-    useSpecificImage: 0
-    specificImageIndex: 0
-  - stage: 3
-    syllabusReference: 100
-    questionType: {fileID: 11400000, guid: 4ea769b7fe011cc42ae770d3fee40a7d, type: 2}
-    questionLocation: 0
-    hint: 
-    plant: {fileID: 11400000, guid: eed02bc3a912265469a7b461d2fd3627, type: 2}
-    feature: {fileID: 11400000, guid: fe11781517f51cc4fbe8b31a155d66c7, type: 2}
-    chanceToUseAlternateName: 0
-    useSpecificImage: 0
-    specificImageIndex: 0
-  - stage: 3
-    syllabusReference: 100
-    questionType: {fileID: 11400000, guid: 4ea769b7fe011cc42ae770d3fee40a7d, type: 2}
-    questionLocation: 0
-    hint: 
-    plant: {fileID: 11400000, guid: eed02bc3a912265469a7b461d2fd3627, type: 2}
-    feature: {fileID: 11400000, guid: fe11781517f51cc4fbe8b31a155d66c7, type: 2}
-    chanceToUseAlternateName: 0
-    useSpecificImage: 0
-    specificImageIndex: 0
   - stage: 4
     syllabusReference: 97
     questionType: {fileID: 11400000, guid: 3f1b03aaef8b51f41bff10eb86b07bb9, type: 2}
@@ -209,7 +169,7 @@ MonoBehaviour:
     questionLocation: 0
     hint: short bright green
     plant: {fileID: 11400000, guid: 762b40a389194f74f9de1f5527540321, type: 2}
-    feature: {fileID: 11400000, guid: fc684de80260a6743aea0702fb12a692, type: 2}
+    feature: {fileID: 11400000, guid: cd98ecc77a48e5149ba143f316a5fcd4, type: 2}
     chanceToUseAlternateName: 0
     useSpecificImage: 0
     specificImageIndex: 0
@@ -219,7 +179,7 @@ MonoBehaviour:
     questionLocation: 0
     hint: dark crimson
     plant: {fileID: 11400000, guid: 762b40a389194f74f9de1f5527540321, type: 2}
-    feature: {fileID: 11400000, guid: fc684de80260a6743aea0702fb12a692, type: 2}
+    feature: {fileID: 11400000, guid: 778ec3706717c14488f48b659a7db306, type: 2}
     chanceToUseAlternateName: 0
     useSpecificImage: 0
     specificImageIndex: 0
@@ -302,7 +262,7 @@ MonoBehaviour:
     feature: {fileID: 11400000, guid: 8b330ce089ea8f347b4b06fc40374dd9, type: 2}
     chanceToUseAlternateName: 0
     useSpecificImage: 1
-    specificImageIndex: 4
+    specificImageIndex: 3
   - stage: 1
     syllabusReference: 97
     questionType: {fileID: 11400000, guid: 0b08101d7541a3142913ea532f2ad71d, type: 2}
@@ -320,7 +280,7 @@ MonoBehaviour:
     hint: wavy edged
     plant: {fileID: 11400000, guid: 8157e23aeb7276248b88aadeb44ff570, type: 2}
     feature: {fileID: 11400000, guid: 1e96f521bf03d1f4c8694360872c1e79, type: 2}
-    chanceToUseAlternateName: 1
+    chanceToUseAlternateName: 0
     useSpecificImage: 0
     specificImageIndex: 0
   - stage: 1

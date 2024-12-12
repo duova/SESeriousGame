@@ -7,6 +7,14 @@ public class GameManagerButtonFuncs : MonoBehaviour
     public int spaceship;
 
     public int journal;
+
+    public SaveButton SaveButton;
+
+    public void LoadThenChange(int level)
+    {
+        SaveButton.Load();
+        GameManager.Instance.Change(level);
+    }
     
     public void ChangeLevel(int level)
     {

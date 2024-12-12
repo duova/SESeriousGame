@@ -149,13 +149,10 @@ public class DefaultPlantBackend : IPlantBackend
         Answer answer = new Answer();
         answer.IsCorrect = isCorrect;
         answer.DisplayText = plantFeature.displayName;
-        if (questionEntry.useSpecificImage)
+        answer.Sprite = plantFeature.sprites[Random.Range(0, plantFeature.sprites.Count)];
+        if (questionEntry.useSpecificImage && isCorrect)
         {
-            answer.Sprite = plantFeature.sprites[questionEntry.specificImageIndex];
-        }
-        else
-        {
-            answer.Sprite = plantFeature.sprites[Random.Range(0, plantFeature.sprites.Count)];
+            answer.Sprite = questionEntry.feature.sprites[questionEntry.specificImageIndex];
         }
 
         // TODO: Check AnswerDisplayType with Laura later

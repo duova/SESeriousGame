@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   displayName: Leaf
   displayNamePlural: Leaves
-  alternateDisplayName: AltLeaf
-  alternateDisplayNamePlural: AltLeaves
+  alternateDisplayName: Leaf
+  alternateDisplayNamePlural: Leaves
   isEdible: 0
   featureType: {fileID: 11400000, guid: 6d2ff2c4c8d5be74890713d5a1ebdb99, type: 2}
   sprites:

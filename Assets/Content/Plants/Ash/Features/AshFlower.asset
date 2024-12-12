@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   displayName: Flower
   displayNamePlural: Flowers
-  alternateDisplayName: AltFlower
-  alternateDisplayNamePlural: AltFLower
+  alternateDisplayName: Flower
+  alternateDisplayNamePlural: Flowers
   isEdible: 0
   featureType: {fileID: 11400000, guid: 11547de509840b04280ff833bed842d9, type: 2}
   sprites:

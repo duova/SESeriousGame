@@ -54,6 +54,7 @@ public class SaveButton : MonoBehaviour
             x++;
         }
         GameManager.Instance.tutorialDone = loadedData.TutorialDone;
+        print(loadedData.TutorialDone);
         GameManager.Instance.foragingTutorialDone = loadedData.forageTutorialDone;
         GameManager.Instance.environment = loadedData.environmentNum;
         GameManager.Instance.fallingTutorialDone = loadedData.fallingTutorialDone;

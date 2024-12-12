@@ -34,6 +34,9 @@ public class EnvironmentChanger : MonoBehaviour
     private int stageForNewEnvironment;
 
     [SerializeField]
+    private int lastEnvironment;
+
+    [SerializeField]
     private GameObject introductoryObject;
     
     [SerializeField]
@@ -129,6 +132,10 @@ public class EnvironmentChanger : MonoBehaviour
             {
                 newEnvironmentObject.SetActive(true);
                 GameManager.Instance.environment++;
+                if (GameManager.Instance.environment > lastEnvironment)
+                {
+                    GameManager.Instance.EndGame();
+                }
             }
         }
         else

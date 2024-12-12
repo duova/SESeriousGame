@@ -645,6 +645,7 @@ GameObject:
   - component: {fileID: 847092811}
   - component: {fileID: 847092810}
   - component: {fileID: 847092809}
+  - component: {fileID: 847092812}
   m_Layer: 5
   m_Name: LoadGameButton
   m_TagString: Untagged
@@ -716,21 +717,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1676363115}
-        m_TargetAssemblyTypeName: SaveButton, Main
-        m_MethodName: Load
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1856454979}
-        m_TargetAssemblyTypeName: GameManager, Main
-        m_MethodName: Change
+      - m_Target: {fileID: 847092812}
+        m_TargetAssemblyTypeName: GameManagerButtonFuncs, Main
+        m_MethodName: LoadThenChange
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -778,6 +767,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 847092807}
   m_CullTransparentMesh: 1
+--- !u!114 &847092812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 847092807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 628969637f644cf3944464a6859180ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spaceship: 0
+  journal: 0
+  SaveButton: {fileID: 1676363115}
 --- !u!1 &927924083
 GameObject:
   m_ObjectHideFlags: 0
@@ -1669,12 +1673,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   environment: 0
-  maxStage: 6
+  maxStage: 5
   plantLibrary: {fileID: 11400000, guid: 557d057e844ae304599fb3fe8398cac8, type: 2}
   questionLibrary: {fileID: 11400000, guid: 701d55fb25d61754cae9688019f012a4, type: 2}
   lastSessionStreak: 0
   tutorialDone: 0
   foragingTutorialDone: 0
+  fallingTutorialDone: 0
   endSceneIndex: 6
   fadeOut: 1
   fadeTime: 0.5
