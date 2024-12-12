@@ -23,3 +23,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 7c9e686d97134394da1d37cf8bc3e021, type: 2}
   fruitEntries:
   - {fileID: 11400000, guid: 5f33478d8067afd0e87b3f3f30d7f7d2, type: 2}
+  - {fileID: 11400000, guid: 2b4f304af7cbe584d873679652473b51, type: 2}

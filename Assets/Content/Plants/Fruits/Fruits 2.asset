@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Fruits 2
   m_EditorClassIdentifier: 
   displayName: 
-  environment: 0
+  environment: 1
   features:
   - {fileID: 11400000, guid: 590726f7e9fc15e1d9d627d23e07419c, type: 2}
   - {fileID: 11400000, guid: f83fe922de024ff99a0c4888dd880002, type: 2}
