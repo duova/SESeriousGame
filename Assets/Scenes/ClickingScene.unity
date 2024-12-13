@@ -1577,8 +1577,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Eating lets you get your energy up, and then you will get to play the next
-    level for longer. Go on, now give it a try!
+  m_text: Keeping your energy up will let you play the next level for longer. Give
+    it a try now!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3887,8 +3887,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Hello again! Here is where you can grab some food to eat, just to make
-    sure that you can work properly.
+  m_text: "In nature, if you know what you\u2019re looking for, you can find things
+    you can eat to keep your energy up!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4442,6 +4442,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spaceship: 0
   journal: 0
+  SaveButton: {fileID: 0}
 --- !u!114 &1898521162
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4665,8 +4666,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: You just need to remember which plants are edible!  Beware, if you don't
-    know the name of the plant, I won't let you eat it!
+  m_text: "Only pick things you know are safe to eat. If you don\u2019t know what
+    it is I won\u2019t let you eat it!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
